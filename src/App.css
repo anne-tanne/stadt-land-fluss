@@ -513,6 +513,8 @@ body {
 .quiz-header h2 {
   margin: 0 0 15px 0;
   color: var(--text-primary);
+  color: #2d3748 !important;
+  margin-bottom: 1.5rem;
 }
 
 .letter-info {
