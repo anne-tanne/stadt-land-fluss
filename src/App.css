@@ -603,12 +603,12 @@ h2 {
 }
 
 .change-letter-btn {
-  background: var(--primary-bg);
-  color: var(--primary-color);
+  background: #667eea;
+  color: white;
 }
 
 .change-letter-btn:hover {
-  background: var(--primary-color);
+  background: #5a67d8;
   color: white;
   transform: translateY(-1px);
 }

@@ -475,10 +475,9 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
 
   const changeLetter = (newLetter?: string) => {
     const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
+    let targetLetter = newLetter
     
-    if (newLetter) {
-      setCurrentLetter(newLetter)
-    } else {
+    if (!newLetter) {
       const currentIndex = alphabet.indexOf(currentLetter)
       const nextIndex = (currentIndex + 1) % alphabet.length
       const nextLetter = alphabet[nextIndex]
@@ -493,15 +492,17 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
         attempts++
       }
 
-      setCurrentLetter(letterToUse)
+      targetLetter = letterToUse
     }
+    
+    setCurrentLetter(targetLetter!)
     
     // Load progress for the new letter
     const savedProgress = localStorage.getItem(QUIZ_STORAGE_KEY)
     if (savedProgress) {
       try {
         const progress: QuizProgress = JSON.parse(savedProgress)
-        const newLetterProgress = progress.letterProgress[newLetter || currentLetter] || []
+        const newLetterProgress = progress.letterProgress[targetLetter!] || []
         setFoundCountries(new Set(newLetterProgress))
       } catch (error) {
         setFoundCountries(new Set())
