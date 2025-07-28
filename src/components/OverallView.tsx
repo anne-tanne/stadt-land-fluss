@@ -23,7 +23,7 @@ const OverallView = ({ countries, onCountryToggle }: OverallViewProps) => {
 
   return (
     <div className="overall-view">
-      <h2>{t('allCountries')} ({sortedCountries.length})</h2>
+      <h2 className="white-box-title">{t('allCountries')} ({sortedCountries.length})</h2>
       <div className="countries-grid">
         {sortedCountries.map(country => (
           <div 

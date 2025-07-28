@@ -92,7 +92,7 @@ const StudyMode = ({ countries, onCountryProgress }: StudyModeProps) => {
     return (
       <div className="study-mode">
         <div className="study-complete">
-          <h2>🎉 {t('studySessionComplete')}</h2>
+          <h2 className="white-box-title">🎉 {t('studySessionComplete')}</h2>
           <p>{t('studySessionCompleteDescription', { count: session.sessionProgress })}</p>
           <button className="reset-btn" onClick={resetSession}>
             <RotateCcw size={20} />
@@ -106,7 +106,7 @@ const StudyMode = ({ countries, onCountryProgress }: StudyModeProps) => {
   return (
     <div className="study-mode">
       <div className="study-header">
-        <h2>{t('studyMode')}</h2>
+        <h2 className="white-box-title">{t('studyMode')}</h2>
         <div className="progress-info">
           <span>{t('progress')}: {session.sessionProgress + 1} / {session.totalInSession}</span>
           <div className="progress-bar">
@@ -125,7 +125,7 @@ const StudyMode = ({ countries, onCountryProgress }: StudyModeProps) => {
             onClick={handleFlip}
           >
             <div className="flashcard-front">
-              <h3>{t('startingLetter')}</h3>
+              <h3 className="white-box-title">{t('startingLetter')}</h3>
               <div className="flashcard-content">
                 <h2 className="letter-display">{session.currentCountry.letter}</h2>
                 <p>Klicke, um ein Land zu sehen, das mit diesem Buchstaben beginnt</p>
@@ -133,7 +133,7 @@ const StudyMode = ({ countries, onCountryProgress }: StudyModeProps) => {
             </div>
             
             <div className="flashcard-back">
-              <h3>{t('countryName')}</h3>
+              <h3 className="white-box-title">{t('countryName')}</h3>
               <div className="flashcard-content">
                 <h2>{session.currentCountry.name}</h2>
                 <p>{t('startsWith')}: {session.currentCountry.letter}</p>

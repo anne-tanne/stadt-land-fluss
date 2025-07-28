@@ -290,6 +290,12 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+/* White box titles - for titles in white/light backgrounds */
+.white-box-title {
+  color: #2d3748 !important;
+  margin-bottom: 1.5rem;
+}
+
 /* Only set white for h2 on colored backgrounds */
 .overall-view h2,
 .quiz-end-screen h2,

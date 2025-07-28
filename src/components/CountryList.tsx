@@ -20,7 +20,7 @@ const CountryList = ({ countries, onCountryToggle }: CountryListProps) => {
 
   return (
     <div className="country-list">
-      <h2>{t('countriesStartingWith', { letter: countries[0]?.letter })} ({countries.length})</h2>
+      <h2 className="white-box-title">{t('countriesStartingWith', { letter: countries[0]?.letter })} ({countries.length})</h2>
       <div className="countries-grid">
         {countries.map(country => (
           <div 

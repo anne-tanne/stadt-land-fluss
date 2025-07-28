@@ -574,11 +574,11 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
     return (
       <div className="quiz-mode">
         <div className="quiz-start-screen">
-          <h2>🌍 {t('quizStartTitle')}</h2>
+          <h2 className="white-box-title">🌍 {t('quizStartTitle')}</h2>
           <p>{t('quizStartDescription')}</p>
           
           <div className="continent-selection">
-            <h3>Wähle einen Kontinent:</h3>
+            <h3 className="white-box-title">Wähle einen Kontinent:</h3>
             <select 
               value={selectedContinent} 
               onChange={(e) => setSelectedContinent(e.target.value)}
@@ -744,7 +744,7 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
 
       {/* Letter Navigation Bar */}
       <div className="letter-navigation">
-        <h3>Buchstaben Navigation</h3>
+                    <h3 className="white-box-title">Buchstaben Navigation</h3>
         <div className="letter-buttons">
           {availableLetters.map(letter => {
             const progress = getLetterProgress(letter)
@@ -790,7 +790,7 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
 
       <div className="quiz-card">
         <div className="question-section">
-          <h3>Nenne Länder, die mit "{currentLetter}" beginnen</h3>
+          <h3 className="white-box-title">Nenne Länder, die mit "{currentLetter}" beginnen</h3>
           <p className="hint-text">Tippe einen Ländernamen ein und drücke Enter. Ein Tippfehler ist erlaubt.</p>
 
           {foundCount === totalCountries ? (
