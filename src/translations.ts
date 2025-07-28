@@ -83,7 +83,7 @@ export const translations: Record<Language, Translations> = {
   de: {
     // App header
     appTitle: 'Stadt, Land, Fluss',
-    browse: 'Durchsuchen',
+    browse: 'Übersicht',
     quizMode: 'Quiz-Modus',
     
     // View modes
