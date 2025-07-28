@@ -495,12 +495,22 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
       targetLetter = letterToUse
     }
     
-    // Clear the current display immediately
-    setFoundCountries(new Set())
+    // Load progress for the new letter BEFORE changing currentLetter
+    const savedProgress = localStorage.getItem(QUIZ_STORAGE_KEY)
+    if (savedProgress) {
+      try {
+        const progress: QuizProgress = JSON.parse(savedProgress)
+        const newLetterProgress = progress.letterProgress[targetLetter!] || []
+        setFoundCountries(new Set(newLetterProgress))
+      } catch (error) {
+        setFoundCountries(new Set())
+      }
+    } else {
+      setFoundCountries(new Set())
+    }
+    
     setInputValue('')
     setMessage('')
-    
-    // Then set the new letter
     setCurrentLetter(targetLetter!)
   }
 
@@ -529,23 +539,7 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
     }
   }, [currentLetter, isQuizActive])
 
-  // Load progress for the current letter whenever it changes
-  useEffect(() => {
-    if (isQuizActive && currentLetter) {
-      const savedProgress = localStorage.getItem(QUIZ_STORAGE_KEY)
-      if (savedProgress) {
-        try {
-          const progress: QuizProgress = JSON.parse(savedProgress)
-          const currentLetterProgress = progress.letterProgress[currentLetter] || []
-          setFoundCountries(new Set(currentLetterProgress))
-        } catch (error) {
-          setFoundCountries(new Set())
-        }
-      } else {
-        setFoundCountries(new Set())
-      }
-    }
-  }, [currentLetter, isQuizActive])
+
 
   // Get all letters that have countries
   const availableLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').filter(letter => 
