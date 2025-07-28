@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import type { Country } from '../types'
 import { Check, RotateCcw, Target, Play, Home } from 'lucide-react'
 import { useTranslation } from '../translations'
+import ContinentNav from './ContinentNav'
 
 interface QuizModeProps {
   countries: Country[]
@@ -19,12 +20,14 @@ interface QuizProgress {
   currentLetter: string
   letterProgress: { [letter: string]: string[] } // Save progress for each letter
   lastUpdated: string
+  selectedContinent?: string // Add continent to progress
 }
 
 interface QuizSession {
   isActive: boolean
   startTime: string | null
   totalCountriesFound: number
+  selectedContinent?: string // Add continent to session
 }
 
 const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
@@ -38,8 +41,19 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
   const [messageType, setMessageType] = useState<'success' | 'error' | 'info'>('info')
   const [isQuizActive, setIsQuizActive] = useState<boolean>(false)
   const [showEndScreen, setShowEndScreen] = useState<boolean>(false)
+  const [selectedContinent, setSelectedContinent] = useState<string>('Alle')
   const inputRef = useRef<HTMLInputElement>(null)
   const [isInitialized, setIsInitialized] = useState<boolean>(false)
+
+  // Filter countries by selected continent
+  const getFilteredCountries = () => {
+    if (selectedContinent === 'Alle') {
+      return countries
+    }
+    return countries.filter(country => country.continent === selectedContinent)
+  }
+
+  const filteredCountries = getFilteredCountries()
 
   // Load saved progress and session on component mount
   useEffect(() => {
@@ -59,6 +73,10 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
         // Only restore if saved within the last 24 hours
         if (now.getTime() - savedDate.getTime() < 24 * 60 * 60 * 1000) {
           setCurrentLetter(progress.currentLetter)
+          // Restore selected continent if available
+          if (progress.selectedContinent) {
+            setSelectedContinent(progress.selectedContinent)
+          }
           // Load progress for current letter
           const currentLetterProgress = progress.letterProgress[progress.currentLetter] || []
           setFoundCountries(new Set(currentLetterProgress))
@@ -80,6 +98,11 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
       try {
         const session: QuizSession = JSON.parse(savedSession)
         console.log('Session loaded:', session)
+        
+        // Restore selected continent if available
+        if (session.selectedContinent) {
+          setSelectedContinent(session.selectedContinent)
+        }
         
         // Always restore the session state if it exists and is valid
         if (session.isActive) {
@@ -124,29 +147,31 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
         progress = JSON.parse(savedProgress)
         progress.letterProgress[currentLetter] = Array.from(foundCountries)
         progress.currentLetter = currentLetter
+        progress.selectedContinent = selectedContinent
         progress.lastUpdated = new Date().toISOString()
         console.log('Updated existing progress:', progress)
       } catch (error) {
-        progress = { currentLetter, letterProgress: { [currentLetter]: Array.from(foundCountries) }, lastUpdated: new Date().toISOString() }
+        progress = { currentLetter, letterProgress: { [currentLetter]: Array.from(foundCountries) }, selectedContinent, lastUpdated: new Date().toISOString() }
         console.log('Created new progress due to error:', progress)
       }
     } else {
-      progress = { currentLetter, letterProgress: { [currentLetter]: Array.from(foundCountries) }, lastUpdated: new Date().toISOString() }
+      progress = { currentLetter, letterProgress: { [currentLetter]: Array.from(foundCountries) }, selectedContinent, lastUpdated: new Date().toISOString() }
       console.log('Created new progress:', progress)
     }
     localStorage.setItem(QUIZ_STORAGE_KEY, JSON.stringify(progress))
     console.log('Progress saved to localStorage')
-  }, [currentLetter, foundCountries, isInitialized])
+  }, [currentLetter, foundCountries, selectedContinent, isInitialized])
 
   // Save session state whenever isQuizActive changes
   useEffect(() => {
     const session: QuizSession = {
       isActive: isQuizActive,
       startTime: isQuizActive ? new Date().toISOString() : null,
-      totalCountriesFound: getTotalCountriesFound()
+      totalCountriesFound: getTotalCountriesFound(),
+      selectedContinent: selectedContinent // Save selected continent
     }
     localStorage.setItem(QUIZ_SESSION_KEY, JSON.stringify(session))
-  }, [isQuizActive])
+  }, [isQuizActive, selectedContinent])
 
   // Also save session when progress changes (in case user switches modes during active quiz)
   useEffect(() => {
@@ -154,11 +179,12 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
       const session: QuizSession = {
         isActive: true,
         startTime: new Date().toISOString(),
-        totalCountriesFound: getTotalCountriesFound()
+        totalCountriesFound: getTotalCountriesFound(),
+        selectedContinent: selectedContinent // Save selected continent
       }
       localStorage.setItem(QUIZ_SESSION_KEY, JSON.stringify(session))
     }
-  }, [foundCountries, currentLetter])
+  }, [foundCountries, currentLetter, selectedContinent])
 
   // Prevent session from being deactivated when component unmounts (switching modes)
   useEffect(() => {
@@ -169,13 +195,14 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
         const session: QuizSession = {
           isActive: true,
           startTime: new Date().toISOString(),
-          totalCountriesFound: getTotalCountriesFound()
+          totalCountriesFound: getTotalCountriesFound(),
+          selectedContinent: selectedContinent // Preserve selected continent
         }
         localStorage.setItem(QUIZ_SESSION_KEY, JSON.stringify(session))
         console.log('Active session preserved:', session)
       }
     }
-  }, [isQuizActive])
+  }, [isQuizActive, selectedContinent])
 
   const getTotalCountriesFound = () => {
     const savedProgress = localStorage.getItem(QUIZ_STORAGE_KEY)
@@ -192,7 +219,7 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
 
   const isAllCountriesCompleted = () => {
     const totalFound = getTotalCountriesFound()
-    return totalFound >= countries.length
+    return totalFound >= filteredCountries.length
   }
 
   const startQuiz = () => {
@@ -203,7 +230,8 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
     const session: QuizSession = {
       isActive: true,
       startTime: new Date().toISOString(),
-      totalCountriesFound: getTotalCountriesFound()
+      totalCountriesFound: getTotalCountriesFound(),
+      selectedContinent: selectedContinent // Save selected continent
     }
     localStorage.setItem(QUIZ_SESSION_KEY, JSON.stringify(session))
     
@@ -228,7 +256,7 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
   }
 
   const getCountriesForLetter = (letter: string) => {
-    return countries.filter(country => country.letter === letter)
+    return filteredCountries.filter(country => country.letter === letter)
   }
 
   const currentCountries = getCountriesForLetter(currentLetter)
@@ -543,8 +571,28 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
           <h2>🌍 {t('quizStartTitle')}</h2>
           <p>{t('quizStartDescription')}</p>
           
+          <div className="continent-selection">
+            <h3>Wähle einen Kontinent:</h3>
+            <ContinentNav
+              selectedContinent={selectedContinent}
+              onContinentSelect={setSelectedContinent}
+              countries={countries}
+            />
+          </div>
+          
+          <div className="quiz-info">
+            <p>Länder für Quiz: <strong>{filteredCountries.length}</strong></p>
+            {selectedContinent !== 'Alle' && (
+              <p>Kontinent: <strong>{selectedContinent}</strong></p>
+            )}
+          </div>
+          
           <div className="start-actions">
-            <button className="start-quiz-btn" onClick={startQuiz}>
+            <button 
+              className="start-quiz-btn" 
+              onClick={startQuiz}
+              disabled={filteredCountries.length === 0}
+            >
               <Play size={20} />
               {hasProgress ? 'Quiz fortsetzen' : t('startQuiz')}
             </button>
@@ -563,7 +611,7 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
 
   if (showEndScreen) {
     const totalFound = getTotalCountriesFound()
-    const totalPossible = countries.length
+    const totalPossible = filteredCountries.length
     const isFullyCompleted = totalFound >= totalPossible
     
     return (

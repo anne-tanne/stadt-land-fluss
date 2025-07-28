@@ -1060,6 +1060,45 @@ h2 {
   font-size: 1.1rem;
 }
 
+.continent-selection {
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.continent-selection h3 {
+  margin-bottom: 1rem;
+  color: #2d3748;
+  font-size: 1.2rem;
+}
+
+.quiz-info {
+  background: #f7fafc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.quiz-info p {
+  margin: 0.5rem 0;
+  color: #4a5568;
+  font-size: 1rem;
+}
+
+.quiz-info strong {
+  color: #2d3748;
+}
+
+.start-quiz-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.start-quiz-btn:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
 .progress-summary {
   background: var(--bg-secondary);
   border-radius: 8px;
