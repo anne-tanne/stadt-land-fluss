@@ -5,6 +5,8 @@ import AlphabetNav from './components/AlphabetNav'
 import CountryList from './components/CountryList'
 import StudyMode from './components/StudyMode'
 import QuizMode from './components/QuizMode'
+import ContinentNav from './components/ContinentNav'
+import OverallView from './components/OverallView'
 import type { Country } from './types'
 
 type AppMode = 'browse' | 'study' | 'quiz'
@@ -24,19 +26,22 @@ const normalizeLetter = (letter: string): string => {
 
 function App() {
   const [selectedLetter, setSelectedLetter] = useState<string>('A')
+  const [selectedContinent, setSelectedContinent] = useState<string>('All')
+  const [viewMode, setViewMode] = useState<'alphabetical' | 'overall'>('alphabetical')
   const [appMode, setAppMode] = useState<AppMode>('browse')
   const [countries, setCountries] = useState<Country[]>([])
 
   useEffect(() => {
     // Convert the JSON data to our Country format with normalized letters
-    const countriesWithProgress = countriesData.map((countryName: string) => {
-      const firstChar = countryName.charAt(0)
+    const countriesWithProgress = countriesData.map((countryData: any) => {
+      const firstChar = countryData.name.charAt(0)
       const normalizedLetter = normalizeLetter(firstChar.toUpperCase())
       
       return {
-        name: countryName,
+        name: countryData.name,
         letter: normalizedLetter,
         originalLetter: firstChar.toUpperCase(), // Keep original for display
+        continent: countryData.continent,
         learned: false,
         lastReviewed: null,
         reviewCount: 0,
@@ -46,8 +51,20 @@ function App() {
     setCountries(countriesWithProgress)
   }, [])
 
+  const getFilteredCountries = () => {
+    let filtered = countries
+
+    // Filter by continent
+    if (selectedContinent !== 'All') {
+      filtered = filtered.filter(country => country.continent === selectedContinent)
+    }
+
+    return filtered
+  }
+
   const getCountriesByLetter = (letter: string) => {
-    return countries.filter(country => country.letter === letter)
+    const filtered = getFilteredCountries()
+    return filtered.filter(country => country.letter === letter)
   }
 
   const updateCountryProgress = (countryName: string, learned: boolean) => {
@@ -93,15 +110,49 @@ function App() {
       <main className="app-main">
         {appMode === 'browse' && (
           <>
-            <AlphabetNav 
-              selectedLetter={selectedLetter} 
-              onLetterSelect={setSelectedLetter}
-              countries={countries}
-            />
-            <CountryList 
-              countries={getCountriesByLetter(selectedLetter)}
-              onCountryToggle={updateCountryProgress}
-            />
+            <div className="browse-controls">
+              <div className="view-mode-toggle">
+                <button 
+                  className={viewMode === 'alphabetical' ? 'active' : ''} 
+                  onClick={() => setViewMode('alphabetical')}
+                >
+                  Alphabetical View
+                </button>
+                <button 
+                  className={viewMode === 'overall' ? 'active' : ''} 
+                  onClick={() => setViewMode('overall')}
+                >
+                  Overall View
+                </button>
+              </div>
+              
+              <ContinentNav 
+                selectedContinent={selectedContinent}
+                onContinentSelect={setSelectedContinent}
+                countries={countries}
+              />
+            </div>
+
+            {viewMode === 'alphabetical' && (
+              <>
+                <AlphabetNav 
+                  selectedLetter={selectedLetter} 
+                  onLetterSelect={setSelectedLetter}
+                  countries={getFilteredCountries()}
+                />
+                <CountryList 
+                  countries={getCountriesByLetter(selectedLetter)}
+                  onCountryToggle={updateCountryProgress}
+                />
+              </>
+            )}
+
+            {viewMode === 'overall' && (
+              <OverallView 
+                countries={getFilteredCountries()}
+                onCountryToggle={updateCountryProgress}
+              />
+            )}
           </>
         )}
         

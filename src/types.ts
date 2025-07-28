@@ -2,6 +2,7 @@ export interface Country {
   name: string
   letter: string
   originalLetter: string
+  continent: string
   learned: boolean
   lastReviewed: string | null
   reviewCount: number

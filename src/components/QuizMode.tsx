@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import type { Country } from '../types'
-import { Check, X, RotateCcw, Target, Play, Square, Home } from 'lucide-react'
+import { Check, RotateCcw, Target, Play, Home } from 'lucide-react'
 
 interface QuizModeProps {
   countries: Country[]
@@ -8,17 +8,7 @@ interface QuizModeProps {
 }
 
 // Function to normalize special characters to their base letters (for internal use if needed)
-const normalizeLetter = (letter: string): string => {
-  const specialChars: { [key: string]: string } = {
-    'Ö': 'O',
-    'Ä': 'A',
-    'Ü': 'U',
-    'ö': 'o',
-    'ä': 'a',
-    'ü': 'u'
-  }
-  return specialChars[letter] || letter
-}
+
 
 // Local storage keys
 const QUIZ_STORAGE_KEY = 'länder-quiz-progress'
