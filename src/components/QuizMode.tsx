@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from 'react'
 import type { Country } from '../types'
 import { Check, RotateCcw, Target, Play, Home } from 'lucide-react'
 import { useTranslation } from '../translations'
-import ContinentNav from './ContinentNav'
 
 interface QuizModeProps {
   countries: Country[]
@@ -50,10 +49,21 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
     if (selectedContinent === 'Alle') {
       return countries
     }
+    if (selectedContinent === 'Amerikas') {
+      return countries.filter(country => 
+        country.continent === 'Nordamerika' || country.continent === 'Südamerika'
+      )
+    }
     return countries.filter(country => country.continent === selectedContinent)
   }
 
   const filteredCountries = getFilteredCountries()
+
+  // Get available continents for dropdown
+  const getAvailableContinents = () => {
+    const continents = ['Alle', 'Amerikas', ...Array.from(new Set(countries.map(country => country.continent)))]
+    return continents
+  }
 
   // Load saved progress and session on component mount
   useEffect(() => {
@@ -573,11 +583,25 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
           
           <div className="continent-selection">
             <h3>Wähle einen Kontinent:</h3>
-            <ContinentNav
-              selectedContinent={selectedContinent}
-              onContinentSelect={setSelectedContinent}
-              countries={countries}
-            />
+            <select 
+              value={selectedContinent} 
+              onChange={(e) => setSelectedContinent(e.target.value)}
+              className="continent-dropdown"
+            >
+              {getAvailableContinents().map(continent => (
+                <option key={continent} value={continent}>
+                  {continent === 'Alle' ? '🌍 Alle Kontinente' :
+                   continent === 'Amerikas' ? '🌎 Amerikas (Nord & Süd)' :
+                   continent === 'Afrika' ? '🌍 Afrika' :
+                   continent === 'Asien' ? '🌏 Asien' :
+                   continent === 'Europa' ? '🌍 Europa' :
+                   continent === 'Nordamerika' ? '🌎 Nordamerika' :
+                   continent === 'Südamerika' ? '🌎 Südamerika' :
+                   continent === 'Ozeanien' ? '🌏 Ozeanien' :
+                   continent}
+                </option>
+              ))}
+            </select>
           </div>
           
           <div className="quiz-info">

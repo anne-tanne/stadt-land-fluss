@@ -1071,6 +1071,33 @@ h2 {
   font-size: 1.2rem;
 }
 
+.continent-dropdown {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  background: white;
+  font-size: 1rem;
+  color: #2d3748;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.continent-dropdown:hover {
+  border-color: #667eea;
+}
+
+.continent-dropdown:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.continent-dropdown option {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
 .quiz-info {
   background: #f7fafc;
   border-radius: 8px;
