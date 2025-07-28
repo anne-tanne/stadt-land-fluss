@@ -1,110 +1,52 @@
-import { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './App.css'
-import countriesData from './countries.json'
 import AlphabetNav from './components/AlphabetNav'
 import CountryList from './components/CountryList'
 import StudyMode from './components/StudyMode'
-import QuizMode from './components/QuizMode'
+import { QuizModeRefactored } from './components/QuizModeRefactored'
 import ContinentNav from './components/ContinentNav'
 import OverallView from './components/OverallView'
-import type { Country } from './types'
+import { CountryProvider, useCountryContext } from './contexts/CountryContext'
 import { useTranslation } from './translations'
 
 type AppMode = 'browse' | 'study' | 'quiz'
 
-// Function to normalize special characters to their base letters
-const normalizeLetter = (letter: string): string => {
-  const specialChars: { [key: string]: string } = {
-    'Ö': 'O',
-    'Ä': 'A', 
-    'Ü': 'U',
-    'ö': 'o',
-    'ä': 'a',
-    'ü': 'u'
-  }
-  return specialChars[letter] || letter
-}
-
-function App() {
+const AppContent: React.FC = () => {
   const { t } = useTranslation()
+  const { markCountryAsLearned, getFilteredCountries, getCountriesByLetter } = useCountryContext()
+  
   const [selectedLetter, setSelectedLetter] = useState<string>('A')
   const [selectedContinent, setSelectedContinent] = useState<string>('Alle')
   const [viewMode, setViewMode] = useState<'alphabetical' | 'overall'>('alphabetical')
   const [appMode, setAppMode] = useState<AppMode>('browse')
-  const [countries, setCountries] = useState<Country[]>([])
 
-  useEffect(() => {
-    // Convert the JSON data to our Country format with normalized letters
-    const countriesWithProgress = countriesData.map((countryData: any) => {
-      const firstChar = countryData.name.charAt(0)
-      const normalizedLetter = normalizeLetter(firstChar.toUpperCase())
-      
-      return {
-        name: countryData.name,
-        letter: normalizedLetter,
-        originalLetter: firstChar.toUpperCase(), // Keep original for display
-        continent: countryData.continent,
-        learned: false,
-        lastReviewed: null,
-        reviewCount: 0,
-        nextReview: null
-      }
-    })
-    setCountries(countriesWithProgress)
-  }, [])
-
-  const getFilteredCountries = () => {
-    let filtered = countries
-
-    // Filter by continent
-    if (selectedContinent !== 'Alle') {
-      filtered = filtered.filter(country => country.continent === selectedContinent)
-    }
-
-    return filtered
-  }
-
-  const getCountriesByLetter = (letter: string) => {
-    const filtered = getFilteredCountries()
-    return filtered.filter(country => country.letter === letter)
-  }
-
-  const updateCountryProgress = (countryName: string, learned: boolean) => {
-    setCountries(prev => prev.map(country => 
-      country.name === countryName 
-        ? { 
-            ...country, 
-            learned, 
-            lastReviewed: new Date().toISOString(),
-            reviewCount: country.reviewCount + 1,
-            nextReview: learned ? new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString() : null
-          }
-        : country
-    ))
-  }
-
-  const markCountryAsLearned = (countryName: string) => {
-    updateCountryProgress(countryName, true)
-  }
+  const filteredCountries = getFilteredCountries(selectedContinent)
+  const countriesByLetter = getCountriesByLetter(selectedLetter, selectedContinent)
 
   return (
     <div className="app">
       <header className="app-header">
         <h1 className="app-title" onClick={() => setAppMode('browse')}>
-        🌍 {t('appTitle')}
+          🌍 {t('appTitle')}
         </h1>
         <div className="mode-toggle">
           <button 
             className={appMode === 'browse' ? 'active' : ''} 
             onClick={() => setAppMode('browse')}
           >
-            {t('browse')}
+            📚 {t('browse')}
+          </button>
+          <button 
+            className={appMode === 'study' ? 'active' : ''} 
+            onClick={() => setAppMode('study')}
+          >
+            🧠 {t('studyMode')}
           </button>
           <button 
             className={appMode === 'quiz' ? 'active' : ''} 
             onClick={() => setAppMode('quiz')}
           >
-            {t('quizMode')}
+            🎯 {t('quizMode')}
           </button>
         </div>
       </header>
@@ -118,56 +60,53 @@ function App() {
                   className={viewMode === 'alphabetical' ? 'active' : ''} 
                   onClick={() => setViewMode('alphabetical')}
                 >
-                  {t('alphabeticalView')}
+                  🔤 {t('alphabeticalView')}
                 </button>
                 <button 
                   className={viewMode === 'overall' ? 'active' : ''} 
                   onClick={() => setViewMode('overall')}
                 >
-                  {t('overallView')}
+                  🌍 {t('overallView')}
                 </button>
               </div>
-              
-              <ContinentNav 
-                selectedContinent={selectedContinent}
-                onContinentSelect={setSelectedContinent}
-                countries={countries}
-              />
             </div>
 
-            {viewMode === 'alphabetical' && (
+            <ContinentNav 
+              selectedContinent={selectedContinent}
+              onContinentSelect={setSelectedContinent}
+              countries={filteredCountries}
+            />
+
+            {viewMode === 'alphabetical' ? (
               <>
                 <AlphabetNav 
-                  selectedLetter={selectedLetter} 
+                  selectedLetter={selectedLetter}
                   onLetterSelect={setSelectedLetter}
-                  countries={getFilteredCountries()}
+                  countries={filteredCountries}
                 />
                 <CountryList 
-                  countries={getCountriesByLetter(selectedLetter)}
-                  onCountryToggle={updateCountryProgress}
+                  countries={countriesByLetter}
+                  onCountryToggle={markCountryAsLearned}
                 />
               </>
-            )}
-
-            {viewMode === 'overall' && (
+            ) : (
               <OverallView 
-                countries={getFilteredCountries()}
-                onCountryToggle={updateCountryProgress}
+                countries={filteredCountries}
+                onCountryToggle={markCountryAsLearned}
               />
             )}
           </>
         )}
-        
+
         {appMode === 'study' && (
           <StudyMode 
-            countries={countries}
-            onCountryProgress={updateCountryProgress}
+            countries={filteredCountries}
+            onCountryProgress={markCountryAsLearned}
           />
         )}
-        
+
         {appMode === 'quiz' && (
-          <QuizMode 
-            countries={countries}
+          <QuizModeRefactored 
             onCountryLearned={markCountryAsLearned}
           />
         )}
@@ -176,4 +115,12 @@ function App() {
   )
 }
 
-export default App
+const App: React.FC = () => {
+  return (
+    <CountryProvider>
+      <AppContent />
+    </CountryProvider>
+  )
+}
+
+export default App 
