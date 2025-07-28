@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import type { Country } from '../types'
-import { Check, RotateCcw, Target, Play, Home } from 'lucide-react'
+import { Check, RotateCcw, Target, Play } from 'lucide-react'
 import { useTranslation } from '../translations'
 
 interface QuizModeProps {
@@ -39,7 +39,6 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
   const [message, setMessage] = useState<string>('')
   const [messageType, setMessageType] = useState<'success' | 'error' | 'info'>('info')
   const [isQuizActive, setIsQuizActive] = useState<boolean>(false)
-  const [showEndScreen, setShowEndScreen] = useState<boolean>(false)
   const [selectedContinent, setSelectedContinent] = useState<string>('Alle')
   const inputRef = useRef<HTMLInputElement>(null)
   const [isInitialized, setIsInitialized] = useState<boolean>(false)
@@ -233,7 +232,7 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
   }
 
   const startQuiz = () => {
-    // Force the quiz to start
+    // Start the quiz
     setIsQuizActive(true)
     
     // Also save the session immediately
@@ -249,21 +248,28 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
     setMessageType('info')
   }
 
-  const endQuiz = () => {
+  const saveForLater = () => {
+    // Save progress and go back to overview (no end screen)
     setIsQuizActive(false)
-    setShowEndScreen(true)
+    // Progress is already saved in localStorage, so we just exit
   }
 
-  const restartQuiz = () => {
-    setShowEndScreen(false)
-    setIsQuizActive(false)
-    setCurrentLetter('A')
-    setFoundCountries(new Set())
-    setInputValue('')
-    setMessage('')
-    localStorage.removeItem(QUIZ_STORAGE_KEY)
-    localStorage.removeItem(QUIZ_SESSION_KEY)
+  const endQuiz = () => {
+    const confirmed = window.confirm('Bist du sicher, dass du das Quiz beenden möchtest? Alle Fortschritte werden gelöscht.')
+    if (confirmed) {
+      // End quiz and clear all progress
+      setIsQuizActive(false)
+      setCurrentLetter('A')
+      setFoundCountries(new Set())
+      setInputValue('')
+      setMessage('')
+      setSelectedContinent('Alle')
+      localStorage.removeItem(QUIZ_STORAGE_KEY)
+      localStorage.removeItem(QUIZ_SESSION_KEY)
+    }
   }
+
+
 
   const getCountriesForLetter = (letter: string) => {
     return filteredCountries.filter(country => country.letter === letter)
@@ -605,6 +611,12 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
             {selectedContinent !== 'Alle' && (
               <p>Kontinent: <strong>{selectedContinent}</strong></p>
             )}
+            {hasProgress && (
+              <div className="saved-progress-info">
+                <p>💾 <strong>Gespeicherter Fortschritt gefunden!</strong></p>
+                <p>Du kannst dein Quiz fortsetzen oder neu starten.</p>
+              </div>
+            )}
           </div>
           
           <div className="start-actions">
@@ -629,77 +641,7 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
     )
   }
 
-  if (showEndScreen) {
-    const totalFound = getTotalCountriesFound()
-    const totalPossible = filteredCountries.length
-    const isFullyCompleted = totalFound >= totalPossible
-    
-    return (
-      <div className="quiz-mode">
-        <div className="quiz-end-screen">
-          {isFullyCompleted ? (
-            <h2 className="white-box-title">🏆🎉 {t('congratulations')}! 🎉🏆</h2>
-          ) : (
-            <h2 className="white-box-title">🎉 {t('quizComplete')}</h2>
-          )}
-          
-          {isFullyCompleted && (
-            <div className="congratulations-message">
-              <h3>Du hast ALLE {totalPossible} Länder gefunden!</h3>
-              <p>Großartige Arbeit! Du bist ein Geographie-Meister! 🌍✨</p>
-            </div>
-          )}
-          
-          <div className="quiz-stats">
-            <div className="stat-item">
-              <h3>Gefundene Länder</h3>
-              <p className="stat-number">{totalFound}</p>
-              <p className="stat-label">von {totalPossible}</p>
-            </div>
-            <div className="stat-item">
-              <h3>Abschlussrate</h3>
-              <p className="stat-number">{Math.round((totalFound / totalPossible) * 100)}%</p>
-            </div>
-          </div>
-          
-          <div className="letter-progress-summary">
-            <h3>{t('letterProgress')}</h3>
-            <div className="letter-grid">
-              {availableLetters.map(letter => {
-                const progress = getLetterProgress(letter)
-                if (progress.total > 0) {
-                  return (
-                    <div key={letter} className="letter-stat">
-                      <span className="letter">{letter}</span>
-                      <span className="progress">{progress.found}/{progress.total}</span>
-                      <div className="mini-progress-bar">
-                        <div 
-                          className="mini-progress-fill" 
-                          style={{ width: `${(progress.found / progress.total) * 100}%` }}
-                        />
-                      </div>
-                    </div>
-                  )
-                }
-                return null
-              })}
-            </div>
-          </div>
-          
-          <div className="end-actions">
-            <button className="start-quiz-btn" onClick={restartQuiz}>
-              <RotateCcw size={20} />
-              Neues Quiz starten
-            </button>
-            <button className="browse-btn" onClick={() => window.location.reload()}>
-              <Home size={20} />
-              {t('backToBrowse')}
-            </button>
-          </div>
-        </div>
-      </div>
-    )
-  }
+
 
   if (totalCountries === 0) {
     console.log('No countries for letter:', currentLetter)
@@ -719,8 +661,11 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
   console.log('Showing active quiz for letter:', currentLetter)
   return (
     <div className="quiz-mode">
-      {/* End Quiz Button */}
+      {/* Quiz Control Buttons */}
       <div className="quiz-controls">
+        <button className="save-later-btn" onClick={saveForLater}>
+          Später fortsetzen
+        </button>
         <button className="end-quiz-btn" onClick={endQuiz}>
           {t('endQuiz')}
         </button>
