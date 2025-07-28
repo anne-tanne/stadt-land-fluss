@@ -19,8 +19,8 @@ export const ContinentDropdown: React.FC<ContinentDropdownProps> = ({
   return (
     <div className={`continent-dropdown-container ${className}`}>
       {label && <h3>{label}</h3>}
-      <select 
-        value={selectedContinent} 
+      <select
+        value={selectedContinent}
         onChange={(e) => onContinentChange(e.target.value)}
         className="continent-dropdown"
       >

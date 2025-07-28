@@ -1,24 +1,31 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './App.css'
+import './styles/design-system.css'
+import './styles/components.css'
 import AlphabetNav from './components/AlphabetNav'
 import CountryList from './components/CountryList'
-// import StudyMode from './components/StudyMode' // Temporarily hidden
 import { QuizModeRefactored } from './components/QuizModeRefactored'
 import { ContinentDropdown } from './components/ContinentDropdown'
 import OverallView from './components/OverallView'
+import { ErrorBoundary } from './components/ErrorBoundary'
 import { CountryProvider, useCountryContext } from './contexts/CountryContext'
+import { useAppState } from './hooks/useAppState'
 import { useTranslation } from './translations'
-
-type AppMode = 'browse' | 'study' | 'quiz'
 
 const AppContent: React.FC = () => {
   const { t } = useTranslation()
   const { markCountryAsLearned, getFilteredCountries, getCountriesByLetter } = useCountryContext()
-  
-  const [selectedLetter, setSelectedLetter] = useState<string>('A')
-  const [selectedContinent, setSelectedContinent] = useState<string>('Alle')
-  const [viewMode, setViewMode] = useState<'alphabetical' | 'overall'>('overall')
-  const [appMode, setAppMode] = useState<AppMode>('browse')
+  const {
+    appMode,
+    viewMode,
+    selectedLetter,
+    selectedContinent,
+    setAppMode,
+    setViewMode,
+    setSelectedLetter,
+    setSelectedContinent,
+    resetToBrowse
+  } = useAppState()
 
   const filteredCountries = getFilteredCountries(selectedContinent)
   const countriesByLetter = getCountriesByLetter(selectedLetter, selectedContinent)
@@ -26,7 +33,7 @@ const AppContent: React.FC = () => {
   return (
     <div className="app">
       <header className="app-header">
-        <h1 className="app-title" onClick={() => setAppMode('browse')}>
+        <h1 className="app-title" onClick={resetToBrowse}>
           🌍 {t('appTitle')}
         </h1>
         <div className="mode-toggle">
@@ -36,14 +43,6 @@ const AppContent: React.FC = () => {
           >
             📚 {t('browse')}
           </button>
-          {/* Temporarily hidden study mode
-          <button 
-            className={appMode === 'study' ? 'active' : ''} 
-            onClick={() => setAppMode('study')}
-          >
-            🧠 {t('studyMode')}
-          </button>
-          */}
           <button 
             className={appMode === 'quiz' ? 'active' : ''} 
             onClick={() => setAppMode('quiz')}
@@ -54,67 +53,60 @@ const AppContent: React.FC = () => {
       </header>
 
       <main className="app-main">
-        {appMode === 'browse' && (
-          <>
-            <ContinentDropdown 
-              selectedContinent={selectedContinent}
-              onContinentChange={setSelectedContinent}
-            />
-
-            <div className="browse-controls">
-              <div className="view-mode-toggle">
-                <button 
-                  className={viewMode === 'overall' ? 'active' : ''} 
-                  onClick={() => setViewMode('overall')}
-                >
-                  {t('overallView')}
-                </button>
-                <button 
-                  className={viewMode === 'alphabetical' ? 'active' : ''} 
-                  onClick={() => setViewMode('alphabetical')}
-                >
-                  {t('alphabeticalView')}
-                </button>
-              </div>
-            </div>
-
-            {viewMode === 'alphabetical' ? (
-              <>
-                <AlphabetNav 
-                  selectedLetter={selectedLetter}
-                  onLetterSelect={setSelectedLetter}
-                  countries={filteredCountries}
-                />
-                <CountryList 
-                  countries={countriesByLetter}
-                  onCountryToggle={markCountryAsLearned}
-                />
-              </>
-            ) : (
-              <OverallView 
-                countries={filteredCountries}
-                onCountryToggle={markCountryAsLearned}
+        <ErrorBoundary>
+          {appMode === 'browse' && (
+            <>
+              <ContinentDropdown 
                 selectedContinent={selectedContinent}
+                onContinentChange={setSelectedContinent}
               />
-            )}
-          </>
-        )}
 
-        {/* Temporarily hidden study mode
-        {appMode === 'study' && (
-          <StudyMode 
-            countries={filteredCountries}
-            onCountryProgress={markCountryAsLearned}
-          />
-        )}
-        */}
+              <div className="browse-controls">
+                <div className="view-mode-toggle">
+                  <button 
+                    className={viewMode === 'overall' ? 'active' : ''} 
+                    onClick={() => setViewMode('overall')}
+                  >
+                    {t('overallView')}
+                  </button>
+                  <button 
+                    className={viewMode === 'alphabetical' ? 'active' : ''} 
+                    onClick={() => setViewMode('alphabetical')}
+                  >
+                    {t('alphabeticalView')}
+                  </button>
+                </div>
+              </div>
 
-        {appMode === 'quiz' && (
-          <QuizModeRefactored 
-            onCountryLearned={markCountryAsLearned}
-            onReturnToBrowse={() => setAppMode('browse')}
-          />
-        )}
+              {viewMode === 'alphabetical' ? (
+                <>
+                  <AlphabetNav 
+                    selectedLetter={selectedLetter}
+                    onLetterSelect={setSelectedLetter}
+                    countries={filteredCountries}
+                  />
+                  <CountryList 
+                    countries={countriesByLetter}
+                    onCountryToggle={markCountryAsLearned}
+                  />
+                </>
+              ) : (
+                <OverallView 
+                  countries={filteredCountries}
+                  onCountryToggle={markCountryAsLearned}
+                  selectedContinent={selectedContinent}
+                />
+              )}
+            </>
+          )}
+
+          {appMode === 'quiz' && (
+            <QuizModeRefactored 
+              onCountryLearned={markCountryAsLearned}
+              onReturnToBrowse={resetToBrowse}
+            />
+          )}
+        </ErrorBoundary>
       </main>
     </div>
   )
@@ -122,9 +114,11 @@ const AppContent: React.FC = () => {
 
 const App: React.FC = () => {
   return (
-    <CountryProvider>
-      <AppContent />
-    </CountryProvider>
+    <ErrorBoundary>
+      <CountryProvider>
+        <AppContent />
+      </CountryProvider>
+    </ErrorBoundary>
   )
 }
 
