@@ -1460,6 +1460,8 @@ h2 {
 
 .letter-progress-summary {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .letter-progress-summary h3 {
