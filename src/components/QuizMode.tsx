@@ -444,13 +444,7 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
       setMessageType('success')
       setInputValue('')
 
-      // Check if all countries for this letter are found
-      if (foundCount + 1 >= totalCountries) {
-        setTimeout(() => {
-          setMessage('🎉 All countries for this letter completed!')
-          setMessageType('success')
-        }, 1000)
-      }
+
 
       // Check if all countries in the entire quiz are completed
       setTimeout(() => {
