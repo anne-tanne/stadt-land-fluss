@@ -7,6 +7,7 @@ export interface Country {
   lastReviewed: string | null
   reviewCount: number
   nextReview: string | null
+  alternatives?: string[]
 }
 
 export interface StudySession {

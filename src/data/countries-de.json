@@ -1,0 +1,1160 @@
+[
+  {
+    "name": "Afghanistan",
+    "continent": "Asien",
+    "letter": "A",
+    "alternatives": []
+  },
+  {
+    "name": "Albanien",
+    "continent": "Europa",
+    "letter": "A",
+    "alternatives": []
+  },
+  {
+    "name": "Algerien",
+    "continent": "Afrika",
+    "letter": "A",
+    "alternatives": []
+  },
+  {
+    "name": "Andorra",
+    "continent": "Europa",
+    "letter": "A",
+    "alternatives": []
+  },
+  {
+    "name": "Angola",
+    "continent": "Afrika",
+    "letter": "A",
+    "alternatives": []
+  },
+  {
+    "name": "Antigua und Barbuda",
+    "continent": "Nordamerika",
+    "letter": "A",
+    "alternatives": ["antigua", "barbuda"]
+  },
+  {
+    "name": "Argentinien",
+    "continent": "Südamerika",
+    "letter": "A",
+    "alternatives": []
+  },
+  {
+    "name": "Armenien",
+    "continent": "Asien",
+    "letter": "A",
+    "alternatives": []
+  },
+  {
+    "name": "Aserbaidschan",
+    "continent": "Asien",
+    "letter": "A",
+    "alternatives": []
+  },
+  {
+    "name": "Australien",
+    "continent": "Ozeanien",
+    "letter": "A",
+    "alternatives": []
+  },
+  {
+    "name": "Äquatorialguinea",
+    "continent": "Afrika",
+    "letter": "Ä",
+    "alternatives": ["equatorial guinea"]
+  },
+  {
+    "name": "Bahamas",
+    "continent": "Nordamerika",
+    "letter": "B",
+    "alternatives": []
+  },
+  {
+    "name": "Bahrain",
+    "continent": "Asien",
+    "letter": "B",
+    "alternatives": []
+  },
+  {
+    "name": "Bangladesch",
+    "continent": "Asien",
+    "letter": "B",
+    "alternatives": []
+  },
+  {
+    "name": "Barbados",
+    "continent": "Nordamerika",
+    "letter": "B",
+    "alternatives": []
+  },
+  {
+    "name": "Belarus",
+    "continent": "Europa",
+    "letter": "B",
+    "alternatives": ["weißrussland", "weissrussland"]
+  },
+  {
+    "name": "Belgien",
+    "continent": "Europa",
+    "letter": "B",
+    "alternatives": []
+  },
+  {
+    "name": "Belize",
+    "continent": "Nordamerika",
+    "letter": "B",
+    "alternatives": []
+  },
+  {
+    "name": "Benin",
+    "continent": "Afrika",
+    "letter": "B",
+    "alternatives": []
+  },
+  {
+    "name": "Bhutan",
+    "continent": "Asien",
+    "letter": "B",
+    "alternatives": []
+  },
+  {
+    "name": "Bolivien",
+    "continent": "Südamerika",
+    "letter": "B",
+    "alternatives": []
+  },
+  {
+    "name": "Bosnien und Herzegowina",
+    "continent": "Europa",
+    "letter": "B",
+    "alternatives": ["bosnien", "herzegowina"]
+  },
+  {
+    "name": "Botswana",
+    "continent": "Afrika",
+    "letter": "B",
+    "alternatives": []
+  },
+  {
+    "name": "Brasilien",
+    "continent": "Südamerika",
+    "letter": "B",
+    "alternatives": []
+  },
+  {
+    "name": "Brunei",
+    "continent": "Asien",
+    "letter": "B",
+    "alternatives": []
+  },
+  {
+    "name": "Bulgarien",
+    "continent": "Europa",
+    "letter": "B",
+    "alternatives": []
+  },
+  {
+    "name": "Burkina Faso",
+    "continent": "Afrika",
+    "letter": "B",
+    "alternatives": []
+  },
+  {
+    "name": "Burundi",
+    "continent": "Afrika",
+    "letter": "B",
+    "alternatives": []
+  },
+  {
+    "name": "Chile",
+    "continent": "Südamerika",
+    "letter": "C",
+    "alternatives": []
+  },
+  {
+    "name": "China",
+    "continent": "Asien",
+    "letter": "C",
+    "alternatives": ["volksrepublik china"]
+  },
+  {
+    "name": "Costa Rica",
+    "continent": "Nordamerika",
+    "letter": "C",
+    "alternatives": []
+  },
+  {
+    "name": "Dänemark",
+    "continent": "Europa",
+    "letter": "D",
+    "alternatives": []
+  },
+  {
+    "name": "Deutschland",
+    "continent": "Europa",
+    "letter": "D",
+    "alternatives": ["germany", "bundesrepublik deutschland"]
+  },
+  {
+    "name": "Dominica",
+    "continent": "Nordamerika",
+    "letter": "D",
+    "alternatives": []
+  },
+  {
+    "name": "Dominikanische Republik",
+    "continent": "Nordamerika",
+    "letter": "D",
+    "alternatives": ["dr", "dominican republic"]
+  },
+  {
+    "name": "Dschibuti",
+    "continent": "Afrika",
+    "letter": "D",
+    "alternatives": ["djibouti"]
+  },
+  {
+    "name": "Ecuador",
+    "continent": "Südamerika",
+    "letter": "E",
+    "alternatives": []
+  },
+  {
+    "name": "Elfenbeinküste",
+    "continent": "Afrika",
+    "letter": "E",
+    "alternatives": ["côte d'ivoire", "cote d'ivoire", "ivory coast"]
+  },
+  {
+    "name": "El Salvador",
+    "continent": "Nordamerika",
+    "letter": "E",
+    "alternatives": []
+  },
+  {
+    "name": "Eritrea",
+    "continent": "Afrika",
+    "letter": "E",
+    "alternatives": []
+  },
+  {
+    "name": "Estland",
+    "continent": "Europa",
+    "letter": "E",
+    "alternatives": []
+  },
+  {
+    "name": "Eswatini",
+    "continent": "Afrika",
+    "letter": "E",
+    "alternatives": ["swasiland", "swaziland"]
+  },
+  {
+    "name": "Fidschi",
+    "continent": "Ozeanien",
+    "letter": "F",
+    "alternatives": ["fiji"]
+  },
+  {
+    "name": "Finnland",
+    "continent": "Europa",
+    "letter": "F",
+    "alternatives": []
+  },
+  {
+    "name": "Frankreich",
+    "continent": "Europa",
+    "letter": "F",
+    "alternatives": ["france"]
+  },
+  {
+    "name": "Gabun",
+    "continent": "Afrika",
+    "letter": "G",
+    "alternatives": ["gabon"]
+  },
+  {
+    "name": "Gambia",
+    "continent": "Afrika",
+    "letter": "G",
+    "alternatives": []
+  },
+  {
+    "name": "Georgien",
+    "continent": "Asien",
+    "letter": "G",
+    "alternatives": []
+  },
+  {
+    "name": "Ghana",
+    "continent": "Afrika",
+    "letter": "G",
+    "alternatives": []
+  },
+  {
+    "name": "Grenada",
+    "continent": "Nordamerika",
+    "letter": "G",
+    "alternatives": []
+  },
+  {
+    "name": "Griechenland",
+    "continent": "Europa",
+    "letter": "G",
+    "alternatives": ["greece"]
+  },
+  {
+    "name": "Guatemala",
+    "continent": "Nordamerika",
+    "letter": "G",
+    "alternatives": []
+  },
+  {
+    "name": "Guinea",
+    "continent": "Afrika",
+    "letter": "G",
+    "alternatives": []
+  },
+  {
+    "name": "Guinea-Bissau",
+    "continent": "Afrika",
+    "letter": "G",
+    "alternatives": []
+  },
+  {
+    "name": "Guyana",
+    "continent": "Südamerika",
+    "letter": "G",
+    "alternatives": []
+  },
+  {
+    "name": "Haiti",
+    "continent": "Nordamerika",
+    "letter": "H",
+    "alternatives": []
+  },
+  {
+    "name": "Honduras",
+    "continent": "Nordamerika",
+    "letter": "H",
+    "alternatives": []
+  },
+  {
+    "name": "Indien",
+    "continent": "Asien",
+    "letter": "I",
+    "alternatives": ["india"]
+  },
+  {
+    "name": "Indonesien",
+    "continent": "Asien",
+    "letter": "I",
+    "alternatives": []
+  },
+  {
+    "name": "Irak",
+    "continent": "Asien",
+    "letter": "I",
+    "alternatives": ["iraq"]
+  },
+  {
+    "name": "Iran",
+    "continent": "Asien",
+    "letter": "I",
+    "alternatives": []
+  },
+  {
+    "name": "Irland",
+    "continent": "Europa",
+    "letter": "I",
+    "alternatives": ["ireland"]
+  },
+  {
+    "name": "Island",
+    "continent": "Europa",
+    "letter": "I",
+    "alternatives": ["iceland"]
+  },
+  {
+    "name": "Israel",
+    "continent": "Asien",
+    "letter": "I",
+    "alternatives": []
+  },
+  {
+    "name": "Italien",
+    "continent": "Europa",
+    "letter": "I",
+    "alternatives": ["italy"]
+  },
+  {
+    "name": "Jamaika",
+    "continent": "Nordamerika",
+    "letter": "J",
+    "alternatives": ["jamaica"]
+  },
+  {
+    "name": "Japan",
+    "continent": "Asien",
+    "letter": "J",
+    "alternatives": []
+  },
+  {
+    "name": "Jemen",
+    "continent": "Asien",
+    "letter": "J",
+    "alternatives": ["yemen"]
+  },
+  {
+    "name": "Jordanien",
+    "continent": "Asien",
+    "letter": "J",
+    "alternatives": ["jordan"]
+  },
+  {
+    "name": "Kambodscha",
+    "continent": "Asien",
+    "letter": "K",
+    "alternatives": ["cambodia"]
+  },
+  {
+    "name": "Kamerun",
+    "continent": "Afrika",
+    "letter": "K",
+    "alternatives": ["cameroon"]
+  },
+  {
+    "name": "Kanada",
+    "continent": "Nordamerika",
+    "letter": "K",
+    "alternatives": ["canada"]
+  },
+  {
+    "name": "Kap Verde",
+    "continent": "Afrika",
+    "letter": "K",
+    "alternatives": ["cape verde"]
+  },
+  {
+    "name": "Kasachstan",
+    "continent": "Asien",
+    "letter": "K",
+    "alternatives": ["kazakhstan"]
+  },
+  {
+    "name": "Katar",
+    "continent": "Asien",
+    "letter": "K",
+    "alternatives": ["qatar"]
+  },
+  {
+    "name": "Kenia",
+    "continent": "Afrika",
+    "letter": "K",
+    "alternatives": ["kenya"]
+  },
+  {
+    "name": "Kirgisistan",
+    "continent": "Asien",
+    "letter": "K",
+    "alternatives": ["kyrgyzstan"]
+  },
+  {
+    "name": "Kiribati",
+    "continent": "Ozeanien",
+    "letter": "K",
+    "alternatives": []
+  },
+  {
+    "name": "Kolumbien",
+    "continent": "Südamerika",
+    "letter": "K",
+    "alternatives": ["colombia"]
+  },
+  {
+    "name": "Komoren",
+    "continent": "Afrika",
+    "letter": "K",
+    "alternatives": ["comoros"]
+  },
+  {
+    "name": "Kongo",
+    "continent": "Afrika",
+    "letter": "K",
+    "alternatives": ["congo"]
+  },
+  {
+    "name": "Kroatien",
+    "continent": "Europa",
+    "letter": "K",
+    "alternatives": ["croatia"]
+  },
+  {
+    "name": "Kuba",
+    "continent": "Nordamerika",
+    "letter": "K",
+    "alternatives": ["cuba"]
+  },
+  {
+    "name": "Kuwait",
+    "continent": "Asien",
+    "letter": "K",
+    "alternatives": []
+  },
+  {
+    "name": "Laos",
+    "continent": "Asien",
+    "letter": "L",
+    "alternatives": []
+  },
+  {
+    "name": "Lesotho",
+    "continent": "Afrika",
+    "letter": "L",
+    "alternatives": []
+  },
+  {
+    "name": "Lettland",
+    "continent": "Europa",
+    "letter": "L",
+    "alternatives": ["latvia"]
+  },
+  {
+    "name": "Libanon",
+    "continent": "Asien",
+    "letter": "L",
+    "alternatives": ["lebanon"]
+  },
+  {
+    "name": "Liberia",
+    "continent": "Afrika",
+    "letter": "L",
+    "alternatives": []
+  },
+  {
+    "name": "Libyen",
+    "continent": "Afrika",
+    "letter": "L",
+    "alternatives": ["libya"]
+  },
+  {
+    "name": "Liechtenstein",
+    "continent": "Europa",
+    "letter": "L",
+    "alternatives": []
+  },
+  {
+    "name": "Litauen",
+    "continent": "Europa",
+    "letter": "L",
+    "alternatives": ["lithuania"]
+  },
+  {
+    "name": "Luxemburg",
+    "continent": "Europa",
+    "letter": "L",
+    "alternatives": ["luxembourg"]
+  },
+  {
+    "name": "Madagaskar",
+    "continent": "Afrika",
+    "letter": "M",
+    "alternatives": ["madagascar"]
+  },
+  {
+    "name": "Malawi",
+    "continent": "Afrika",
+    "letter": "M",
+    "alternatives": []
+  },
+  {
+    "name": "Malaysia",
+    "continent": "Asien",
+    "letter": "M",
+    "alternatives": []
+  },
+  {
+    "name": "Malediven",
+    "continent": "Asien",
+    "letter": "M",
+    "alternatives": ["maldives"]
+  },
+  {
+    "name": "Mali",
+    "continent": "Afrika",
+    "letter": "M",
+    "alternatives": []
+  },
+  {
+    "name": "Malta",
+    "continent": "Europa",
+    "letter": "M",
+    "alternatives": []
+  },
+  {
+    "name": "Marokko",
+    "continent": "Afrika",
+    "letter": "M",
+    "alternatives": ["morocco"]
+  },
+  {
+    "name": "Marshallinseln",
+    "continent": "Ozeanien",
+    "letter": "M",
+    "alternatives": ["marshall islands"]
+  },
+  {
+    "name": "Mauretanien",
+    "continent": "Afrika",
+    "letter": "M",
+    "alternatives": ["mauritania"]
+  },
+  {
+    "name": "Mauritius",
+    "continent": "Afrika",
+    "letter": "M",
+    "alternatives": []
+  },
+  {
+    "name": "Mexiko",
+    "continent": "Nordamerika",
+    "letter": "M",
+    "alternatives": ["mexico"]
+  },
+  {
+    "name": "Mikronesien",
+    "continent": "Ozeanien",
+    "letter": "M",
+    "alternatives": ["micronesia"]
+  },
+  {
+    "name": "Moldau",
+    "continent": "Europa",
+    "letter": "M",
+    "alternatives": ["moldova"]
+  },
+  {
+    "name": "Monaco",
+    "continent": "Europa",
+    "letter": "M",
+    "alternatives": []
+  },
+  {
+    "name": "Mongolei",
+    "continent": "Asien",
+    "letter": "M",
+    "alternatives": ["mongolia"]
+  },
+  {
+    "name": "Montenegro",
+    "continent": "Europa",
+    "letter": "M",
+    "alternatives": []
+  },
+  {
+    "name": "Mosambik",
+    "continent": "Afrika",
+    "letter": "M",
+    "alternatives": ["mozambique"]
+  },
+  {
+    "name": "Myanmar",
+    "continent": "Asien",
+    "letter": "M",
+    "alternatives": ["burma"]
+  },
+  {
+    "name": "Namibia",
+    "continent": "Afrika",
+    "letter": "N",
+    "alternatives": []
+  },
+  {
+    "name": "Nauru",
+    "continent": "Ozeanien",
+    "letter": "N",
+    "alternatives": []
+  },
+  {
+    "name": "Nepal",
+    "continent": "Asien",
+    "letter": "N",
+    "alternatives": []
+  },
+  {
+    "name": "Neuseeland",
+    "continent": "Ozeanien",
+    "letter": "N",
+    "alternatives": ["new zealand"]
+  },
+  {
+    "name": "Nicaragua",
+    "continent": "Nordamerika",
+    "letter": "N",
+    "alternatives": []
+  },
+  {
+    "name": "Niederlande",
+    "continent": "Europa",
+    "letter": "N",
+    "alternatives": ["netherlands", "holland"]
+  },
+  {
+    "name": "Niger",
+    "continent": "Afrika",
+    "letter": "N",
+    "alternatives": []
+  },
+  {
+    "name": "Nigeria",
+    "continent": "Afrika",
+    "letter": "N",
+    "alternatives": []
+  },
+  {
+    "name": "Nordkorea",
+    "continent": "Asien",
+    "letter": "N",
+    "alternatives": ["north korea"]
+  },
+  {
+    "name": "Nordmazedonien",
+    "continent": "Europa",
+    "letter": "N",
+    "alternatives": ["north macedonia"]
+  },
+  {
+    "name": "Norwegen",
+    "continent": "Europa",
+    "letter": "N",
+    "alternatives": ["norway"]
+  },
+  {
+    "name": "Oman",
+    "continent": "Asien",
+    "letter": "O",
+    "alternatives": []
+  },
+  {
+    "name": "Osttimor",
+    "continent": "Asien",
+    "letter": "O",
+    "alternatives": ["east timor", "timor-leste"]
+  },
+  {
+    "name": "Österreich",
+    "continent": "Europa",
+    "letter": "Ö",
+    "alternatives": ["austria"]
+  },
+  {
+    "name": "Pakistan",
+    "continent": "Asien",
+    "letter": "P",
+    "alternatives": []
+  },
+  {
+    "name": "Palästina",
+    "continent": "Asien",
+    "letter": "P",
+    "alternatives": ["palestine"]
+  },
+  {
+    "name": "Panama",
+    "continent": "Nordamerika",
+    "letter": "P",
+    "alternatives": []
+  },
+  {
+    "name": "Papua-Neuguinea",
+    "continent": "Ozeanien",
+    "letter": "P",
+    "alternatives": ["papua new guinea"]
+  },
+  {
+    "name": "Paraguay",
+    "continent": "Südamerika",
+    "letter": "P",
+    "alternatives": []
+  },
+  {
+    "name": "Peru",
+    "continent": "Südamerika",
+    "letter": "P",
+    "alternatives": []
+  },
+  {
+    "name": "Philippinen",
+    "continent": "Asien",
+    "letter": "P",
+    "alternatives": ["philippines"]
+  },
+  {
+    "name": "Polen",
+    "continent": "Europa",
+    "letter": "P",
+    "alternatives": ["poland"]
+  },
+  {
+    "name": "Portugal",
+    "continent": "Europa",
+    "letter": "P",
+    "alternatives": []
+  },
+  {
+    "name": "Ruanda",
+    "continent": "Afrika",
+    "letter": "R",
+    "alternatives": ["rwanda"]
+  },
+  {
+    "name": "Rumänien",
+    "continent": "Europa",
+    "letter": "R",
+    "alternatives": ["romania"]
+  },
+  {
+    "name": "Russland",
+    "continent": "Europa",
+    "letter": "R",
+    "alternatives": ["russia", "russische föderation"]
+  },
+  {
+    "name": "Salomonen",
+    "continent": "Ozeanien",
+    "letter": "S",
+    "alternatives": ["solomon islands"]
+  },
+  {
+    "name": "Sambia",
+    "continent": "Afrika",
+    "letter": "S",
+    "alternatives": ["zambia"]
+  },
+  {
+    "name": "Samoa",
+    "continent": "Ozeanien",
+    "letter": "S",
+    "alternatives": []
+  },
+  {
+    "name": "San Marino",
+    "continent": "Europa",
+    "letter": "S",
+    "alternatives": []
+  },
+  {
+    "name": "São Tomé und Príncipe",
+    "continent": "Afrika",
+    "letter": "S",
+    "alternatives": []
+  },
+  {
+    "name": "Saudi-Arabien",
+    "continent": "Asien",
+    "letter": "S",
+    "alternatives": ["saudi arabia"]
+  },
+  {
+    "name": "Schweden",
+    "continent": "Europa",
+    "letter": "S",
+    "alternatives": ["sweden"]
+  },
+  {
+    "name": "Schweiz",
+    "continent": "Europa",
+    "letter": "S",
+    "alternatives": ["switzerland"]
+  },
+  {
+    "name": "Senegal",
+    "continent": "Afrika",
+    "letter": "S",
+    "alternatives": []
+  },
+  {
+    "name": "Serbien",
+    "continent": "Europa",
+    "letter": "S",
+    "alternatives": ["serbia"]
+  },
+  {
+    "name": "Seychellen",
+    "continent": "Afrika",
+    "letter": "S",
+    "alternatives": ["seychelles"]
+  },
+  {
+    "name": "Sierra Leone",
+    "continent": "Afrika",
+    "letter": "S",
+    "alternatives": []
+  },
+  {
+    "name": "Simbabwe",
+    "continent": "Afrika",
+    "letter": "S",
+    "alternatives": ["zimbabwe"]
+  },
+  {
+    "name": "Singapur",
+    "continent": "Asien",
+    "letter": "S",
+    "alternatives": ["singapore"]
+  },
+  {
+    "name": "Slowakei",
+    "continent": "Europa",
+    "letter": "S",
+    "alternatives": ["slovakia"]
+  },
+  {
+    "name": "Slowenien",
+    "continent": "Europa",
+    "letter": "S",
+    "alternatives": ["slovenia"]
+  },
+  {
+    "name": "Somalia",
+    "continent": "Afrika",
+    "letter": "S",
+    "alternatives": []
+  },
+  {
+    "name": "Spanien",
+    "continent": "Europa",
+    "letter": "S",
+    "alternatives": ["spain"]
+  },
+  {
+    "name": "Sri Lanka",
+    "continent": "Asien",
+    "letter": "S",
+    "alternatives": []
+  },
+  {
+    "name": "St. Kitts und Nevis",
+    "continent": "Nordamerika",
+    "letter": "S",
+    "alternatives": ["saint kitts und nevis"]
+  },
+  {
+    "name": "St. Lucia",
+    "continent": "Nordamerika",
+    "letter": "S",
+    "alternatives": ["saint lucia"]
+  },
+  {
+    "name": "St. Vincent und die Grenadinen",
+    "continent": "Nordamerika",
+    "letter": "S",
+    "alternatives": ["saint vincent und die grenadinen"]
+  },
+  {
+    "name": "Südafrika",
+    "continent": "Afrika",
+    "letter": "S",
+    "alternatives": ["south africa"]
+  },
+  {
+    "name": "Sudan",
+    "continent": "Afrika",
+    "letter": "S",
+    "alternatives": []
+  },
+  {
+    "name": "Südkorea",
+    "continent": "Asien",
+    "letter": "S",
+    "alternatives": ["south korea"]
+  },
+  {
+    "name": "Südsudan",
+    "continent": "Afrika",
+    "letter": "S",
+    "alternatives": ["south sudan"]
+  },
+  {
+    "name": "Suriname",
+    "continent": "Südamerika",
+    "letter": "S",
+    "alternatives": []
+  },
+  {
+    "name": "Syrien",
+    "continent": "Asien",
+    "letter": "S",
+    "alternatives": ["syria"]
+  },
+  {
+    "name": "Tadschikistan",
+    "continent": "Asien",
+    "letter": "T",
+    "alternatives": ["tajikistan"]
+  },
+  {
+    "name": "Taiwan",
+    "continent": "Asien",
+    "letter": "T",
+    "alternatives": []
+  },
+  {
+    "name": "Tansania",
+    "continent": "Afrika",
+    "letter": "T",
+    "alternatives": ["tanzania"]
+  },
+  {
+    "name": "Thailand",
+    "continent": "Asien",
+    "letter": "T",
+    "alternatives": []
+  },
+  {
+    "name": "Togo",
+    "continent": "Afrika",
+    "letter": "T",
+    "alternatives": []
+  },
+  {
+    "name": "Tonga",
+    "continent": "Ozeanien",
+    "letter": "T",
+    "alternatives": []
+  },
+  {
+    "name": "Trinidad und Tobago",
+    "continent": "Südamerika",
+    "letter": "T",
+    "alternatives": ["trinidad and tobago"]
+  },
+  {
+    "name": "Tschad",
+    "continent": "Afrika",
+    "letter": "T",
+    "alternatives": ["chad"]
+  },
+  {
+    "name": "Tschechien",
+    "continent": "Europa",
+    "letter": "T",
+    "alternatives": ["czech republic", "czech"]
+  },
+  {
+    "name": "Tunesien",
+    "continent": "Afrika",
+    "letter": "T",
+    "alternatives": ["tunisia"]
+  },
+  {
+    "name": "Türkei",
+    "continent": "Asien",
+    "letter": "T",
+    "alternatives": ["turkey"]
+  },
+  {
+    "name": "Turkmenistan",
+    "continent": "Asien",
+    "letter": "T",
+    "alternatives": []
+  },
+  {
+    "name": "Tuvalu",
+    "continent": "Ozeanien",
+    "letter": "T",
+    "alternatives": []
+  },
+  {
+    "name": "Uganda",
+    "continent": "Afrika",
+    "letter": "U",
+    "alternatives": []
+  },
+  {
+    "name": "Ukraine",
+    "continent": "Europa",
+    "letter": "U",
+    "alternatives": []
+  },
+  {
+    "name": "Ungarn",
+    "continent": "Europa",
+    "letter": "U",
+    "alternatives": ["hungary"]
+  },
+  {
+    "name": "Uruguay",
+    "continent": "Südamerika",
+    "letter": "U",
+    "alternatives": []
+  },
+  {
+    "name": "Usbekistan",
+    "continent": "Asien",
+    "letter": "U",
+    "alternatives": ["uzbekistan"]
+  },
+  {
+    "name": "Vanuatu",
+    "continent": "Ozeanien",
+    "letter": "V",
+    "alternatives": []
+  },
+  {
+    "name": "Vatikanstadt",
+    "continent": "Europa",
+    "letter": "V",
+    "alternatives": ["vatikan", "vatican", "holy see", "vatican city"]
+  },
+  {
+    "name": "Venezuela",
+    "continent": "Südamerika",
+    "letter": "V",
+    "alternatives": []
+  },
+  {
+    "name": "Vereinigte Arabische Emirate",
+    "continent": "Asien",
+    "letter": "V",
+    "alternatives": ["vae", "uae", "united arab emirates"]
+  },
+  {
+    "name": "Vereinigte Staaten von Amerika",
+    "continent": "Nordamerika",
+    "letter": "V",
+    "alternatives": ["usa", "united states", "united states of america"]
+  },
+  {
+    "name": "Vereinigtes Königreich",
+    "continent": "Europa",
+    "letter": "V",
+    "alternatives": ["uk", "united kingdom", "great britain", "england"]
+  },
+  {
+    "name": "Vietnam",
+    "continent": "Asien",
+    "letter": "V",
+    "alternatives": []
+  },
+  {
+    "name": "Westsahara",
+    "continent": "Afrika",
+    "letter": "W",
+    "alternatives": ["western sahara"]
+  },
+  {
+    "name": "Zentralafrikanische Republik",
+    "continent": "Afrika",
+    "letter": "Z",
+    "alternatives": ["central african republic"]
+  },
+  {
+    "name": "Zypern",
+    "continent": "Europa",
+    "letter": "Z",
+    "alternatives": ["cyprus"]
+  }
+] 
