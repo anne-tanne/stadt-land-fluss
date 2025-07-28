@@ -8,7 +8,8 @@ export const useQuizLogic = (
   currentLetter: string,
   foundCountries: Set<string>,
   onAddFoundCountry: (countryName: string) => void,
-  onCountryLearned: (countryName: string) => void
+  onCountryLearned: (countryName: string) => void,
+  selectedContinent: string = 'Alle'
 ) => {
   const { getCountriesByLetter } = useCountryContext()
   const { t } = useTranslation()
@@ -16,9 +17,12 @@ export const useQuizLogic = (
   const [message, setMessage] = useState<string>('')
   const [messageType, setMessageType] = useState<'success' | 'error' | 'info'>('info')
 
-  const currentCountries = getCountriesByLetter(currentLetter)
+  const currentCountries = getCountriesByLetter(currentLetter, selectedContinent)
   const totalCountries = currentCountries.length
-  const foundCount = foundCountries.size
+  const foundForCurrentLetter = Array.from(foundCountries).filter(countryName => 
+    currentCountries.some(country => country.name === countryName)
+  )
+  const foundCount = foundForCurrentLetter.length
   const remainingCountries = currentCountries.filter(country => !foundCountries.has(country.name))
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -65,7 +69,7 @@ export const useQuizLogic = (
       const nextLetter = alphabet[nextIndex]
       let letterToUse = nextLetter
       let attempts = 0
-      while (getCountriesByLetter(letterToUse).length === 0 && attempts < 26) {
+      while (getCountriesByLetter(letterToUse, selectedContinent).length === 0 && attempts < 26) {
         const nextAttemptIndex = (alphabet.indexOf(letterToUse) + 1) % 26
         letterToUse = alphabet[nextAttemptIndex]
         attempts++

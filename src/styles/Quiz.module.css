@@ -141,23 +141,24 @@
 
 .letterNavigation h3 {
   margin-bottom: 1rem;
-  color: #2d3748;
+  color: white;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
 .letterButtons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   gap: 0.5rem;
   max-width: 800px;
+  margin: 0 auto;
 }
 
 .letterBtn {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.75rem 0.5rem;
+  padding: 0.5rem 0.25rem;
   background: white;
   border: 2px solid #e2e8f0;
   border-radius: 8px;
@@ -317,6 +318,7 @@
   display: flex;
   gap: 0.5rem;
   max-width: 500px;
+  margin: 0 auto;
 }
 
 .countryInput {
@@ -409,18 +411,44 @@
   font-weight: 600;
 }
 
+.continentsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.continentGroup {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.continentTitle {
+  background: #667eea;
+  color: white;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 .countriesList {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  padding: 1rem;
+  background: #f7fafc;
+}
+
+/* For single continent view (no continent titles) */
+.foundCountries .countriesList:not(.continentsList .countriesList) {
+  background: white;
+  padding: 0;
 }
 
 .foundCountry {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background: #f7fafc;
+  background: white;
   border: 1px solid #e2e8f0;
   border-radius: 6px;
   font-size: 0.9rem;

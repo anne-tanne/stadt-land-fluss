@@ -8,6 +8,19 @@ export const useQuizProgress = (countries: Country[]) => {
   const [selectedContinent, setSelectedContinent] = useState<string>('Alle')
   const [isQuizActive, setIsQuizActive] = useState<boolean>(false)
 
+  // Helper function to filter countries by continent
+  const getFilteredCountries = (continent: string) => {
+    if (continent === 'Alle') {
+      return countries
+    }
+    if (continent === 'Amerikas') {
+      return countries.filter(country => 
+        country.continent === 'Nordamerika' || country.continent === 'Südamerika'
+      )
+    }
+    return countries.filter(country => country.continent === continent)
+  }
+
   // Load saved progress and session on component mount
   useEffect(() => {
     const savedProgress = loadFromStorage<QuizProgress | null>(STORAGE_KEYS.QUIZ_PROGRESS, null)
@@ -73,8 +86,9 @@ export const useQuizProgress = (countries: Country[]) => {
     return foundCountries.size
   }
 
-  const getLetterProgress = (letter: string) => {
-    const letterCountries = countries.filter(country => country.letter === letter)
+  const getLetterProgress = (letter: string, continent: string = selectedContinent) => {
+    const filteredCountries = getFilteredCountries(continent)
+    const letterCountries = filteredCountries.filter(country => country.letter === letter)
     const foundForLetter = Array.from(foundCountries).filter(countryName => 
       letterCountries.some(country => country.name === countryName)
     )

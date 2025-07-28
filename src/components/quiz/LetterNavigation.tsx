@@ -5,13 +5,15 @@ import styles from '../../styles/Quiz.module.css'
 interface LetterNavigationProps {
   currentLetter: string
   onLetterChange: (letter: string) => void
-  getLetterProgress: (letter: string) => { found: number; total: number }
+  getLetterProgress: (letter: string, continent: string) => { found: number; total: number }
+  selectedContinent: string
 }
 
 export const LetterNavigation: React.FC<LetterNavigationProps> = ({
   currentLetter,
   onLetterChange,
-  getLetterProgress
+  getLetterProgress,
+  selectedContinent
 }) => {
   const availableLetters = getAvailableLetters()
 
@@ -20,7 +22,7 @@ export const LetterNavigation: React.FC<LetterNavigationProps> = ({
       <h3>Buchstaben Navigation</h3>
       <div className={styles.letterButtons}>
         {availableLetters.map(letter => {
-          const progress = getLetterProgress(letter)
+          const progress = getLetterProgress(letter, selectedContinent)
           const isActive = letter === currentLetter
           const isComplete = progress.found === progress.total && progress.total > 0
           
