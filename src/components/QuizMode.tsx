@@ -638,9 +638,9 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
       <div className="quiz-mode">
         <div className="quiz-end-screen">
           {isFullyCompleted ? (
-            <h2>🏆🎉 {t('congratulations')}! 🎉🏆</h2>
+            <h2 className="white-box-title">🏆🎉 {t('congratulations')}! 🎉🏆</h2>
           ) : (
-            <h2>🎉 {t('quizComplete')}</h2>
+            <h2 className="white-box-title">🎉 {t('quizComplete')}</h2>
           )}
           
           {isFullyCompleted && (
