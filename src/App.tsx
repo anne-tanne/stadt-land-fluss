@@ -28,7 +28,7 @@ const normalizeLetter = (letter: string): string => {
 function App() {
   const { t } = useTranslation()
   const [selectedLetter, setSelectedLetter] = useState<string>('A')
-  const [selectedContinent, setSelectedContinent] = useState<string>(t('all'))
+  const [selectedContinent, setSelectedContinent] = useState<string>('Alle')
   const [viewMode, setViewMode] = useState<'alphabetical' | 'overall'>('alphabetical')
   const [appMode, setAppMode] = useState<AppMode>('browse')
   const [countries, setCountries] = useState<Country[]>([])
@@ -57,7 +57,7 @@ function App() {
     let filtered = countries
 
     // Filter by continent
-    if (selectedContinent !== t('all')) {
+    if (selectedContinent !== 'Alle') {
       filtered = filtered.filter(country => country.continent === selectedContinent)
     }
 
