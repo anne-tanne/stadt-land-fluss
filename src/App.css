@@ -296,6 +296,11 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+/* Override quiz-end-screen h2 specifically */
+.quiz-end-screen h2.white-box-title {
+  color: #2d3748 !important;
+}
+
 /* Only set white for h2 on colored backgrounds */
 .overall-view h2,
 .quiz-end-screen h2,
