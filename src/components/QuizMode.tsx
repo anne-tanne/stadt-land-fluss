@@ -495,24 +495,13 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
       targetLetter = letterToUse
     }
     
-    setCurrentLetter(targetLetter!)
-    
-    // Load progress for the new letter
-    const savedProgress = localStorage.getItem(QUIZ_STORAGE_KEY)
-    if (savedProgress) {
-      try {
-        const progress: QuizProgress = JSON.parse(savedProgress)
-        const newLetterProgress = progress.letterProgress[targetLetter!] || []
-        setFoundCountries(new Set(newLetterProgress))
-      } catch (error) {
-        setFoundCountries(new Set())
-      }
-    } else {
-      setFoundCountries(new Set())
-    }
-    
+    // Clear the current display immediately
+    setFoundCountries(new Set())
     setInputValue('')
     setMessage('')
+    
+    // Then set the new letter
+    setCurrentLetter(targetLetter!)
   }
 
   const resetCurrentLetter = () => {
@@ -537,6 +526,24 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
     // Focus input when component mounts or letter changes
     if (inputRef.current && isQuizActive) {
       inputRef.current.focus()
+    }
+  }, [currentLetter, isQuizActive])
+
+  // Load progress for the current letter whenever it changes
+  useEffect(() => {
+    if (isQuizActive && currentLetter) {
+      const savedProgress = localStorage.getItem(QUIZ_STORAGE_KEY)
+      if (savedProgress) {
+        try {
+          const progress: QuizProgress = JSON.parse(savedProgress)
+          const currentLetterProgress = progress.letterProgress[currentLetter] || []
+          setFoundCountries(new Set(currentLetterProgress))
+        } catch (error) {
+          setFoundCountries(new Set())
+        }
+      } else {
+        setFoundCountries(new Set())
+      }
     }
   }, [currentLetter, isQuizActive])
 
