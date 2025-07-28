@@ -50,6 +50,11 @@
     "letter": "A"
   },
   {
+    "name": "Äquatorialguinea",
+    "continent": "Afrika",
+    "letter": "Ä"
+  },
+  {
     "name": "Bahamas",
     "continent": "Nordamerika",
     "letter": "B"
@@ -155,9 +160,9 @@
     "letter": "C"
   },
   {
-    "name": "Elfenbeinküste (Côte d'Ivoire)",
-    "continent": "Afrika",
-    "letter": "E"
+    "name": "Dänemark",
+    "continent": "Europa",
+    "letter": "D"
   },
   {
     "name": "Deutschland",
@@ -180,13 +185,13 @@
     "letter": "D"
   },
   {
-    "name": "Dänemark",
-    "continent": "Europa",
-    "letter": "D"
-  },
-  {
     "name": "Ecuador",
     "continent": "Südamerika",
+    "letter": "E"
+  },
+  {
+    "name": "Elfenbeinküste (Côte d'Ivoire)",
+    "continent": "Afrika",
     "letter": "E"
   },
   {
@@ -515,6 +520,11 @@
     "letter": "M"
   },
   {
+    "name": "Marshallinseln",
+    "continent": "Ozeanien",
+    "letter": "M"
+  },
+  {
     "name": "Mauretanien",
     "continent": "Afrika",
     "letter": "M"
@@ -527,6 +537,11 @@
   {
     "name": "Mexiko",
     "continent": "Nordamerika",
+    "letter": "M"
+  },
+  {
+    "name": "Mikronesien",
+    "continent": "Ozeanien",
     "letter": "M"
   },
   {
@@ -621,6 +636,11 @@
   },
   {
     "name": "Pakistan",
+    "continent": "Asien",
+    "letter": "P"
+  },
+  {
+    "name": "Palästina",
     "continent": "Asien",
     "letter": "P"
   },
@@ -820,6 +840,11 @@
     "letter": "T"
   },
   {
+    "name": "Taiwan",
+    "continent": "Asien",
+    "letter": "T"
+  },
+  {
     "name": "Tansania",
     "continent": "Afrika",
     "letter": "T"
@@ -953,30 +978,5 @@
     "name": "Zypern",
     "continent": "Europa",
     "letter": "Z"
-  },
-  {
-    "name": "Taiwan",
-    "continent": "Asien",
-    "letter": "T"
-  },
-  {
-    "name": "Palästina",
-    "continent": "Asien",
-    "letter": "P"
-  },
-  {
-    "name": "Marshallinseln",
-    "continent": "Ozeanien",
-    "letter": "M"
-  },
-  {
-    "name": "Mikronesien",
-    "continent": "Ozeanien",
-    "letter": "M"
-  },
-  {
-    "name": "Äquatorialguinea",
-    "continent": "Afrika",
-    "letter": "Ä"
   }
 ]
