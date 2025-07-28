@@ -730,6 +730,22 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
         </button>
       </div>
 
+      {/* Continent Display */}
+      <div className="continent-display">
+        <span className="continent-badge">
+          {selectedContinent === 'Alle' ? '🌍 Alle Kontinente' :
+           selectedContinent === 'Amerikas' ? '🌎 Amerikas (Nord & Süd)' :
+           selectedContinent === 'Afrika' ? '🌍 Afrika' :
+           selectedContinent === 'Asien' ? '🌏 Asien' :
+           selectedContinent === 'Europa' ? '🌍 Europa' :
+           selectedContinent === 'Nordamerika' ? '🌎 Nordamerika' :
+           selectedContinent === 'Südamerika' ? '🌎 Südamerika' :
+           selectedContinent === 'Ozeanien' ? '🌏 Ozeanien' :
+           selectedContinent}
+        </span>
+        <span className="continent-count">({filteredCountries.length} Länder)</span>
+      </div>
+
       {/* Letter Navigation Bar */}
       <div className="letter-navigation">
         <h3>Buchstaben Navigation</h3>

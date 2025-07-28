@@ -1194,7 +1194,33 @@ h2 {
 .quiz-controls {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
+}
+
+.continent-display {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.continent-display .continent-badge {
+  background: #667eea;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.continent-display .continent-count {
+  color: #4a5568;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
 .end-quiz-btn {
