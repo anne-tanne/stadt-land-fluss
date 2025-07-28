@@ -951,7 +951,17 @@
   },
   {
     "name": "Zypern",
-    "continent": "Asien",
+    "continent": "Europa",
     "letter": "Z"
+  },
+  {
+    "name": "Taiwan",
+    "continent": "Asien",
+    "letter": "T"
+  },
+  {
+    "name": "Palästina",
+    "continent": "Asien",
+    "letter": "P"
   }
 ]
