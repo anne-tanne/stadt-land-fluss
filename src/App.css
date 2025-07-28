@@ -297,6 +297,14 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.country-list h2,
+.flashcard-content h2,
+.study-complete h2,
+.quiz-start-screen h2 {
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+}
+
 .overall-view {
   margin-bottom: 2rem;
 }
