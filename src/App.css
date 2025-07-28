@@ -285,11 +285,15 @@ body {
 }
 
 .country-list h2,
-.overall-view h2 {
-  margin-bottom: 1.5rem;
-  color: #2d3748;
-  font-size: 1.5rem;
-  text-align: center;
+.overall-view h2,
+.quiz-header h2,
+.quiz-complete h2,
+.flashcard-content h2,
+.study-complete h2,
+.quiz-start-screen h2,
+.quiz-end-screen h2 {
+  color: white !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 .overall-view {
