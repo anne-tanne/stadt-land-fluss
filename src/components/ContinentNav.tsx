@@ -1,4 +1,5 @@
 import type { Country } from '../types'
+import { useTranslation } from '../translations'
 
 interface ContinentNavProps {
   selectedContinent: string
@@ -7,18 +8,20 @@ interface ContinentNavProps {
 }
 
 const ContinentNav = ({ selectedContinent, onContinentSelect, countries }: ContinentNavProps) => {
+  const { t } = useTranslation()
+  
   // Get unique continents from countries data
-  const continents = ['All', ...Array.from(new Set(countries.map(country => country.continent)))]
+  const continents = [t('all'), ...Array.from(new Set(countries.map(country => country.continent)))]
   
   // Get continent emojis
   const continentEmojis: { [key: string]: string } = {
-    'All': '🌍',
-    'Africa': '🌍',
-    'Asia': '🌏',
-    'Europe': '🌍',
-    'North America': '🌎',
-    'South America': '🌎',
-    'Oceania': '🌏'
+    [t('all')]: '🌍',
+    'Afrika': '🌍',
+    'Asien': '🌏',
+    'Europa': '🌍',
+    'Nordamerika': '🌎',
+    'Südamerika': '🌎',
+    'Ozeanien': '🌏'
   }
 
   return (
@@ -32,7 +35,7 @@ const ContinentNav = ({ selectedContinent, onContinentSelect, countries }: Conti
           >
             <span className="continent-emoji">{continentEmojis[continent]}</span>
             <span className="continent-name">{continent}</span>
-            {continent !== 'All' && (
+            {continent !== t('all') && (
               <span className="continent-count">
                 {countries.filter(country => country.continent === continent).length}
               </span>

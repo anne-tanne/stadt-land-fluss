@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import type { Country } from '../types'
 import { Check, RotateCcw, Target, Play, Home } from 'lucide-react'
+import { useTranslation } from '../translations'
 
 interface QuizModeProps {
   countries: Country[]
@@ -27,6 +28,7 @@ interface QuizSession {
 }
 
 const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
+  const { t } = useTranslation()
   console.log('QuizMode component called with countries:', countries.length)
   
   const [currentLetter, setCurrentLetter] = useState<string>('A')
@@ -538,13 +540,13 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
     return (
       <div className="quiz-mode">
         <div className="quiz-start-screen">
-          <h2>🌍 Länder Quiz</h2>
-          <p>Teste dein Wissen über Länder, indem du ihre Namen eintippst!</p>
+          <h2>🌍 {t('quizStartTitle')}</h2>
+          <p>{t('quizStartDescription')}</p>
           
           <div className="start-actions">
             <button className="start-quiz-btn" onClick={startQuiz}>
               <Play size={20} />
-              {hasProgress ? 'Quiz fortsetzen' : 'Quiz starten'}
+              {hasProgress ? 'Quiz fortsetzen' : t('startQuiz')}
             </button>
             
             {hasProgress && (
@@ -568,9 +570,9 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
       <div className="quiz-mode">
         <div className="quiz-end-screen">
           {isFullyCompleted ? (
-            <h2>🏆🎉 GLÜCKWUNSCH! 🎉🏆</h2>
+            <h2>🏆🎉 {t('congratulations')}! 🎉🏆</h2>
           ) : (
-            <h2>🎉 Quiz beendet!</h2>
+            <h2>🎉 {t('quizComplete')}</h2>
           )}
           
           {isFullyCompleted && (
@@ -593,7 +595,7 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
           </div>
           
           <div className="letter-progress-summary">
-            <h3>Fortschritt nach Buchstaben</h3>
+            <h3>{t('letterProgress')}</h3>
             <div className="letter-grid">
               {availableLetters.map(letter => {
                 const progress = getLetterProgress(letter)
@@ -623,7 +625,7 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
             </button>
             <button className="browse-btn" onClick={() => window.location.reload()}>
               <Home size={20} />
-              Zurück zum Browse
+              {t('backToBrowse')}
             </button>
           </div>
         </div>
@@ -639,7 +641,7 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
           <h2>Keine Länder für den Buchstaben "{currentLetter}" gefunden</h2>
           <button className="change-letter-btn" onClick={() => changeLetter()}>
             <Target size={20} />
-            Nächster Buchstabe
+            {t('nextLetter')}
           </button>
         </div>
       </div>
@@ -652,7 +654,7 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
       {/* End Quiz Button */}
       <div className="quiz-controls">
         <button className="end-quiz-btn" onClick={endQuiz}>
-          Quiz beenden
+          {t('endQuiz')}
         </button>
       </div>
 
@@ -696,7 +698,7 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
           <div className="letter-actions">
             <button className="reset-btn" onClick={resetCurrentLetter}>
               <RotateCcw size={16} />
-              Zurücksetzen
+              {t('resetLetter')}
             </button>
           </div>
         </div>
@@ -712,7 +714,7 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
               <h3>🎉 Alle Länder für "{currentLetter}" gefunden!</h3>
               <button className="change-letter-btn" onClick={() => changeLetter()}>
                 <Target size={20} />
-                Nächster Buchstabe
+                {t('nextLetter')}
               </button>
             </div>
           ) : (
@@ -722,7 +724,7 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
                 type="text"
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
-                placeholder="Ländernamen eingeben..."
+                placeholder={t('enterCountryName')}
                 className="country-input"
                 autoComplete="off"
               />
@@ -740,7 +742,7 @@ const QuizMode = ({ countries, onCountryLearned }: QuizModeProps) => {
         </div>
 
         <div className="found-countries">
-          <h4>Gefundene Länder:</h4>
+          <h4>{t('foundCountries')}:</h4>
           <div className="countries-list">
             {Array.from(foundCountries).map(country => (
               <span key={country} className="found-country">

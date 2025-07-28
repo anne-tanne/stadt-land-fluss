@@ -8,6 +8,7 @@ import QuizMode from './components/QuizMode'
 import ContinentNav from './components/ContinentNav'
 import OverallView from './components/OverallView'
 import type { Country } from './types'
+import { useTranslation } from './translations'
 
 type AppMode = 'browse' | 'study' | 'quiz'
 
@@ -25,8 +26,9 @@ const normalizeLetter = (letter: string): string => {
 }
 
 function App() {
+  const { t } = useTranslation()
   const [selectedLetter, setSelectedLetter] = useState<string>('A')
-  const [selectedContinent, setSelectedContinent] = useState<string>('All')
+  const [selectedContinent, setSelectedContinent] = useState<string>(t('all'))
   const [viewMode, setViewMode] = useState<'alphabetical' | 'overall'>('alphabetical')
   const [appMode, setAppMode] = useState<AppMode>('browse')
   const [countries, setCountries] = useState<Country[]>([])
@@ -55,7 +57,7 @@ function App() {
     let filtered = countries
 
     // Filter by continent
-    if (selectedContinent !== 'All') {
+    if (selectedContinent !== t('all')) {
       filtered = filtered.filter(country => country.continent === selectedContinent)
     }
 
@@ -89,20 +91,20 @@ function App() {
     <div className="app">
       <header className="app-header">
         <h1 className="app-title" onClick={() => setAppMode('browse')}>
-        🌍 Stadt, Land, Fluss
+        🌍 {t('appTitle')}
         </h1>
         <div className="mode-toggle">
           <button 
             className={appMode === 'browse' ? 'active' : ''} 
             onClick={() => setAppMode('browse')}
           >
-            Browse
+            {t('browse')}
           </button>
           <button 
             className={appMode === 'quiz' ? 'active' : ''} 
             onClick={() => setAppMode('quiz')}
           >
-            Quiz Mode
+            {t('quizMode')}
           </button>
         </div>
       </header>
@@ -116,13 +118,13 @@ function App() {
                   className={viewMode === 'alphabetical' ? 'active' : ''} 
                   onClick={() => setViewMode('alphabetical')}
                 >
-                  Alphabetical View
+                  {t('alphabeticalView')}
                 </button>
                 <button 
                   className={viewMode === 'overall' ? 'active' : ''} 
                   onClick={() => setViewMode('overall')}
                 >
-                  Overall View
+                  {t('overallView')}
                 </button>
               </div>
               

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import type { Country, StudySession } from '../types'
 import { RotateCcw, ArrowLeft, ArrowRight, Check, X } from 'lucide-react'
+import { useTranslation } from '../translations'
 
 interface StudyModeProps {
   countries: Country[]
@@ -8,6 +9,7 @@ interface StudyModeProps {
 }
 
 const StudyMode = ({ countries, onCountryProgress }: StudyModeProps) => {
+  const { t } = useTranslation()
   const [session, setSession] = useState<StudySession>({
     currentCountry: null,
     isAnswerRevealed: false,
@@ -90,11 +92,11 @@ const StudyMode = ({ countries, onCountryProgress }: StudyModeProps) => {
     return (
       <div className="study-mode">
         <div className="study-complete">
-          <h2>🎉 Study Session Complete!</h2>
-          <p>You've reviewed {session.sessionProgress} countries.</p>
+          <h2>🎉 {t('studySessionComplete')}</h2>
+          <p>{t('studySessionCompleteDescription', { count: session.sessionProgress })}</p>
           <button className="reset-btn" onClick={resetSession}>
             <RotateCcw size={20} />
-            Start New Session
+            {t('startNewSession')}
           </button>
         </div>
       </div>
@@ -104,9 +106,9 @@ const StudyMode = ({ countries, onCountryProgress }: StudyModeProps) => {
   return (
     <div className="study-mode">
       <div className="study-header">
-        <h2>Study Mode - Flashcards</h2>
+        <h2>{t('studyMode')}</h2>
         <div className="progress-info">
-          <span>Progress: {session.sessionProgress + 1} / {session.totalInSession}</span>
+          <span>{t('progress')}: {session.sessionProgress + 1} / {session.totalInSession}</span>
           <div className="progress-bar">
             <div 
               className="progress-fill" 
@@ -123,18 +125,18 @@ const StudyMode = ({ countries, onCountryProgress }: StudyModeProps) => {
             onClick={handleFlip}
           >
             <div className="flashcard-front">
-              <h3>Starting Letter</h3>
+              <h3>{t('startingLetter')}</h3>
               <div className="flashcard-content">
                 <h2 className="letter-display">{session.currentCountry.letter}</h2>
-                <p>Click to see a country that starts with this letter</p>
+                <p>Klicke, um ein Land zu sehen, das mit diesem Buchstaben beginnt</p>
               </div>
             </div>
             
             <div className="flashcard-back">
-              <h3>Country Name</h3>
+              <h3>{t('countryName')}</h3>
               <div className="flashcard-content">
                 <h2>{session.currentCountry.name}</h2>
-                <p>Starts with: {session.currentCountry.letter}</p>
+                <p>{t('startsWith')}: {session.currentCountry.letter}</p>
               </div>
             </div>
           </div>
@@ -144,8 +146,8 @@ const StudyMode = ({ countries, onCountryProgress }: StudyModeProps) => {
               className="flip-btn" 
               onClick={handleFlip}
             >
-              {isFlipped ? <ArrowLeft size={20} /> : <ArrowRight size={20} />}
-              {isFlipped ? 'Show Letter' : 'Show Country'}
+                          {isFlipped ? <ArrowLeft size={20} /> : <ArrowRight size={20} />}
+            {isFlipped ? t('showLetter') : t('showCountry')}
             </button>
           </div>
 
@@ -155,21 +157,21 @@ const StudyMode = ({ countries, onCountryProgress }: StudyModeProps) => {
               onClick={() => handleAnswer(true)}
             >
               <Check size={20} />
-              I Knew This
+              {t('iKnewThis')}
             </button>
             <button 
               className="answer-btn incorrect" 
               onClick={() => handleAnswer(false)}
             >
               <X size={20} />
-              I Didn't Know
+              {t('iDidntKnow')}
             </button>
           </div>
 
           <div className="country-stats">
-            <p>Reviewed: {session.currentCountry.reviewCount} times</p>
+            <p>{t('reviewed')}: {session.currentCountry.reviewCount} mal</p>
             {session.currentCountry.lastReviewed && (
-              <p>Last reviewed: {new Date(session.currentCountry.lastReviewed).toLocaleDateString()}</p>
+              <p>Zuletzt wiederholt: {new Date(session.currentCountry.lastReviewed).toLocaleDateString('de-DE')}</p>
             )}
           </div>
         </div>

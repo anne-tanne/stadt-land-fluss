@@ -1,5 +1,6 @@
 import type { Country } from '../types'
 import { Check, Globe } from 'lucide-react'
+import { useTranslation } from '../translations'
 
 interface CountryListProps {
   countries: Country[]
@@ -7,17 +8,19 @@ interface CountryListProps {
 }
 
 const CountryList = ({ countries, onCountryToggle }: CountryListProps) => {
+  const { t } = useTranslation()
+  
   if (countries.length === 0) {
     return (
       <div className="country-list empty">
-        <p>No countries found for this letter.</p>
+        <p>{t('noCountriesFoundForLetter')}</p>
       </div>
     )
   }
 
   return (
     <div className="country-list">
-      <h2>Countries starting with "{countries[0]?.letter}" ({countries.length})</h2>
+      <h2>{t('countriesStartingWith', { letter: countries[0]?.letter })} ({countries.length})</h2>
       <div className="countries-grid">
         {countries.map(country => (
           <div 
@@ -28,11 +31,11 @@ const CountryList = ({ countries, onCountryToggle }: CountryListProps) => {
               <h3>{country.name}</h3>
               <div className="country-stats">
                 <span className="review-count">
-                  Reviewed: {country.reviewCount} times
+                  {t('reviewed')}: {country.reviewCount} mal
                 </span>
                 {country.lastReviewed && (
                   <span className="last-reviewed">
-                    Last: {new Date(country.lastReviewed).toLocaleDateString()}
+                    {t('lastReviewed')}: {new Date(country.lastReviewed).toLocaleDateString('de-DE')}
                   </span>
                 )}
               </div>
@@ -43,7 +46,7 @@ const CountryList = ({ countries, onCountryToggle }: CountryListProps) => {
                 onClick={() => onCountryToggle(country.name, !country.learned)}
               >
                 {country.learned ? <Check size={20} /> : <Globe size={20} />}
-                {country.learned ? 'Learned' : 'Mark as Learned'}
+                {country.learned ? t('learned') : t('markAsLearned')}
               </button>
             </div>
           </div>

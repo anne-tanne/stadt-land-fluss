@@ -1,5 +1,6 @@
 import type { Country } from '../types'
 import { Check, Globe } from 'lucide-react'
+import { useTranslation } from '../translations'
 
 interface OverallViewProps {
   countries: Country[]
@@ -7,20 +8,22 @@ interface OverallViewProps {
 }
 
 const OverallView = ({ countries, onCountryToggle }: OverallViewProps) => {
+  const { t } = useTranslation()
+  
   // Sort countries alphabetically
   const sortedCountries = [...countries].sort((a, b) => a.name.localeCompare(b.name))
 
   if (sortedCountries.length === 0) {
     return (
       <div className="overall-view empty">
-        <p>No countries found.</p>
+        <p>{t('noCountriesFound')}</p>
       </div>
     )
   }
 
   return (
     <div className="overall-view">
-      <h2>All Countries ({sortedCountries.length})</h2>
+      <h2>{t('allCountries')} ({sortedCountries.length})</h2>
       <div className="countries-grid">
         {sortedCountries.map(country => (
           <div 
@@ -35,11 +38,11 @@ const OverallView = ({ countries, onCountryToggle }: OverallViewProps) => {
               </div>
               <div className="country-stats">
                 <span className="review-count">
-                  Reviewed: {country.reviewCount} times
+                  {t('reviewed')}: {country.reviewCount} mal
                 </span>
                 {country.lastReviewed && (
                   <span className="last-reviewed">
-                    Last: {new Date(country.lastReviewed).toLocaleDateString()}
+                    {t('lastReviewed')}: {new Date(country.lastReviewed).toLocaleDateString('de-DE')}
                   </span>
                 )}
               </div>
@@ -50,7 +53,7 @@ const OverallView = ({ countries, onCountryToggle }: OverallViewProps) => {
                 onClick={() => onCountryToggle(country.name, !country.learned)}
               >
                 {country.learned ? <Check size={20} /> : <Globe size={20} />}
-                {country.learned ? 'Learned' : 'Mark as Learned'}
+                {country.learned ? t('learned') : t('markAsLearned')}
               </button>
             </div>
           </div>

@@ -1,952 +1,952 @@
 [
   {
     "name": "Afghanistan",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "A"
   },
   {
     "name": "Albanien",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "A"
   },
   {
     "name": "Algerien",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "A"
   },
   {
     "name": "Andorra",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "A"
   },
   {
     "name": "Angola",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "A"
   },
   {
     "name": "Antigua und Barbuda",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "A"
   },
   {
     "name": "Argentinien",
-    "continent": "South America",
+    "continent": "Südamerika",
     "letter": "A"
   },
   {
     "name": "Armenien",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "A"
   },
   {
     "name": "Aserbaidschan",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "A"
   },
   {
     "name": "Australien",
-    "continent": "Oceania",
+    "continent": "Ozeanien",
     "letter": "A"
   },
   {
     "name": "Bahamas",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "B"
   },
   {
     "name": "Bahrain",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "B"
   },
   {
     "name": "Bangladesch",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "B"
   },
   {
     "name": "Barbados",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "B"
   },
   {
     "name": "Belarus",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "B"
   },
   {
     "name": "Belgien",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "B"
   },
   {
     "name": "Belize",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "B"
   },
   {
     "name": "Benin",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "B"
   },
   {
     "name": "Bhutan",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "B"
   },
   {
     "name": "Bolivien",
-    "continent": "South America",
+    "continent": "Südamerika",
     "letter": "B"
   },
   {
     "name": "Bosnien und Herzegowina",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "B"
   },
   {
     "name": "Botswana",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "B"
   },
   {
     "name": "Brasilien",
-    "continent": "South America",
+    "continent": "Südamerika",
     "letter": "B"
   },
   {
     "name": "Brunei Darussalam",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "B"
   },
   {
     "name": "Bulgarien",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "B"
   },
   {
     "name": "Burkina Faso",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "B"
   },
   {
     "name": "Burundi",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "B"
   },
   {
     "name": "Chile",
-    "continent": "South America",
+    "continent": "Südamerika",
     "letter": "C"
   },
   {
     "name": "China",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "C"
   },
   {
     "name": "Cookinseln",
-    "continent": "Oceania",
+    "continent": "Ozeanien",
     "letter": "C"
   },
   {
     "name": "Costa Rica",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "C"
   },
   {
     "name": "Elfenbeinküste (Côte d'Ivoire)",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "E"
   },
   {
     "name": "Deutschland",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "D"
   },
   {
     "name": "Dominica",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "D"
   },
   {
     "name": "Dominikanische Republik",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "D"
   },
   {
     "name": "Dschibuti",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "D"
   },
   {
     "name": "Dänemark",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "D"
   },
   {
     "name": "Ecuador",
-    "continent": "South America",
+    "continent": "Südamerika",
     "letter": "E"
   },
   {
     "name": "El Salvador",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "E"
   },
   {
     "name": "Eritrea",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "E"
   },
   {
     "name": "Estland",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "E"
   },
   {
     "name": "Eswatini (Swasiland)",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "E"
   },
   {
     "name": "Fidschi",
-    "continent": "Oceania",
+    "continent": "Ozeanien",
     "letter": "F"
   },
   {
     "name": "Finnland",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "F"
   },
   {
     "name": "Frankreich",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "F"
   },
   {
     "name": "Gabun",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "G"
   },
   {
     "name": "Gambia",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "G"
   },
   {
     "name": "Georgien",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "G"
   },
   {
     "name": "Ghana",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "G"
   },
   {
     "name": "Grenada",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "G"
   },
   {
     "name": "Griechenland",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "G"
   },
   {
     "name": "Guatemala",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "G"
   },
   {
     "name": "Guinea",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "G"
   },
   {
     "name": "Guinea-Bissau",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "G"
   },
   {
     "name": "Guyana",
-    "continent": "South America",
+    "continent": "Südamerika",
     "letter": "G"
   },
   {
     "name": "Haiti",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "H"
   },
   {
     "name": "Honduras",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "H"
   },
   {
     "name": "Indien",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "I"
   },
   {
     "name": "Indonesien",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "I"
   },
   {
     "name": "Irak",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "I"
   },
   {
     "name": "Iran, Islamische Republik",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "I"
   },
   {
     "name": "Irland",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "I"
   },
   {
     "name": "Island",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "I"
   },
   {
     "name": "Israel",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "I"
   },
   {
     "name": "Italien",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "I"
   },
   {
     "name": "Jamaika",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "J"
   },
   {
     "name": "Japan",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "J"
   },
   {
     "name": "Jemen",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "J"
   },
   {
     "name": "Jordanien",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "J"
   },
   {
     "name": "Kambodscha",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "K"
   },
   {
     "name": "Kamerun",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "K"
   },
   {
     "name": "Kanada",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "K"
   },
   {
     "name": "Kap Verde",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "K"
   },
   {
     "name": "Kasachstan",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "K"
   },
   {
     "name": "Katar",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "K"
   },
   {
     "name": "Kenia",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "K"
   },
   {
     "name": "Kirgisistan",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "K"
   },
   {
     "name": "Kiribati",
-    "continent": "Oceania",
+    "continent": "Ozeanien",
     "letter": "K"
   },
   {
     "name": "Kolumbien",
-    "continent": "South America",
+    "continent": "Südamerika",
     "letter": "K"
   },
   {
     "name": "Komoren",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "K"
   },
   {
     "name": "Republik Kongo",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "K"
   },
   {
     "name": "Demokratische Republik Kongo",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "K"
   },
   {
     "name": "Nordkorea (Korea, Demokratische Volksrepublik)",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "N"
   },
   {
     "name": "Südkorea (Korea, Republik)",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "S"
   },
   {
     "name": "Kroatien",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "K"
   },
   {
     "name": "Kuba",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "K"
   },
   {
     "name": "Kuwait",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "K"
   },
   {
     "name": "Laos, Demokratische Volksrepublik",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "L"
   },
   {
     "name": "Lesotho",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "L"
   },
   {
     "name": "Lettland",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "L"
   },
   {
     "name": "Libanon",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "L"
   },
   {
     "name": "Liberia",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "L"
   },
   {
     "name": "Libyen",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "L"
   },
   {
     "name": "Liechtenstein",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "L"
   },
   {
     "name": "Litauen",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "L"
   },
   {
     "name": "Luxemburg",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "L"
   },
   {
     "name": "Madagaskar",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "M"
   },
   {
     "name": "Malawi",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "M"
   },
   {
     "name": "Malaysia",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "M"
   },
   {
     "name": "Malediven",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "M"
   },
   {
     "name": "Mali",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "M"
   },
   {
     "name": "Malta",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "M"
   },
   {
     "name": "Marokko",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "M"
   },
   {
     "name": "Mauretanien",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "M"
   },
   {
     "name": "Mauritius",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "M"
   },
   {
     "name": "Mexiko",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "M"
   },
   {
     "name": "Moldau",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "M"
   },
   {
     "name": "Monaco",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "M"
   },
   {
     "name": "Mongolei",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "M"
   },
   {
     "name": "Montenegro",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "M"
   },
   {
     "name": "Mosambik",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "M"
   },
   {
     "name": "Myanmar",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "M"
   },
   {
     "name": "Namibia",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "N"
   },
   {
     "name": "Nauru",
-    "continent": "Oceania",
+    "continent": "Ozeanien",
     "letter": "N"
   },
   {
     "name": "Nepal",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "N"
   },
   {
     "name": "Neuseeland",
-    "continent": "Oceania",
+    "continent": "Ozeanien",
     "letter": "N"
   },
   {
     "name": "Nicaragua",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "N"
   },
   {
     "name": "Niederlande",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "N"
   },
   {
     "name": "Niger",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "N"
   },
   {
     "name": "Nigeria",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "N"
   },
   {
     "name": "Nordmazedonien",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "N"
   },
   {
     "name": "Norwegen",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "N"
   },
   {
     "name": "Oman",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "O"
   },
   {
     "name": "Österreich",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "Ö"
   },
   {
     "name": "Pakistan",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "P"
   },
   {
     "name": "Palau",
-    "continent": "Oceania",
+    "continent": "Ozeanien",
     "letter": "P"
   },
   {
     "name": "Panama",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "P"
   },
   {
     "name": "Papua-Neuguinea",
-    "continent": "Oceania",
+    "continent": "Ozeanien",
     "letter": "P"
   },
   {
     "name": "Paraguay",
-    "continent": "South America",
+    "continent": "Südamerika",
     "letter": "P"
   },
   {
     "name": "Peru",
-    "continent": "South America",
+    "continent": "Südamerika",
     "letter": "P"
   },
   {
     "name": "Philippinen",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "P"
   },
   {
     "name": "Polen",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "P"
   },
   {
     "name": "Portugal",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "P"
   },
   {
     "name": "Ruanda",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "R"
   },
   {
     "name": "Rumänien",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "R"
   },
   {
     "name": "Russland",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "R"
   },
   {
     "name": "Salomonen",
-    "continent": "Oceania",
+    "continent": "Ozeanien",
     "letter": "S"
   },
   {
     "name": "Sambia",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "S"
   },
   {
     "name": "Samoa",
-    "continent": "Oceania",
+    "continent": "Ozeanien",
     "letter": "S"
   },
   {
     "name": "San Marino",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "S"
   },
   {
     "name": "São Tomé und Príncipe",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "S"
   },
   {
     "name": "Saudi-Arabien",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "S"
   },
   {
     "name": "Schweden",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "S"
   },
   {
     "name": "Schweiz",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "S"
   },
   {
     "name": "Senegal",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "S"
   },
   {
     "name": "Serbien",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "S"
   },
   {
     "name": "Seychellen",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "S"
   },
   {
     "name": "Sierra Leone",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "S"
   },
   {
     "name": "Simbabwe",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "S"
   },
   {
     "name": "Singapur",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "S"
   },
   {
     "name": "Slowakei",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "S"
   },
   {
     "name": "Slowenien",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "S"
   },
   {
     "name": "Somalia",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "S"
   },
   {
     "name": "Spanien",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "S"
   },
   {
     "name": "Sri Lanka",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "S"
   },
   {
     "name": "St. Kitts und Nevis",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "S"
   },
   {
     "name": "St. Lucia",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "S"
   },
   {
     "name": "St. Vincent und die Grenadinen",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "S"
   },
   {
     "name": "Südafrika",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "S"
   },
   {
     "name": "Sudan",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "S"
   },
   {
     "name": "Südsudan",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "S"
   },
   {
     "name": "Suriname",
-    "continent": "South America",
+    "continent": "Südamerika",
     "letter": "S"
   },
   {
     "name": "Syrien",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "S"
   },
   {
     "name": "Tadschikistan",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "T"
   },
   {
     "name": "Tansania",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "T"
   },
   {
     "name": "Thailand",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "T"
   },
   {
     "name": "Timor-Leste",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "T"
   },
   {
     "name": "Togo",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "T"
   },
   {
     "name": "Tonga",
-    "continent": "Oceania",
+    "continent": "Ozeanien",
     "letter": "T"
   },
   {
     "name": "Trinidad und Tobago",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "T"
   },
   {
     "name": "Tschad",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "T"
   },
   {
     "name": "Tschechien",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "T"
   },
   {
     "name": "Tunesien",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "T"
   },
   {
     "name": "Türkei",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "T"
   },
   {
     "name": "Turkmenistan",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "T"
   },
   {
     "name": "Tuvalu",
-    "continent": "Oceania",
+    "continent": "Ozeanien",
     "letter": "T"
   },
   {
     "name": "Uganda",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "U"
   },
   {
     "name": "Ukraine",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "U"
   },
   {
     "name": "Ungarn",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "U"
   },
   {
     "name": "Uruguay",
-    "continent": "South America",
+    "continent": "Südamerika",
     "letter": "U"
   },
   {
     "name": "Usbekistan",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "U"
   },
   {
     "name": "Vanuatu",
-    "continent": "Oceania",
+    "continent": "Ozeanien",
     "letter": "V"
   },
   {
     "name": "Vatikanstadt",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "V"
   },
   {
     "name": "Venezuela",
-    "continent": "South America",
+    "continent": "Südamerika",
     "letter": "V"
   },
   {
     "name": "Vereinigte Arabische Emirate",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "V"
   },
   {
     "name": "Vereinigte Staaten",
-    "continent": "North America",
+    "continent": "Nordamerika",
     "letter": "V"
   },
   {
     "name": "Vereinigtes Königreich",
-    "continent": "Europe",
+    "continent": "Europa",
     "letter": "V"
   },
   {
     "name": "Vietnam",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "V"
   },
   {
     "name": "Zentralafrikanische Republik",
-    "continent": "Africa",
+    "continent": "Afrika",
     "letter": "Z"
   },
   {
     "name": "Zypern",
-    "continent": "Asia",
+    "continent": "Asien",
     "letter": "Z"
   }
 ]
