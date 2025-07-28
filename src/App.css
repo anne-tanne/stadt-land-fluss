@@ -1472,7 +1472,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   gap: 0.5rem;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .letter-stat {
@@ -1513,7 +1513,7 @@ h2 {
 
 .end-actions {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1rem;
   flex-wrap: wrap;
 }
