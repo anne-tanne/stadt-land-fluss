@@ -1205,6 +1205,7 @@ h2 {
 .quiz-controls {
   display: flex;
   justify-content: flex-end;
+  gap: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -1232,6 +1233,53 @@ h2 {
   color: #4a5568;
   font-size: 0.875rem;
   font-weight: 500;
+}
+
+.save-later-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  background: #059669;
+  color: white;
+  border: 2px solid #059669;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 8px rgba(5, 150, 105, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.save-later-btn:hover {
+  background: #047857;
+  border-color: #047857;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(5, 150, 105, 0.4);
+}
+
+.save-later-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(5, 150, 105, 0.3);
+}
+
+.save-later-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.save-later-btn:hover::before {
+  left: 100%;
 }
 
 .end-quiz-btn {
