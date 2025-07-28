@@ -350,13 +350,13 @@ h2 {
 .country-info h3 {
   font-size: 1.25rem;
   color: #2d3748;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .country-details {
   display: flex;
   gap: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .continent-badge {
@@ -1107,6 +1107,54 @@ h2 {
 .continent-dropdown option {
   padding: 0.5rem;
   font-size: 1rem;
+}
+
+.continent-dropdown-container {
+  margin-bottom: 1.5rem;
+}
+
+.continent-dropdown-container h3 {
+  margin-bottom: 0.5rem;
+  color: #2d3748;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Browse mode specific dropdown styling */
+.continent-dropdown-container:first-child {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.continent-dropdown-container:first-child h3 {
+  display: none;
+}
+
+.continent-dropdown-container:first-child .continent-dropdown {
+  padding: 0.5rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  background: #f7fafc;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4a5568;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 250px;
+  max-width: 100%;
+  align-self: flex-start;
+}
+
+.continent-dropdown-container:first-child .continent-dropdown:hover {
+  border-color: #667eea;
+  background: #edf2f7;
+}
+
+.continent-dropdown-container:first-child .continent-dropdown:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
 .quiz-info {
