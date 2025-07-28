@@ -1,7 +1,7 @@
 import React from 'react'
 import { Play, RotateCcw } from 'lucide-react'
 import { useTranslation } from '../../translations'
-import { useCountryContext } from '../../contexts/CountryContext'
+import { ContinentDropdown } from '../ContinentDropdown'
 import styles from '../../styles/QuizStart.module.css'
 
 interface QuizStartScreenProps {
@@ -22,35 +22,18 @@ export const QuizStartScreen: React.FC<QuizStartScreenProps> = ({
   filteredCountriesCount
 }) => {
   const { t } = useTranslation()
-  const { getAvailableContinents } = useCountryContext()
 
   return (
     <div className={styles.quizStartScreen}>
       <h2>🌍 {t('quizStartTitle')}</h2>
       <p>{t('quizStartDescription')}</p>
       
-      <div className={styles.continentSelection}>
-        <h3>Wähle einen Kontinent:</h3>
-        <select 
-          value={selectedContinent} 
-          onChange={(e) => onContinentChange(e.target.value)}
-          className={styles.continentDropdown}
-        >
-          {getAvailableContinents().map(continent => (
-            <option key={continent} value={continent}>
-              {continent === 'Alle' ? '🌍 Alle Kontinente' :
-               continent === 'Amerikas' ? '🌎 Amerikas (Nord & Süd)' :
-               continent === 'Afrika' ? '🌍 Afrika' :
-               continent === 'Asien' ? '🌏 Asien' :
-               continent === 'Europa' ? '🌍 Europa' :
-               continent === 'Nordamerika' ? '🌎 Nordamerika' :
-               continent === 'Südamerika' ? '🌎 Südamerika' :
-               continent === 'Ozeanien' ? '🌏 Ozeanien' :
-               continent}
-            </option>
-          ))}
-        </select>
-      </div>
+      <ContinentDropdown
+        selectedContinent={selectedContinent}
+        onContinentChange={onContinentChange}
+        label="Wähle einen Kontinent:"
+        className={styles.continentSelection}
+      />
       
       <div className={styles.quizInfo}>
         <p>Länder für Quiz: <strong>{filteredCountriesCount}</strong></p>

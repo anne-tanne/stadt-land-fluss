@@ -13,9 +13,13 @@ import styles from '../styles/Quiz.module.css'
 
 interface QuizModeRefactoredProps {
   onCountryLearned: (countryName: string) => void
+  onReturnToBrowse: () => void
 }
 
-export const QuizModeRefactored: React.FC<QuizModeRefactoredProps> = ({ onCountryLearned }) => {
+export const QuizModeRefactored: React.FC<QuizModeRefactoredProps> = ({ 
+  onCountryLearned, 
+  onReturnToBrowse 
+}) => {
   const { countries, getFilteredCountries } = useCountryContext()
   
   const {
@@ -43,7 +47,7 @@ export const QuizModeRefactored: React.FC<QuizModeRefactoredProps> = ({ onCountr
     foundCount,
     handleSubmit,
     changeLetter
-  } = useQuizLogic(currentLetter, foundCountries, addFoundCountry, onCountryLearned)
+  } = useQuizLogic(currentLetter, foundCountries, addFoundCountry, onCountryLearned, selectedContinent)
 
   const filteredCountries = getFilteredCountries(selectedContinent)
   const hasProgress = getTotalCountriesFound() > 0
@@ -94,6 +98,11 @@ export const QuizModeRefactored: React.FC<QuizModeRefactoredProps> = ({ onCountr
     setInputValue('')
   }
 
+  const handleSaveForLater = () => {
+    saveForLater()
+    onReturnToBrowse()
+  }
+
   // Show start screen if quiz is not active
   if (!isQuizActive) {
     return (
@@ -126,7 +135,7 @@ export const QuizModeRefactored: React.FC<QuizModeRefactoredProps> = ({ onCountr
   return (
     <div className={styles.quizMode}>
       <QuizControls
-        onSaveForLater={saveForLater}
+        onSaveForLater={handleSaveForLater}
         onEndQuiz={handleEndQuiz}
       />
 
@@ -139,6 +148,7 @@ export const QuizModeRefactored: React.FC<QuizModeRefactoredProps> = ({ onCountr
         currentLetter={currentLetter}
         onLetterChange={handleLetterChange}
         getLetterProgress={getLetterProgress}
+        selectedContinent={selectedContinent}
       />
 
       <QuizHeader
@@ -167,6 +177,7 @@ export const QuizModeRefactored: React.FC<QuizModeRefactoredProps> = ({ onCountr
       <FoundCountries
         foundCountries={foundCountries}
         currentCountries={currentCountries}
+        selectedContinent={selectedContinent}
       />
     </div>
   )
