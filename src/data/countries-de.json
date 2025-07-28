@@ -66,6 +66,18 @@
     "alternatives": ["equatorial guinea"]
   },
   {
+    "name": "Ägypten",
+    "continent": "Afrika",
+    "letter": "Ä",
+    "alternatives": []
+  },
+  {
+    "name": "Äthiopien",
+    "continent": "Afrika",
+    "letter": "Ä",
+    "alternatives": ["ethiopia"]
+  },
+  {
     "name": "Bahamas",
     "continent": "Nordamerika",
     "letter": "B",
@@ -480,10 +492,16 @@
     "alternatives": ["comoros"]
   },
   {
-    "name": "Kongo",
+    "name": "Demokratische Republik Kongo",
     "continent": "Afrika",
-    "letter": "K",
-    "alternatives": ["congo"]
+    "letter": "D",
+    "alternatives": ["dr kongo", "democratic republic of congo", "drc"]
+  },
+  {
+    "name": "Republik Kongo",
+    "continent": "Afrika",
+    "letter": "R",
+    "alternatives": ["kongo", "congo", "republic of congo"]
   },
   {
     "name": "Kroatien",
@@ -500,6 +518,12 @@
   {
     "name": "Kuwait",
     "continent": "Asien",
+    "letter": "K",
+    "alternatives": []
+  },
+  {
+    "name": "Kosovo",
+    "continent": "Europa",
     "letter": "K",
     "alternatives": []
   },

@@ -88,7 +88,7 @@ export const translations: Record<Language, Translations> = {
     
     // View modes
     alphabeticalView: 'Alphabetische Ansicht',
-    overallView: 'Übersicht',
+    overallView: 'Alle Länder',
     
     // Continent names
     all: 'Alle',
@@ -124,7 +124,7 @@ export const translations: Record<Language, Translations> = {
     quizComplete: 'Quiz abgeschlossen!',
     congratulations: 'Herzlichen Glückwunsch!',
     quizCompleteDescription: 'Du hast alle Länder für diesen Buchstaben gefunden!',
-    backToBrowse: 'Zurück zum Durchsuchen',
+    backToBrowse: 'Zurück zur Übersicht',
     
     // Quiz interface
     currentLetter: 'Aktueller Buchstabe',
