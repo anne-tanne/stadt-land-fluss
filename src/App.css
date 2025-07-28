@@ -284,27 +284,18 @@ body {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
-.country-list h2,
-.overall-view h2,
-.quiz-header h2,
-.quiz-complete h2,
-.flashcard-content h2,
-.study-complete h2,
-.quiz-start-screen h2,
-.quiz-end-screen h2 {
-  color: white !important;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+/* Reset all h2 colors to dark by default */
+h2 {
+  color: #2d3748 !important;
   margin-bottom: 1.5rem;
 }
 
-.country-list h2,
-.quiz-header h2,
-.question-section h3,
-.flashcard-content h2,
-.study-complete h2,
-.quiz-start-screen h2 {
-  color: #2d3748;
-  margin-bottom: 1.5rem;
+/* Only set white for h2 on colored backgrounds */
+.overall-view h2,
+.quiz-end-screen h2,
+.quiz-complete h2 {
+  color: white !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
 .overall-view {
