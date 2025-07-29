@@ -100,9 +100,17 @@ export const useQuizLogic = (
     const input = hintInputValue.trim()
     setHintInputValue('')
 
-    // Check if country is already found
-    if (foundCountries.has(input)) {
-      showMessage('Dieses Land wurde bereits gefunden!', 'error', 2000)
+    // Check if country is already found (check against all found countries and their alternatives)
+    const isAlreadyFound = Array.from(foundCountries).some(foundCountryName => {
+      const foundCountry = currentCountries.find(country => country.name === foundCountryName)
+      if (!foundCountry) return false
+      
+      // Check if input matches the found country name or any of its alternatives
+      return isCountryNameValid(input, foundCountry)
+    })
+
+    if (isAlreadyFound) {
+      showMessage('Du hast dieses Land bereits gefunden!', 'info', 2000)
       return
     }
 
@@ -158,9 +166,17 @@ export const useQuizLogic = (
     const input = inputValue.trim()
     setInputValue('')
 
-    // Check if country is already found
-    if (foundCountries.has(input)) {
-      showMessage('Dieses Land wurde bereits gefunden!', 'error', 2000)
+    // Check if country is already found (check against all found countries and their alternatives)
+    const isAlreadyFound = Array.from(foundCountries).some(foundCountryName => {
+      const foundCountry = currentCountries.find(country => country.name === foundCountryName)
+      if (!foundCountry) return false
+      
+      // Check if input matches the found country name or any of its alternatives
+      return isCountryNameValid(input, foundCountry)
+    })
+
+    if (isAlreadyFound) {
+      showMessage('Du hast dieses Land bereits gefunden!', 'info', 2000)
       return
     }
 

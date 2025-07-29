@@ -186,11 +186,11 @@ export const QuizMode: React.FC<QuizModeProps> = ({
         onOpenHint={openHintPopup}
       />
 
-      {message && (
+          {message && (
         <div className={`${styles.message} ${styles[messageType]} ${isFading ? styles['fade-out'] : ''}`}>
-          {message}
-        </div>
-      )}
+              {message}
+            </div>
+          )}
 
       <FoundCountries
         foundCountries={foundCountries}
@@ -214,4 +214,4 @@ export const QuizMode: React.FC<QuizModeProps> = ({
       />
     </div>
   )
-} 
+}

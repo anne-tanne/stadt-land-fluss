@@ -110,12 +110,12 @@ const AppContent: React.FC = () => {
         )}
         
         {appMode === 'quiz' && (
-            <QuizMode 
+          <QuizMode 
               selectedContinent={selectedContinent}
-              onCountryLearned={markCountryAsLearned}
+            onCountryLearned={markCountryAsLearned}
               onReturnToBrowse={resetToBrowse}
-            />
-          )}
+          />
+        )}
         </ErrorBoundary>
       </main>
     </div>

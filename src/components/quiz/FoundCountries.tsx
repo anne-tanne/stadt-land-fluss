@@ -60,22 +60,43 @@ export const FoundCountries: React.FC<FoundCountriesProps> = ({
     return acc
   }, {} as Record<string, Country[]>)
 
+  // Calculate total countries per continent for CURRENT LETTER only
+  const totalByContinent = currentCountries.reduce((acc, country) => {
+    if (!acc[country.continent]) {
+      acc[country.continent] = 0
+    }
+    acc[country.continent]++
+    return acc
+  }, {} as Record<string, number>)
+
+  const getContinentTitleClassName = (continent: string, foundCount: number) => {
+    const totalCount = totalByContinent[continent] || 0
+    const isComplete = foundCount === totalCount && totalCount > 0
+    return `${styles.continentTitle} ${isComplete ? styles.completeContinent : ''}`
+  }
+
   return (
     <div className={styles.foundCountries}>
       <h4>{foundCountriesList.length} Länder gefunden:</h4>
       <div className={styles.continentsList}>
-        {Object.entries(countriesByContinent).map(([continent, countries]) => (
-          <div key={continent} className={styles.continentGroup}>
-            <h5 className={styles.continentTitle}>{continent}</h5>
-            <div className={styles.countriesList}>
-              {countries.map(country => (
-                <div key={country.name} className={getCountryClassName(country.name)}>
-                  <span className={styles.countryName}>{country.name}</span>
-                </div>
-              ))}
+        {Object.entries(countriesByContinent).map(([continent, countries]) => {
+          const totalCount = totalByContinent[continent] || 0
+          const foundCount = countries.length
+          return (
+            <div key={continent} className={styles.continentGroup}>
+              <h5 className={getContinentTitleClassName(continent, foundCount)}>
+                {continent} ({foundCount}/{totalCount})
+              </h5>
+              <div className={styles.countriesList}>
+                {countries.map(country => (
+                  <div key={country.name} className={getCountryClassName(country.name)}>
+                    <span className={styles.countryName}>{country.name}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          )
+        })}
       </div>
     </div>
   )
