@@ -1,68 +1,67 @@
-# Stadt Land Fluss 🌍
+# Stadt Land Fluss - Project Notes 🗺️
 
-A modern web application for learning about countries, cities, and geography. Built with React, TypeScript, and Vite.
+Personal project to stop sucking at Stadt, Land, Fluss.
 
-## Features
+## What exists
 
-- **Study Mode**: Browse countries alphabetically with detailed information
-- **Quiz Mode**: Test your knowledge with interactive quizzes
-- **Responsive Design**: Works on desktop and mobile devices
-- **Modern UI**: Clean and intuitive user interface
+### Browse Mode
+- Continent filter (dropdown)
+- Overall view (all countries)
+- Alphabetical view (by letter)
+- Country cards with continent badges
+- No "mark as learned" button (hidden)
 
-## Getting Started
+### Quiz Mode  
+- Continent selection before start
+- Letter navigation (shows progress)
+- Country input with validation
+- Progress saving (localStorage)
+- "Später fortsetzen" / "Quiz beenden" buttons
+- Found countries display
+- Message feedback (fade out)
 
-### Prerequisites
+### Data
+- `countries-de.json` - 200+ countries with German names
+- Continent mapping (Afrika, Asien, Europa, etc.)
+- Letter normalization (Ä→A, Ö→O, etc.)
+- Alternative names support
 
-- Node.js (version 16 or higher)
-- npm or yarn
+### Tech
+- React + TypeScript
+- Custom hooks (useCountries, useQuizProgress, useQuizLogic)
+- Context for state management
+- CSS modules + design system
+- German translations
 
-### Installation
+## What works
+- ✅ Quiz progress saves/loads
+- ✅ Continent filtering
+- ✅ Letter navigation
+- ✅ Country validation (typo tolerant)
+- ✅ Responsive design
+- ✅ Error boundaries
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+## What needs work
+- ⚠️ Message transitions (still a bit abrupt)
+- ⚠️ Performance (some memoization needed)
+- ⚠️ CSS organization (too much in App.css)
+- ⚠️ Mobile experience
 
-### Development
+## Ideas for later
+- [ ] More countries/territories
+- [ ] Statistics/analytics
+- [ ] Cities/rivers mode
+- [ ] Offline support
+- [ ] Better animations
 
-Start the development server:
+## Key files
+- `src/hooks/useQuizProgress.ts` - Quiz state
+- `src/components/QuizModeRefactored.tsx` - Main quiz
+- `src/data/countries-de.json` - Country data
+- `src/translations.ts` - German text
+
+## Run locally
 ```bash
+cd stadt-land-fluss
 npm run dev
 ```
-
-The application will be available at `http://localhost:5173`
-
-### Building for Production
-
-Build the application:
-```bash
-npm run build
-```
-
-Preview the production build:
-```bash
-npm run preview
-```
-
-## Technologies Used
-
-- React 19
-- TypeScript
-- Vite
-- Lucide React (for icons)
-- CSS3
-
-## Project Structure
-
-```
-src/
-├── components/     # React components
-├── types.ts        # TypeScript type definitions
-├── countries.json  # Country data
-└── main.tsx        # Application entry point
-```
-
-## License
-
-This project is open source and available under the MIT License.

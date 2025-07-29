@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import './App.css'
 import './styles/design-system.css'
 import './styles/components.css'
@@ -27,8 +27,15 @@ const AppContent: React.FC = () => {
     resetToBrowse
   } = useAppState()
 
-  const filteredCountries = getFilteredCountries(selectedContinent)
-  const countriesByLetter = getCountriesByLetter(selectedLetter, selectedContinent)
+  const filteredCountries = useMemo(() => 
+    getFilteredCountries(selectedContinent), 
+    [getFilteredCountries, selectedContinent]
+  )
+  
+  const countriesByLetter = useMemo(() => 
+    getCountriesByLetter(selectedLetter, selectedContinent), 
+    [getCountriesByLetter, selectedLetter, selectedContinent]
+  )
 
   return (
     <div className="app">
@@ -79,25 +86,25 @@ const AppContent: React.FC = () => {
               </div>
 
               {viewMode === 'alphabetical' ? (
-                <>
-                  <AlphabetNav 
-                    selectedLetter={selectedLetter}
-                    onLetterSelect={setSelectedLetter}
+          <>
+            <AlphabetNav 
+              selectedLetter={selectedLetter} 
+              onLetterSelect={setSelectedLetter}
                     countries={filteredCountries}
                     selectedContinent={selectedContinent}
-                  />
-                  <CountryList 
+            />
+            <CountryList 
                     countries={countriesByLetter}
                     onCountryToggle={markCountryAsLearned}
                     selectedContinent={selectedContinent}
-                  />
-                </>
+            />
+          </>
               ) : (
                 <OverallView 
                   countries={filteredCountries}
                   onCountryToggle={markCountryAsLearned}
                   selectedContinent={selectedContinent}
-                />
+          />
               )}
             </>
         )}

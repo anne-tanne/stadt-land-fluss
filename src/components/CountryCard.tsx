@@ -9,13 +9,17 @@ interface CountryCardProps {
   onCountryToggle?: (countryName: string, learned: boolean) => void
 }
 
-export const CountryCard: React.FC<CountryCardProps> = ({
-  country,
-  showLetter = true,
-  showLearnButton = false,
-  onCountryToggle
+export const CountryCard: React.FC<CountryCardProps> = React.memo(({ 
+  country, 
+  showLetter = true, 
+  showLearnButton = true,
+  onCountryToggle 
 }) => {
-  const { t } = useTranslation()
+  const handleToggle = () => {
+    if (onCountryToggle) {
+      onCountryToggle(country.name, !country.learned)
+    }
+  }
 
   return (
     <div className={`country-card ${country.learned ? 'learned' : ''}`}>
@@ -23,32 +27,30 @@ export const CountryCard: React.FC<CountryCardProps> = ({
         <div className="country-details">
           <span className="continent-badge">{country.continent}</span>
           {showLetter && (
-            <span className="letter-badge">{country.letter}</span>
+            <span className="letter-badge">
+              {country.originalLetter}
+            </span>
           )}
         </div>
         <h3>{country.name}</h3>
         <div className="country-stats">
-          <span className="review-count">
-            {t('reviewed')}: {country.reviewCount} mal
-          </span>
+          <p>Review Count: {country.reviewCount}</p>
           {country.lastReviewed && (
-            <span className="last-reviewed">
-              {t('lastReviewed')}: {new Date(country.lastReviewed).toLocaleDateString('de-DE')}
-            </span>
+            <p>Last Reviewed: {new Date(country.lastReviewed).toLocaleDateString()}</p>
           )}
         </div>
       </div>
+      
       {showLearnButton && onCountryToggle && (
-        <div className="country-actions">
-          <button
-            className={`learn-btn ${country.learned ? 'learned' : ''}`}
-            onClick={() => onCountryToggle(country.name, !country.learned)}
-          >
-            {country.learned ? '✓' : '🌍'}
-            {country.learned ? t('learned') : t('markAsLearned')}
-          </button>
-        </div>
+        <button 
+          className={`learn-btn ${country.learned ? 'learned' : ''}`}
+          onClick={handleToggle}
+        >
+          {country.learned ? '✓ Gelernt' : 'Als gelernt markieren'}
+        </button>
       )}
     </div>
   )
-} 
+})
+
+CountryCard.displayName = 'CountryCard' 

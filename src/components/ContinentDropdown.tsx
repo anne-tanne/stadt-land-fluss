@@ -24,7 +24,7 @@ export const ContinentDropdown: React.FC<ContinentDropdownProps> = ({
         onChange={(e) => onContinentChange(e.target.value)}
         className="continent-dropdown"
       >
-        {getAvailableContinents().map(continent => (
+        {getAvailableContinents.map((continent: string) => (
           <option key={continent} value={continent}>
             {continent === 'Alle' ? '🌍 Alle Kontinente' :
              continent === 'Amerikas' ? '🌎 Amerikas (Nord & Süd)' :

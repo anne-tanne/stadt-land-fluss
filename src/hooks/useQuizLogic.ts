@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { useCountryContext } from '../contexts/CountryContext'
 import { useTranslation } from '../translations'
 import { isCountryNameValid } from '../utils/validationUtils'
@@ -17,6 +17,10 @@ export const useQuizLogic = (
   const [message, setMessage] = useState<string>('')
   const [messageType, setMessageType] = useState<'success' | 'error' | 'info'>('info')
   const [isFading, setIsFading] = useState<boolean>(false)
+  
+  // Use refs to store timer IDs so we can clear them
+  const fadeTimerRef = useRef<NodeJS.Timeout | null>(null)
+  const clearTimerRef = useRef<NodeJS.Timeout | null>(null)
 
   const currentCountries = getCountriesByLetter(currentLetter, selectedContinent)
   const totalCountries = currentCountries.length
@@ -27,13 +31,23 @@ export const useQuizLogic = (
   const remainingCountries = currentCountries.filter(country => !foundCountries.has(country.name))
 
   const showMessage = (text: string, type: 'success' | 'error' | 'info', duration: number) => {
+    // Clear any existing timers
+    if (fadeTimerRef.current) {
+      clearTimeout(fadeTimerRef.current)
+      fadeTimerRef.current = null
+    }
+    if (clearTimerRef.current) {
+      clearTimeout(clearTimerRef.current)
+      clearTimerRef.current = null
+    }
+    
     setMessage(text)
     setMessageType(type)
     setIsFading(false)
     
-    setTimeout(() => {
+    fadeTimerRef.current = setTimeout(() => {
       setIsFading(true)
-      setTimeout(() => {
+      clearTimerRef.current = setTimeout(() => {
         setMessage('')
         setIsFading(false)
       }, 500) // Fade out duration

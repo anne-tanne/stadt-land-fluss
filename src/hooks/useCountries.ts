@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo, useCallback } from 'react'
 import type { Country } from '../types'
 import countriesData from '../data/countries-de.json'
 import { normalizeLetter } from '../utils/letterUtils'
@@ -27,7 +27,7 @@ export const useCountries = () => {
     setCountries(countriesWithProgress)
   }, [])
 
-  const updateCountryProgress = (countryName: string, learned: boolean) => {
+  const updateCountryProgress = useCallback((countryName: string, learned: boolean) => {
     setCountries(prev => prev.map(country => 
       country.name === countryName 
         ? { 
@@ -39,13 +39,13 @@ export const useCountries = () => {
           }
         : country
     ))
-  }
+  }, [])
 
-  const markCountryAsLearned = (countryName: string) => {
+  const markCountryAsLearned = useCallback((countryName: string) => {
     updateCountryProgress(countryName, true)
-  }
+  }, [updateCountryProgress])
 
-  const getFilteredCountries = (selectedContinent: string) => {
+  const getFilteredCountries = useCallback((selectedContinent: string) => {
     let filtered = countries
 
     // Filter by continent
@@ -60,17 +60,17 @@ export const useCountries = () => {
     }
 
     return filtered
-  }
+  }, [countries])
 
-  const getCountriesByLetter = (letter: string, selectedContinent: string = 'Alle') => {
+  const getCountriesByLetter = useCallback((letter: string, selectedContinent: string = 'Alle') => {
     const filtered = getFilteredCountries(selectedContinent)
     return filtered.filter(country => country.letter === letter)
-  }
+  }, [getFilteredCountries])
 
-  const getAvailableContinents = () => {
+  const getAvailableContinents = useMemo(() => {
     const continents = ['Alle', 'Amerikas', ...Array.from(new Set(countries.map(country => country.continent)))]
     return continents
-  }
+  }, [countries])
 
   return {
     countries,

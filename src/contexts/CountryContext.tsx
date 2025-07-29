@@ -9,7 +9,7 @@ interface CountryContextType {
   markCountryAsLearned: (countryName: string) => void
   getFilteredCountries: (selectedContinent: string) => Country[]
   getCountriesByLetter: (letter: string, selectedContinent?: string) => Country[]
-  getAvailableContinents: () => string[]
+  getAvailableContinents: string[]
 }
 
 const CountryContext = createContext<CountryContextType | undefined>(undefined)
