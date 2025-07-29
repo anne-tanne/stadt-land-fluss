@@ -136,12 +136,16 @@
 
 /* Letter Navigation */
 .letterNavigation {
-  margin-bottom: 2rem;
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
 }
 
 .letterNavigation h3 {
   margin-bottom: 1rem;
-  color: white;
+  color: #2d3748;
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -167,7 +171,7 @@
   font-weight: 600;
 }
 
-.letterBtn:hover {
+.letterBtn:hover:not(:disabled) {
   border-color: #667eea;
   transform: translateY(-1px);
   box-shadow: 0 4px 8px rgba(102, 126, 234, 0.2);
@@ -187,18 +191,35 @@
   color: white;
 }
 
-.letterBtn.complete:hover {
+.letterBtn.complete:hover:not(:disabled) {
   background: #38a169;
   border-color: #38a169;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(72, 187, 120, 0.3);
 }
 
-.letterBtn .letter {
+.letterBtn.disabled {
+  background: #f1f5f9;
+  border-color: #e2e8f0;
+  color: #94a3b8;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.letterBtn.disabled:hover {
+  transform: none;
+  box-shadow: none;
+  background: #f1f5f9;
+  border-color: #e2e8f0;
+}
+
+.letter {
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 0.25rem;
 }
 
-.letterBtn .progress {
+.progress {
   font-size: 0.75rem;
   opacity: 0.8;
 }
@@ -466,6 +487,12 @@
   margin-bottom: 1rem;
   font-weight: 600;
   text-align: center;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.message.fade-out {
+  opacity: 0;
 }
 
 .message.success {

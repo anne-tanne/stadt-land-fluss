@@ -146,7 +146,7 @@ const StudyMode = ({ countries, onCountryProgress }: StudyModeProps) => {
               className="flip-btn" 
               onClick={handleFlip}
             >
-                          {isFlipped ? <ArrowLeft size={20} /> : <ArrowRight size={20} />}
+              {isFlipped ? <ArrowLeft size={20} /> : <ArrowRight size={20} />}
             {isFlipped ? t('showLetter') : t('showCountry')}
             </button>
           </div>

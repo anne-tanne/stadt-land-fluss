@@ -42,6 +42,7 @@ export const QuizModeRefactored: React.FC<QuizModeRefactoredProps> = ({
     setInputValue,
     message,
     messageType,
+    isFading,
     currentCountries,
     totalCountries,
     foundCount,
@@ -169,7 +170,7 @@ export const QuizModeRefactored: React.FC<QuizModeRefactoredProps> = ({
       />
 
       {message && (
-        <div className={`${styles.message} ${styles[messageType]}`}>
+        <div className={`${styles.message} ${styles[messageType]} ${isFading ? styles['fade-out'] : ''}`}>
           {message}
         </div>
       )}

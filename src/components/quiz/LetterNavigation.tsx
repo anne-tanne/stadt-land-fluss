@@ -25,12 +25,14 @@ export const LetterNavigation: React.FC<LetterNavigationProps> = ({
           const progress = getLetterProgress(letter, selectedContinent)
           const isActive = letter === currentLetter
           const isComplete = progress.found === progress.total && progress.total > 0
+          const hasCountries = progress.total > 0
           
           return (
             <button
               key={letter}
-              className={`${styles.letterBtn} ${isActive ? styles.active : ''} ${isComplete ? styles.complete : ''}`}
-              onClick={() => onLetterChange(letter)}
+              className={`${styles.letterBtn} ${isActive ? styles.active : ''} ${isComplete ? styles.complete : ''} ${!hasCountries ? styles.disabled : ''}`}
+              onClick={() => hasCountries && onLetterChange(letter)}
+              disabled={!hasCountries}
             >
               <span className={styles.letter}>{letter}</span>
               <span className={styles.progress}>{progress.found}/{progress.total}</span>

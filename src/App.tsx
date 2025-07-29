@@ -54,7 +54,7 @@ const AppContent: React.FC = () => {
 
       <main className="app-main">
         <ErrorBoundary>
-          {appMode === 'browse' && (
+        {appMode === 'browse' && (
             <>
               <ContinentDropdown 
                 selectedContinent={selectedContinent}
@@ -84,10 +84,12 @@ const AppContent: React.FC = () => {
                     selectedLetter={selectedLetter}
                     onLetterSelect={setSelectedLetter}
                     countries={filteredCountries}
+                    selectedContinent={selectedContinent}
                   />
                   <CountryList 
                     countries={countriesByLetter}
                     onCountryToggle={markCountryAsLearned}
+                    selectedContinent={selectedContinent}
                   />
                 </>
               ) : (
@@ -98,14 +100,14 @@ const AppContent: React.FC = () => {
                 />
               )}
             </>
-          )}
-
-          {appMode === 'quiz' && (
+        )}
+        
+        {appMode === 'quiz' && (
             <QuizModeRefactored 
-              onCountryLearned={markCountryAsLearned}
+            onCountryLearned={markCountryAsLearned}
               onReturnToBrowse={resetToBrowse}
-            />
-          )}
+          />
+        )}
         </ErrorBoundary>
       </main>
     </div>
@@ -122,4 +124,4 @@ const App: React.FC = () => {
   )
 }
 
-export default App 
+export default App

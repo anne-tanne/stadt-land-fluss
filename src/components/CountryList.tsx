@@ -5,10 +5,21 @@ import { CountryCard } from './CountryCard'
 interface CountryListProps {
   countries: Country[]
   onCountryToggle?: (countryName: string, learned: boolean) => void
+  selectedContinent?: string
 }
 
-const CountryList = ({ countries }: CountryListProps) => {
+const CountryList = ({ countries, selectedContinent }: CountryListProps) => {
   const { t } = useTranslation()
+  
+  const getTitle = () => {
+    if (countries.length === 0) return ''
+    
+    const letter = countries[0]?.letter
+    if (selectedContinent && selectedContinent !== 'Alle') {
+      return `Länder in ${selectedContinent}, die mit "${letter}" beginnen (${countries.length})`
+    }
+    return `${t('countriesStartingWith', { letter })} (${countries.length})`
+  }
   
   if (countries.length === 0) {
     return (
@@ -20,11 +31,11 @@ const CountryList = ({ countries }: CountryListProps) => {
 
   return (
     <div className="country-list">
-      <h2 className="white-box-title">{t('countriesStartingWith', { letter: countries[0]?.letter })} ({countries.length})</h2>
+      <h2 className="white-box-title">{getTitle()}</h2>
       <div className="countries-grid">
         {countries.map(country => (
           <CountryCard
-            key={country.name}
+            key={country.name} 
             country={country}
             showLetter={false}
             showLearnButton={false}

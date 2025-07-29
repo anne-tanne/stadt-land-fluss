@@ -16,6 +16,7 @@ export const useQuizLogic = (
   const [inputValue, setInputValue] = useState<string>('')
   const [message, setMessage] = useState<string>('')
   const [messageType, setMessageType] = useState<'success' | 'error' | 'info'>('info')
+  const [isFading, setIsFading] = useState<boolean>(false)
 
   const currentCountries = getCountriesByLetter(currentLetter, selectedContinent)
   const totalCountries = currentCountries.length
@@ -24,6 +25,20 @@ export const useQuizLogic = (
   )
   const foundCount = foundForCurrentLetter.length
   const remainingCountries = currentCountries.filter(country => !foundCountries.has(country.name))
+
+  const showMessage = (text: string, type: 'success' | 'error' | 'info', duration: number) => {
+    setMessage(text)
+    setMessageType(type)
+    setIsFading(false)
+    
+    setTimeout(() => {
+      setIsFading(true)
+      setTimeout(() => {
+        setMessage('')
+        setIsFading(false)
+      }, 500) // Fade out duration
+    }, duration - 500) // Start fade before complete removal
+  }
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -35,9 +50,7 @@ export const useQuizLogic = (
 
     // Check if country is already found
     if (foundCountries.has(input)) {
-      setMessage('Dieses Land wurde bereits gefunden!')
-      setMessageType('error')
-      setTimeout(() => setMessage(''), 2000)
+      showMessage('Dieses Land wurde bereits gefunden!', 'error', 2000)
       return
     }
 
@@ -49,13 +62,18 @@ export const useQuizLogic = (
     if (matchedCountry) {
       onAddFoundCountry(matchedCountry.name)
       onCountryLearned(matchedCountry.name)
-      setMessage(`✅ ${t('correctAnswer')} - ${matchedCountry.name}!`)
-      setMessageType('success')
-      setTimeout(() => setMessage(''), 2000)
+      
+      // Check if this was the last country for this letter
+      const newFoundCount = foundCount + 1
+      if (newFoundCount === totalCountries) {
+        // Don't show success message if all countries are found
+        // The completion message will be shown instead
+        return
+      }
+      
+      showMessage(`✅ ${t('correctAnswer')} - ${matchedCountry.name}!`, 'success', 2000)
     } else {
-      setMessage(`❌ ${t('incorrectAnswer')}. ${t('tryAgain')}`)
-      setMessageType('error')
-      setTimeout(() => setMessage(''), 3000)
+      showMessage(`❌ ${t('incorrectAnswer')}. ${t('tryAgain')}`, 'error', 3000)
     }
   }
 
@@ -83,6 +101,7 @@ export const useQuizLogic = (
   const resetCurrentLetter = () => {
     setInputValue('')
     setMessage('')
+    setIsFading(false)
     // Note: This would need to be handled by the parent component
     // as it needs to clear foundCountries for the current letter
   }
@@ -92,6 +111,7 @@ export const useQuizLogic = (
     setInputValue,
     message,
     messageType,
+    isFading,
     currentCountries,
     totalCountries,
     foundCount,
