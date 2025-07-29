@@ -21,7 +21,7 @@ Personal project to stop sucking at Stadt, Land, Fluss.
 - Message feedback (fade out)
 
 ### Data
-- `countries-de.json` - 200+ countries with German names
+- `countries-de.json` - ca. 200 countries with German names
 - Continent mapping (Afrika, Asien, Europa, etc.)
 - Letter normalization (Ä→A, Ö→O, etc.)
 - Alternative names support
@@ -56,7 +56,7 @@ Personal project to stop sucking at Stadt, Land, Fluss.
 
 ## Key files
 - `src/hooks/useQuizProgress.ts` - Quiz state
-- `src/components/QuizModeRefactored.tsx` - Main quiz
+- `src/components/QuizMode.tsx` - Main quiz component
 - `src/data/countries-de.json` - Country data
 - `src/translations.ts` - German text
 

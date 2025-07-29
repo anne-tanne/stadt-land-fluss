@@ -12,12 +12,13 @@ import { FoundCountries } from './quiz/FoundCountries'
 import { HintPopup } from './quiz/HintPopup'
 import styles from '../styles/Quiz.module.css'
 
-interface QuizModeRefactoredProps {
-  onCountryLearned: (countryName: string) => void
+interface QuizModeProps {
+  selectedContinent: string
   onReturnToBrowse: () => void
+  onCountryLearned: (countryName: string) => void
 }
 
-export const QuizModeRefactored: React.FC<QuizModeRefactoredProps> = ({ 
+export const QuizMode: React.FC<QuizModeProps> = ({
   onCountryLearned, 
   onReturnToBrowse 
 }) => {

@@ -4,7 +4,7 @@ import './styles/design-system.css'
 import './styles/components.css'
 import AlphabetNav from './components/AlphabetNav'
 import CountryList from './components/CountryList'
-import { QuizModeRefactored } from './components/QuizModeRefactored'
+import { QuizMode } from './components/QuizMode'
 import { ContinentDropdown } from './components/ContinentDropdown'
 import OverallView from './components/OverallView'
 import { ErrorBoundary } from './components/ErrorBoundary'
@@ -110,11 +110,12 @@ const AppContent: React.FC = () => {
         )}
         
         {appMode === 'quiz' && (
-            <QuizModeRefactored 
-            onCountryLearned={markCountryAsLearned}
+            <QuizMode 
+              selectedContinent={selectedContinent}
+              onCountryLearned={markCountryAsLearned}
               onReturnToBrowse={resetToBrowse}
-          />
-        )}
+            />
+          )}
         </ErrorBoundary>
       </main>
     </div>
