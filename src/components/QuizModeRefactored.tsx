@@ -9,6 +9,7 @@ import { LetterNavigation } from './quiz/LetterNavigation'
 import { QuizHeader } from './quiz/QuizHeader'
 import { QuizInput } from './quiz/QuizInput'
 import { FoundCountries } from './quiz/FoundCountries'
+import { HintPopup } from './quiz/HintPopup'
 import styles from '../styles/Quiz.module.css'
 
 interface QuizModeRefactoredProps {
@@ -47,7 +48,21 @@ export const QuizModeRefactored: React.FC<QuizModeRefactoredProps> = ({
     totalCountries,
     foundCount,
     handleSubmit,
-    changeLetter
+    changeLetter,
+    // Hint popup state
+    showHintPopup,
+    openHintPopup,
+    closeHintPopup,
+    hintCountry,
+    hintLevel,
+    hintInputValue,
+    setHintInputValue,
+    handleHintInputSubmit,
+    showNextLetter,
+    showFullCountry,
+    revealHintedCountry,
+    hintedCountries,
+    heavyHintedCountries
   } = useQuizLogic(currentLetter, foundCountries, addFoundCountry, onCountryLearned, selectedContinent)
 
   const filteredCountries = getFilteredCountries(selectedContinent)
@@ -167,6 +182,7 @@ export const QuizModeRefactored: React.FC<QuizModeRefactoredProps> = ({
         foundCount={foundCount}
         totalCountries={totalCountries}
         onNextLetter={handleNextLetter}
+        onOpenHint={openHintPopup}
       />
 
       {message && (
@@ -179,6 +195,21 @@ export const QuizModeRefactored: React.FC<QuizModeRefactoredProps> = ({
         foundCountries={foundCountries}
         currentCountries={currentCountries}
         selectedContinent={selectedContinent}
+        hintedCountries={hintedCountries}
+        heavyHintedCountries={heavyHintedCountries}
+      />
+
+      <HintPopup
+        isOpen={showHintPopup}
+        hintCountry={hintCountry}
+        hintLevel={hintLevel}
+        inputValue={hintInputValue}
+        onInputChange={setHintInputValue}
+        onSubmit={handleHintInputSubmit}
+        onClose={closeHintPopup}
+        onShowNextLetter={showNextLetter}
+        onShowFullCountry={showFullCountry}
+        onRevealCountry={revealHintedCountry}
       />
     </div>
   )

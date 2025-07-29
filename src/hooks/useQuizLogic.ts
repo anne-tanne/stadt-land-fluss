@@ -17,6 +17,12 @@ export const useQuizLogic = (
   const [message, setMessage] = useState<string>('')
   const [messageType, setMessageType] = useState<'success' | 'error' | 'info'>('info')
   const [isFading, setIsFading] = useState<boolean>(false)
+  const [showHintPopup, setShowHintPopup] = useState<boolean>(false)
+  const [hintCountry, setHintCountry] = useState<string>('')
+  const [hintLevel, setHintLevel] = useState<number>(0)
+  const [hintInputValue, setHintInputValue] = useState<string>('')
+  const [hintedCountries, setHintedCountries] = useState<Set<string>>(new Set())
+  const [heavyHintedCountries, setHeavyHintedCountries] = useState<Set<string>>(new Set())
   
   // Use refs to store timer IDs so we can clear them
   const fadeTimerRef = useRef<NodeJS.Timeout | null>(null)
@@ -54,6 +60,96 @@ export const useQuizLogic = (
     }, duration - 500) // Start fade before complete removal
   }
 
+  const openHintPopup = () => {
+    if (remainingCountries.length === 0) {
+      showMessage('Keine Länder mehr zu finden!', 'info', 2000)
+      return
+    }
+
+    // Pick a random remaining country
+    const randomIndex = Math.floor(Math.random() * remainingCountries.length)
+    const newHintCountry = remainingCountries[randomIndex].name
+    setHintCountry(newHintCountry)
+    setHintLevel(2) // Start with first 2 letters
+    setHintInputValue('')
+    setShowHintPopup(true)
+  }
+
+  const closeHintPopup = () => {
+    setShowHintPopup(false)
+    setHintCountry('')
+    setHintLevel(0)
+    setHintInputValue('')
+  }
+
+  const showNextLetter = () => {
+    if (hintLevel < hintCountry.length) {
+      setHintLevel(prev => prev + 1)
+    }
+  }
+
+  const showFullCountry = () => {
+    setHintLevel(hintCountry.length)
+  }
+
+  const handleHintInputSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    
+    if (!hintInputValue.trim()) return
+
+    const input = hintInputValue.trim()
+    setHintInputValue('')
+
+    // Check if country is already found
+    if (foundCountries.has(input)) {
+      showMessage('Dieses Land wurde bereits gefunden!', 'error', 2000)
+      return
+    }
+
+    // Find matching country
+    const matchedCountry = remainingCountries.find(country => 
+      isCountryNameValid(input, country)
+    )
+
+    if (matchedCountry) {
+      onAddFoundCountry(matchedCountry.name)
+      onCountryLearned(matchedCountry.name)
+      
+      // Mark as hinted based on hint level
+      if (matchedCountry.name === hintCountry) {
+        if (hintLevel <= 2) {
+          // Minimal hint (2 letters) - orange
+          setHintedCountries(prev => new Set([...prev, matchedCountry.name]))
+        } else {
+          // Heavy hint (3+ letters) - red
+          setHeavyHintedCountries(prev => new Set([...prev, matchedCountry.name]))
+        }
+      }
+      
+      closeHintPopup()
+      
+      // Check if this was the last country for this letter
+      const newFoundCount = foundCount + 1
+      if (newFoundCount === totalCountries) {
+        return
+      }
+      
+      showMessage(`✅ ${t('correctAnswer')} - ${matchedCountry.name}!`, 'success', 2000)
+    } else {
+      showMessage(`❌ ${t('incorrectAnswer')}. ${t('tryAgain')}`, 'error', 3000)
+    }
+  }
+
+  const revealHintedCountry = () => {
+    if (hintCountry) {
+      onAddFoundCountry(hintCountry)
+      onCountryLearned(hintCountry)
+      setHeavyHintedCountries(prev => new Set([...prev, hintCountry]))
+      closeHintPopup()
+      showMessage(`🔴 ${hintCountry} wurde mit Tipp hinzugefügt`, 'info', 3000)
+    }
+  }
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     
@@ -77,11 +173,23 @@ export const useQuizLogic = (
       onAddFoundCountry(matchedCountry.name)
       onCountryLearned(matchedCountry.name)
       
+      // Check if this was a hinted country and mark accordingly
+      if (hintedCountries.has(matchedCountry.name)) {
+        // Already marked as hinted (orange)
+      } else if (heavyHintedCountries.has(matchedCountry.name)) {
+        // Already marked as heavily hinted (red)
+      } else if (matchedCountry.name === hintCountry && hintLevel > 0) {
+        // Current hint country - mark based on hint level
+        if (hintLevel <= 2) {
+          setHintedCountries(prev => new Set([...prev, matchedCountry.name]))
+        } else {
+          setHeavyHintedCountries(prev => new Set([...prev, matchedCountry.name]))
+        }
+      }
+      
       // Check if this was the last country for this letter
       const newFoundCount = foundCount + 1
       if (newFoundCount === totalCountries) {
-        // Don't show success message if all countries are found
-        // The completion message will be shown instead
         return
       }
       
@@ -109,15 +217,12 @@ export const useQuizLogic = (
       targetLetter = letterToUse
     }
     
+    // Reset hint when changing letters
+    setHintLevel(0)
+    setHintCountry('')
+    setShowHintPopup(false)
+    
     return targetLetter
-  }
-
-  const resetCurrentLetter = () => {
-    setInputValue('')
-    setMessage('')
-    setIsFading(false)
-    // Note: This would need to be handled by the parent component
-    // as it needs to clear foundCountries for the current letter
   }
 
   return {
@@ -129,9 +234,21 @@ export const useQuizLogic = (
     currentCountries,
     totalCountries,
     foundCount,
-    remainingCountries,
     handleSubmit,
     changeLetter,
-    resetCurrentLetter
+    // Hint popup state
+    showHintPopup,
+    openHintPopup,
+    closeHintPopup,
+    hintCountry,
+    hintLevel,
+    hintInputValue,
+    setHintInputValue,
+    handleHintInputSubmit,
+    showNextLetter,
+    showFullCountry,
+    revealHintedCountry,
+    hintedCountries,
+    heavyHintedCountries
   }
 } 

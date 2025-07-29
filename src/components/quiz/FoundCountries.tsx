@@ -6,12 +6,16 @@ interface FoundCountriesProps {
   foundCountries: Set<string>
   currentCountries: Country[]
   selectedContinent: string
+  hintedCountries?: Set<string>
+  heavyHintedCountries?: Set<string>
 }
 
 export const FoundCountries: React.FC<FoundCountriesProps> = ({
   foundCountries,
   currentCountries,
-  selectedContinent
+  selectedContinent,
+  hintedCountries = new Set(),
+  heavyHintedCountries = new Set()
 }) => {
   const foundCountriesList = currentCountries.filter(country => 
     foundCountries.has(country.name)
@@ -21,6 +25,16 @@ export const FoundCountries: React.FC<FoundCountriesProps> = ({
     return null
   }
 
+  const getCountryClassName = (countryName: string) => {
+    if (heavyHintedCountries.has(countryName)) {
+      return `${styles.foundCountry} ${styles.heavyHintedCountry}`
+    }
+    if (hintedCountries.has(countryName)) {
+      return `${styles.foundCountry} ${styles.hintedCountry}`
+    }
+    return styles.foundCountry
+  }
+
   // If only one continent is selected, show countries without continent titles
   if (selectedContinent !== 'Alle') {
     return (
@@ -28,7 +42,7 @@ export const FoundCountries: React.FC<FoundCountriesProps> = ({
         <h4>{foundCountriesList.length} Länder gefunden:</h4>
         <div className={styles.countriesList}>
           {foundCountriesList.map(country => (
-            <div key={country.name} className={styles.foundCountry}>
+            <div key={country.name} className={getCountryClassName(country.name)}>
               <span className={styles.countryName}>{country.name}</span>
             </div>
           ))}
@@ -55,7 +69,7 @@ export const FoundCountries: React.FC<FoundCountriesProps> = ({
             <h5 className={styles.continentTitle}>{continent}</h5>
             <div className={styles.countriesList}>
               {countries.map(country => (
-                <div key={country.name} className={styles.foundCountry}>
+                <div key={country.name} className={getCountryClassName(country.name)}>
                   <span className={styles.countryName}>{country.name}</span>
                 </div>
               ))}

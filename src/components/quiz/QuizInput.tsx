@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import { Check, Target } from 'lucide-react'
+import { Check, Target, Lightbulb } from 'lucide-react'
 import { useTranslation } from '../../translations'
 import styles from '../../styles/Quiz.module.css'
 
@@ -11,6 +11,7 @@ interface QuizInputProps {
   foundCount: number
   totalCountries: number
   onNextLetter: () => void
+  onOpenHint: () => void
 }
 
 export const QuizInput: React.FC<QuizInputProps> = ({
@@ -20,7 +21,8 @@ export const QuizInput: React.FC<QuizInputProps> = ({
   onSubmit,
   foundCount,
   totalCountries,
-  onNextLetter
+  onNextLetter,
+  onOpenHint
 }) => {
   const { t } = useTranslation()
   const inputRef = useRef<HTMLInputElement>(null)
@@ -60,6 +62,14 @@ export const QuizInput: React.FC<QuizInputProps> = ({
             />
             <button type="submit" className={styles.submitBtn}>
               <Check size={20} />
+            </button>
+            <button 
+              type="button" 
+              className={styles.hintBtn}
+              onClick={onOpenHint}
+              title="Tipp anzeigen"
+            >
+              <Lightbulb size={20} />
             </button>
           </form>
         )}
