@@ -3,1182 +3,1609 @@
     "name": "Afghanistan",
     "continent": "Asien",
     "letter": "A",
+    "population": "42.647.492",
     "alternatives": []
   },
   {
     "name": "Albanien",
     "continent": "Europa",
     "letter": "A",
+    "population": "2.791.765",
     "alternatives": []
   },
   {
     "name": "Algerien",
     "continent": "Afrika",
     "letter": "A",
+    "population": "46.814.308",
     "alternatives": []
   },
   {
     "name": "Andorra",
     "continent": "Europa",
     "letter": "A",
+    "population": "81.938",
     "alternatives": []
   },
   {
     "name": "Angola",
     "continent": "Afrika",
     "letter": "A",
+    "population": "37.885.849",
     "alternatives": []
   },
   {
     "name": "Antigua und Barbuda",
     "continent": "Nordamerika",
     "letter": "A",
-    "alternatives": ["antigua", "barbuda"]
+    "population": "93.772",
+    "alternatives": [
+      "antigua",
+      "barbuda"
+    ]
   },
   {
     "name": "Argentinien",
     "continent": "Südamerika",
     "letter": "A",
+    "population": "45.696.159",
     "alternatives": []
   },
   {
     "name": "Armenien",
     "continent": "Asien",
     "letter": "A",
+    "population": "2.973.840",
     "alternatives": []
   },
   {
     "name": "Aserbaidschan",
     "continent": "Asien",
     "letter": "A",
+    "population": "10.336.577",
     "alternatives": []
   },
   {
     "name": "Australien",
     "continent": "Ozeanien",
     "letter": "A",
+    "population": "26.713.205",
     "alternatives": []
   },
   {
     "name": "Äquatorialguinea",
     "continent": "Afrika",
     "letter": "Ä",
-    "alternatives": ["equatorial guinea"]
+    "population": "1.892.516",
+    "alternatives": [
+      "equatorial guinea"
+    ]
   },
   {
     "name": "Ägypten",
     "continent": "Afrika",
     "letter": "Ä",
+    "population": "116.538.258",
     "alternatives": []
   },
   {
     "name": "Äthiopien",
     "continent": "Afrika",
     "letter": "Ä",
-    "alternatives": ["ethiopia"]
+    "population": "132.059.767",
+    "alternatives": [
+      "ethiopia"
+    ]
   },
   {
     "name": "Bahamas",
     "continent": "Nordamerika",
     "letter": "B",
+    "population": "401.283",
     "alternatives": []
   },
   {
     "name": "Bahrain",
     "continent": "Asien",
     "letter": "B",
+    "population": "1.607.049",
     "alternatives": []
   },
   {
     "name": "Bangladesch",
     "continent": "Asien",
     "letter": "B",
+    "population": "173.562.364",
     "alternatives": []
   },
   {
     "name": "Barbados",
     "continent": "Nordamerika",
     "letter": "B",
-    "alternatives": []
+    "alternatives": [],
+    "population": "282.467"
   },
   {
     "name": "Belarus",
     "continent": "Europa",
     "letter": "B",
-    "alternatives": ["weißrussland", "weissrussland"]
+    "alternatives": [
+      "weißrussland",
+      "weissrussland"
+    ],
+    "population": "9.056.696"
   },
   {
     "name": "Belgien",
     "continent": "Europa",
     "letter": "B",
-    "alternatives": []
+    "alternatives": [],
+    "population": "11.738.763"
   },
   {
     "name": "Belize",
     "continent": "Nordamerika",
     "letter": "B",
-    "alternatives": []
+    "alternatives": [],
+    "population": "417.072"
   },
   {
     "name": "Benin",
     "continent": "Afrika",
     "letter": "B",
-    "alternatives": []
+    "alternatives": [],
+    "population": "14.462.724"
   },
   {
     "name": "Bhutan",
     "continent": "Asien",
     "letter": "B",
-    "alternatives": []
+    "alternatives": [],
+    "population": "791.524"
   },
   {
     "name": "Bolivien",
     "continent": "Südamerika",
     "letter": "B",
-    "alternatives": []
+    "alternatives": [],
+    "population": "12.413.315"
   },
   {
     "name": "Bosnien und Herzegowina",
     "continent": "Europa",
     "letter": "B",
-    "alternatives": ["bosnien", "herzegowina"]
+    "alternatives": [
+      "bosnien",
+      "herzegowina"
+    ],
+    "population": "3.164.253"
   },
   {
     "name": "Botswana",
     "continent": "Afrika",
     "letter": "B",
-    "alternatives": []
+    "alternatives": [],
+    "population": "2.521.139"
   },
   {
     "name": "Brasilien",
     "continent": "Südamerika",
     "letter": "B",
-    "alternatives": []
+    "alternatives": [],
+    "population": "211.998.573"
   },
   {
     "name": "Brunei",
     "continent": "Asien",
     "letter": "B",
-    "alternatives": []
+    "alternatives": [],
+    "population": "462.721"
   },
   {
     "name": "Bulgarien",
     "continent": "Europa",
     "letter": "B",
-    "alternatives": []
+    "alternatives": [],
+    "population": "6.757.689"
   },
   {
     "name": "Burkina Faso",
     "continent": "Afrika",
     "letter": "B",
-    "alternatives": []
+    "alternatives": [],
+    "population": "23.548.781"
   },
   {
     "name": "Burundi",
     "continent": "Afrika",
     "letter": "B",
-    "alternatives": []
+    "alternatives": [],
+    "population": "14.047.786"
   },
   {
     "name": "Chile",
     "continent": "Südamerika",
     "letter": "C",
-    "alternatives": []
+    "alternatives": [],
+    "population": "19.764.771"
   },
   {
     "name": "China",
     "continent": "Asien",
     "letter": "C",
-    "alternatives": ["volksrepublik china"]
+    "alternatives": [
+      "volksrepublik china"
+    ],
+    "population": "1.419.321.278"
   },
   {
     "name": "Costa Rica",
     "continent": "Nordamerika",
     "letter": "C",
-    "alternatives": []
+    "alternatives": [],
+    "population": "5.129.910"
   },
   {
     "name": "Dänemark",
     "continent": "Europa",
     "letter": "D",
-    "alternatives": []
+    "alternatives": [],
+    "population": "5.977.412"
   },
   {
     "name": "Deutschland",
     "continent": "Europa",
     "letter": "D",
-    "alternatives": ["germany", "bundesrepublik deutschland"]
+    "alternatives": [
+      "germany",
+      "bundesrepublik deutschland"
+    ],
+    "population": "84.552.242"
   },
   {
     "name": "Dominica",
     "continent": "Nordamerika",
     "letter": "D",
-    "alternatives": []
+    "alternatives": [],
+    "population": "66.205"
   },
   {
     "name": "Dominikanische Republik",
     "continent": "Nordamerika",
     "letter": "D",
-    "alternatives": ["dr", "dominican republic"]
+    "alternatives": [
+      "dr",
+      "dominican republic"
+    ],
+    "population": "11.427.557"
   },
   {
     "name": "Dschibuti",
     "continent": "Afrika",
     "letter": "D",
-    "alternatives": ["djibouti"]
+    "alternatives": [
+      "djibouti"
+    ],
+    "population": "1.168.722"
   },
   {
     "name": "Ecuador",
     "continent": "Südamerika",
     "letter": "E",
-    "alternatives": []
+    "alternatives": [],
+    "population": "18.135.478"
   },
   {
     "name": "Elfenbeinküste",
     "continent": "Afrika",
     "letter": "E",
-    "alternatives": ["côte d'ivoire", "cote d'ivoire", "ivory coast"]
+    "alternatives": [
+      "côte d'ivoire",
+      "cote d'ivoire",
+      "ivory coast"
+    ],
+    "population": "31.934.230"
   },
   {
     "name": "El Salvador",
     "continent": "Nordamerika",
     "letter": "E",
-    "alternatives": []
+    "alternatives": [],
+    "population": "6.338.193"
   },
   {
     "name": "Eritrea",
     "continent": "Afrika",
     "letter": "E",
-    "alternatives": []
+    "alternatives": [],
+    "population": "3.535.603"
   },
   {
     "name": "Estland",
     "continent": "Europa",
     "letter": "E",
-    "alternatives": []
+    "alternatives": [],
+    "population": "1.360.546"
   },
   {
     "name": "Eswatini",
     "continent": "Afrika",
     "letter": "E",
-    "alternatives": ["swasiland", "swaziland"]
+    "alternatives": [
+      "swasiland",
+      "swaziland"
+    ],
+    "population": "1.242.822"
   },
   {
     "name": "Fidschi",
     "continent": "Ozeanien",
     "letter": "F",
-    "alternatives": ["fiji"]
+    "alternatives": [
+      "fiji"
+    ],
+    "population": "928.784"
   },
   {
     "name": "Finnland",
     "continent": "Europa",
     "letter": "F",
-    "alternatives": []
+    "alternatives": [],
+    "population": "5.617.310"
   },
   {
     "name": "Frankreich",
     "continent": "Europa",
     "letter": "F",
-    "alternatives": ["france"]
+    "alternatives": [
+      "france"
+    ],
+    "population": "66.548.530"
   },
   {
     "name": "Gabun",
     "continent": "Afrika",
     "letter": "G",
-    "alternatives": ["gabon"]
+    "alternatives": [
+      "gabon"
+    ],
+    "population": "2.538.952"
   },
   {
     "name": "Gambia",
     "continent": "Afrika",
     "letter": "G",
-    "alternatives": []
+    "alternatives": [],
+    "population": "2.759.988"
   },
   {
     "name": "Georgien",
     "continent": "Asien",
     "letter": "G",
-    "alternatives": []
+    "alternatives": [],
+    "population": "3.807.670"
   },
   {
     "name": "Ghana",
     "continent": "Afrika",
     "letter": "G",
-    "alternatives": []
+    "alternatives": [],
+    "population": "34.427.414"
   },
   {
     "name": "Grenada",
     "continent": "Nordamerika",
     "letter": "G",
-    "alternatives": []
+    "alternatives": [],
+    "population": "117.207"
   },
   {
     "name": "Griechenland",
     "continent": "Europa",
     "letter": "G",
-    "alternatives": ["greece"]
+    "alternatives": [
+      "greece"
+    ],
+    "population": "10.047.817"
   },
   {
     "name": "Guatemala",
     "continent": "Nordamerika",
     "letter": "G",
-    "alternatives": []
+    "alternatives": [],
+    "population": "18.406.359"
   },
   {
     "name": "Guinea",
     "continent": "Afrika",
     "letter": "G",
-    "alternatives": []
+    "alternatives": [],
+    "population": "14.754.785"
   },
   {
     "name": "Guinea-Bissau",
     "continent": "Afrika",
     "letter": "G",
-    "alternatives": []
+    "alternatives": [],
+    "population": "2.201.352"
   },
   {
     "name": "Guyana",
     "continent": "Südamerika",
     "letter": "G",
-    "alternatives": []
+    "alternatives": [],
+    "population": "831.087"
   },
   {
     "name": "Haiti",
     "continent": "Nordamerika",
     "letter": "H",
-    "alternatives": []
+    "alternatives": [],
+    "population": "11.772.557"
   },
   {
     "name": "Honduras",
     "continent": "Nordamerika",
     "letter": "H",
-    "alternatives": []
+    "alternatives": [],
+    "population": "10.825.703"
   },
   {
     "name": "Indien",
     "continent": "Asien",
     "letter": "I",
-    "alternatives": ["india"]
+    "alternatives": [
+      "india"
+    ],
+    "population": "1.450.935.791"
   },
   {
     "name": "Indonesien",
     "continent": "Asien",
     "letter": "I",
-    "alternatives": []
+    "alternatives": [],
+    "population": "283.487.931"
   },
   {
     "name": "Irak",
     "continent": "Asien",
     "letter": "I",
-    "alternatives": ["iraq"]
+    "alternatives": [
+      "iraq"
+    ],
+    "population": "46.042.015"
   },
   {
     "name": "Iran",
     "continent": "Asien",
     "letter": "I",
-    "alternatives": []
+    "alternatives": [],
+    "population": "91.567.738"
   },
   {
     "name": "Irland",
     "continent": "Europa",
     "letter": "I",
-    "alternatives": ["ireland"]
+    "alternatives": [
+      "ireland"
+    ],
+    "population": "5.262.009"
   },
   {
     "name": "Island",
     "continent": "Europa",
     "letter": "I",
-    "alternatives": ["iceland"]
+    "alternatives": [
+      "iceland"
+    ],
+    "population": "393.396"
   },
   {
     "name": "Israel",
     "continent": "Asien",
     "letter": "I",
-    "alternatives": []
+    "alternatives": [],
+    "population": "9.387.021"
   },
   {
     "name": "Italien",
     "continent": "Europa",
     "letter": "I",
-    "alternatives": ["italy"]
+    "alternatives": [
+      "italy"
+    ],
+    "population": "59.342.867"
   },
   {
     "name": "Jamaika",
     "continent": "Nordamerika",
     "letter": "J",
-    "alternatives": ["jamaica"]
+    "alternatives": [
+      "jamaica"
+    ],
+    "population": "2.839.175"
   },
   {
     "name": "Japan",
     "continent": "Asien",
     "letter": "J",
-    "alternatives": []
+    "alternatives": [],
+    "population": "123.753.041"
   },
   {
     "name": "Jemen",
     "continent": "Asien",
     "letter": "J",
-    "alternatives": ["yemen"]
+    "alternatives": [
+      "yemen"
+    ],
+    "population": "40.583.164"
   },
   {
     "name": "Jordanien",
     "continent": "Asien",
     "letter": "J",
-    "alternatives": ["jordan"]
+    "alternatives": [
+      "jordan"
+    ],
+    "population": "11.552.876"
   },
   {
     "name": "Kambodscha",
     "continent": "Asien",
     "letter": "K",
-    "alternatives": ["cambodia"]
+    "alternatives": [
+      "cambodia"
+    ],
+    "population": "17.638.801"
   },
   {
     "name": "Kamerun",
     "continent": "Afrika",
     "letter": "K",
-    "alternatives": ["cameroon"]
+    "alternatives": [
+      "cameroon"
+    ],
+    "population": "29.123.744"
   },
   {
     "name": "Kanada",
     "continent": "Nordamerika",
     "letter": "K",
-    "alternatives": ["canada"]
+    "alternatives": [
+      "canada"
+    ],
+    "population": "39.742.430"
   },
   {
     "name": "Kap Verde",
     "continent": "Afrika",
     "letter": "K",
-    "alternatives": ["cape verde"]
+    "alternatives": [
+      "cape verde"
+    ],
+    "population": "524.877"
   },
   {
     "name": "Kasachstan",
     "continent": "Asien",
     "letter": "K",
-    "alternatives": ["kazakhstan"]
+    "alternatives": [
+      "kazakhstan"
+    ],
+    "population": "20.592.571"
   },
   {
     "name": "Katar",
     "continent": "Asien",
     "letter": "K",
-    "alternatives": ["qatar"]
+    "alternatives": [
+      "qatar"
+    ],
+    "population": "3.048.423"
   },
   {
     "name": "Kenia",
     "continent": "Afrika",
     "letter": "K",
-    "alternatives": ["kenya"]
+    "alternatives": [
+      "kenya"
+    ],
+    "population": "56.432.944"
   },
   {
     "name": "Kirgisistan",
     "continent": "Asien",
     "letter": "K",
-    "alternatives": ["kyrgyzstan"]
+    "alternatives": [
+      "kyrgyzstan"
+    ],
+    "population": "7.186.009"
   },
   {
     "name": "Kiribati",
     "continent": "Ozeanien",
     "letter": "K",
-    "alternatives": []
+    "alternatives": [],
+    "population": "134.518"
   },
   {
     "name": "Kolumbien",
     "continent": "Südamerika",
     "letter": "K",
-    "alternatives": ["colombia"]
+    "alternatives": [
+      "colombia"
+    ],
+    "population": "52.886.363"
   },
   {
     "name": "Komoren",
     "continent": "Afrika",
     "letter": "K",
-    "alternatives": ["comoros"]
+    "alternatives": [
+      "comoros"
+    ],
+    "population": "866.628"
   },
   {
     "name": "Demokratische Republik Kongo",
     "continent": "Afrika",
     "letter": "D",
-    "alternatives": ["dr kongo", "democratic republic of congo", "drc"]
+    "alternatives": [
+      "dr kongo",
+      "democratic republic of congo",
+      "drc"
+    ],
+    "population": null
   },
   {
     "name": "Republik Kongo",
     "continent": "Afrika",
     "letter": "R",
-    "alternatives": ["kongo", "congo", "republic of congo"]
+    "alternatives": [
+      "kongo",
+      "congo",
+      "republic of congo"
+    ],
+    "population": "6.332.961"
   },
   {
     "name": "Kroatien",
     "continent": "Europa",
     "letter": "K",
-    "alternatives": ["croatia"]
+    "alternatives": [
+      "croatia"
+    ],
+    "population": "3.875.325"
   },
   {
     "name": "Kuba",
     "continent": "Nordamerika",
     "letter": "K",
-    "alternatives": ["cuba"]
+    "alternatives": [
+      "cuba"
+    ],
+    "population": "10.979.783"
   },
   {
     "name": "Kuwait",
     "continent": "Asien",
     "letter": "K",
-    "alternatives": []
+    "alternatives": [],
+    "population": "4.934.507"
   },
   {
     "name": "Kosovo",
     "continent": "Europa",
     "letter": "K",
-    "alternatives": []
+    "alternatives": [],
+    "population": null
   },
   {
     "name": "Laos",
     "continent": "Asien",
     "letter": "L",
-    "alternatives": []
+    "alternatives": [],
+    "population": "7.769.819"
   },
   {
     "name": "Lesotho",
     "continent": "Afrika",
     "letter": "L",
-    "alternatives": []
+    "alternatives": [],
+    "population": "2.337.423"
   },
   {
     "name": "Lettland",
     "continent": "Europa",
     "letter": "L",
-    "alternatives": ["latvia"]
+    "alternatives": [
+      "latvia"
+    ],
+    "population": "1.871.871"
   },
   {
     "name": "Libanon",
     "continent": "Asien",
     "letter": "L",
-    "alternatives": ["lebanon"]
+    "alternatives": [
+      "lebanon"
+    ],
+    "population": "5.805.962"
   },
   {
     "name": "Liberia",
     "continent": "Afrika",
     "letter": "L",
-    "alternatives": []
+    "alternatives": [],
+    "population": "5.612.817"
   },
   {
     "name": "Libyen",
     "continent": "Afrika",
     "letter": "L",
-    "alternatives": ["libya"]
+    "alternatives": [
+      "libya"
+    ],
+    "population": "7.381.023"
   },
   {
     "name": "Liechtenstein",
     "continent": "Europa",
     "letter": "L",
-    "alternatives": []
+    "alternatives": [],
+    "population": "39.870"
   },
   {
     "name": "Litauen",
     "continent": "Europa",
     "letter": "L",
-    "alternatives": ["lithuania"]
+    "alternatives": [
+      "lithuania"
+    ],
+    "population": "2.859.110"
   },
   {
     "name": "Luxemburg",
     "continent": "Europa",
     "letter": "L",
-    "alternatives": ["luxembourg"]
+    "alternatives": [
+      "luxembourg"
+    ],
+    "population": "673.036"
   },
   {
     "name": "Madagaskar",
     "continent": "Afrika",
     "letter": "M",
-    "alternatives": ["madagascar"]
+    "alternatives": [
+      "madagascar"
+    ],
+    "population": "31.964.956"
   },
   {
     "name": "Malawi",
     "continent": "Afrika",
     "letter": "M",
-    "alternatives": []
+    "alternatives": [],
+    "population": "21.655.286"
   },
   {
     "name": "Malaysia",
     "continent": "Asien",
     "letter": "M",
-    "alternatives": []
+    "alternatives": [],
+    "population": "35.557.673"
   },
   {
     "name": "Malediven",
     "continent": "Asien",
     "letter": "M",
-    "alternatives": ["maldives"]
+    "alternatives": [
+      "maldives"
+    ],
+    "population": "527.799"
   },
   {
     "name": "Mali",
     "continent": "Afrika",
     "letter": "M",
-    "alternatives": []
+    "alternatives": [],
+    "population": "24.478.595"
   },
   {
     "name": "Malta",
     "continent": "Europa",
     "letter": "M",
-    "alternatives": []
+    "alternatives": [],
+    "population": "539.607"
   },
   {
     "name": "Marokko",
     "continent": "Afrika",
     "letter": "M",
-    "alternatives": ["morocco"]
+    "alternatives": [
+      "morocco"
+    ],
+    "population": "38.081.173"
   },
   {
     "name": "Marshallinseln",
     "continent": "Ozeanien",
     "letter": "M",
-    "alternatives": ["marshall islands"]
+    "alternatives": [
+      "marshall islands"
+    ],
+    "population": "37.548"
   },
   {
     "name": "Mauretanien",
     "continent": "Afrika",
     "letter": "M",
-    "alternatives": ["mauritania"]
+    "alternatives": [
+      "mauritania"
+    ],
+    "population": "5.169.395"
   },
   {
     "name": "Mauritius",
     "continent": "Afrika",
     "letter": "M",
-    "alternatives": []
+    "alternatives": [],
+    "population": "1.271.169"
   },
   {
     "name": "Mexiko",
     "continent": "Nordamerika",
     "letter": "M",
-    "alternatives": ["mexico"]
+    "alternatives": [
+      "mexico"
+    ],
+    "population": "130.861.007"
   },
   {
     "name": "Mikronesien",
     "continent": "Ozeanien",
     "letter": "M",
-    "alternatives": ["micronesia"]
+    "alternatives": [
+      "micronesia"
+    ],
+    "population": "113.160"
   },
   {
     "name": "Moldau",
     "continent": "Europa",
     "letter": "M",
-    "alternatives": ["moldova"]
+    "alternatives": [
+      "moldova"
+    ],
+    "population": "3.034.961"
   },
   {
     "name": "Monaco",
     "continent": "Europa",
     "letter": "M",
-    "alternatives": []
+    "alternatives": [],
+    "population": "38.631"
   },
   {
     "name": "Mongolei",
     "continent": "Asien",
     "letter": "M",
-    "alternatives": ["mongolia"]
+    "alternatives": [
+      "mongolia"
+    ],
+    "population": "3.475.540"
   },
   {
     "name": "Montenegro",
     "continent": "Europa",
     "letter": "M",
-    "alternatives": []
+    "alternatives": [],
+    "population": "638.479"
   },
   {
     "name": "Mosambik",
     "continent": "Afrika",
     "letter": "M",
-    "alternatives": ["mozambique"]
+    "alternatives": [
+      "mozambique"
+    ],
+    "population": "34.631.766"
   },
   {
     "name": "Myanmar",
     "continent": "Asien",
     "letter": "M",
-    "alternatives": ["burma"]
+    "alternatives": [
+      "burma"
+    ],
+    "population": "54.500.091"
   },
   {
     "name": "Namibia",
     "continent": "Afrika",
     "letter": "N",
-    "alternatives": []
+    "alternatives": [],
+    "population": "3.030.131"
   },
   {
     "name": "Nauru",
     "continent": "Ozeanien",
     "letter": "N",
-    "alternatives": []
+    "alternatives": [],
+    "population": "11.947"
   },
   {
     "name": "Nepal",
     "continent": "Asien",
     "letter": "N",
-    "alternatives": []
+    "alternatives": [],
+    "population": "29.651.054"
   },
   {
     "name": "Neuseeland",
     "continent": "Ozeanien",
     "letter": "N",
-    "alternatives": ["new zealand"]
+    "alternatives": [
+      "new zealand"
+    ],
+    "population": "5.213.944"
   },
   {
     "name": "Nicaragua",
     "continent": "Nordamerika",
     "letter": "N",
-    "alternatives": []
+    "alternatives": [],
+    "population": "6.916.140"
   },
   {
     "name": "Niederlande",
     "continent": "Europa",
     "letter": "N",
-    "alternatives": ["netherlands", "holland"]
+    "alternatives": [
+      "netherlands",
+      "holland"
+    ],
+    "population": "18.228.742"
   },
   {
     "name": "Niger",
     "continent": "Afrika",
     "letter": "N",
-    "alternatives": []
+    "alternatives": [],
+    "population": "27.032.412"
   },
   {
     "name": "Nigeria",
     "continent": "Afrika",
     "letter": "N",
-    "alternatives": []
+    "alternatives": [],
+    "population": "212.915.636"
   },
   {
     "name": "Nordkorea",
     "continent": "Asien",
     "letter": "N",
-    "alternatives": ["north korea"]
+    "alternatives": [
+      "north korea"
+    ],
+    "population": "26.498.823"
   },
   {
     "name": "Nordmazedonien",
     "continent": "Europa",
     "letter": "N",
-    "alternatives": ["north macedonia"]
+    "alternatives": [
+      "north macedonia"
+    ],
+    "population": "1.823.009"
   },
   {
     "name": "Norwegen",
     "continent": "Europa",
     "letter": "N",
-    "alternatives": ["norway"]
+    "alternatives": [
+      "norway"
+    ],
+    "population": "5.576.660"
   },
   {
     "name": "Oman",
     "continent": "Asien",
     "letter": "O",
-    "alternatives": []
+    "alternatives": [],
+    "population": "5.281.538"
   },
   {
     "name": "Osttimor",
     "continent": "Asien",
     "letter": "O",
-    "alternatives": ["east timor", "timor-leste"]
+    "alternatives": [
+      "east timor",
+      "timor-leste"
+    ],
+    "population": "1.400.638"
   },
   {
     "name": "Österreich",
     "continent": "Europa",
     "letter": "Ö",
-    "alternatives": ["austria"]
+    "alternatives": [
+      "austria"
+    ],
+    "population": "9.120.813"
   },
   {
     "name": "Pakistan",
     "continent": "Asien",
     "letter": "P",
-    "alternatives": []
+    "alternatives": [],
+    "population": "251.269.164"
   },
   {
     "name": "Palästina",
     "continent": "Asien",
     "letter": "P",
-    "alternatives": ["palestine"]
+    "alternatives": [
+      "palestine"
+    ],
+    "population": null
   },
   {
     "name": "Panama",
     "continent": "Nordamerika",
     "letter": "P",
-    "alternatives": []
+    "alternatives": [],
+    "population": "4.515.577"
   },
   {
     "name": "Papua-Neuguinea",
     "continent": "Ozeanien",
     "letter": "P",
-    "alternatives": ["papua new guinea"]
+    "alternatives": [
+      "papua new guinea"
+    ],
+    "population": "10.576.502"
   },
   {
     "name": "Paraguay",
     "continent": "Südamerika",
     "letter": "P",
-    "alternatives": []
+    "alternatives": [],
+    "population": "6.929.153"
   },
   {
     "name": "Peru",
     "continent": "Südamerika",
     "letter": "P",
-    "alternatives": []
+    "alternatives": [],
+    "population": "34.217.848"
   },
   {
     "name": "Philippinen",
     "continent": "Asien",
     "letter": "P",
-    "alternatives": ["philippines"]
+    "alternatives": [
+      "philippines"
+    ],
+    "population": "115.843.670"
   },
   {
     "name": "Polen",
     "continent": "Europa",
     "letter": "P",
-    "alternatives": ["poland"]
+    "alternatives": [
+      "poland"
+    ],
+    "population": "38.539.201"
   },
   {
     "name": "Portugal",
     "continent": "Europa",
     "letter": "P",
-    "alternatives": []
+    "alternatives": [],
+    "population": "10.425.292"
   },
   {
     "name": "Ruanda",
     "continent": "Afrika",
     "letter": "R",
-    "alternatives": ["rwanda"]
+    "alternatives": [
+      "rwanda"
+    ],
+    "population": "14.256.567"
   },
   {
     "name": "Rumänien",
     "continent": "Europa",
     "letter": "R",
-    "alternatives": ["romania"]
+    "alternatives": [
+      "romania"
+    ],
+    "population": "19.015.088"
   },
   {
     "name": "Russland",
     "continent": "Europa",
     "letter": "R",
-    "alternatives": ["russia", "russische föderation"]
+    "alternatives": [
+      "russia",
+      "russische föderation"
+    ],
+    "population": "144.820.423"
   },
   {
     "name": "Salomonen",
     "continent": "Ozeanien",
     "letter": "S",
-    "alternatives": ["solomon islands"]
+    "alternatives": [
+      "solomon islands"
+    ],
+    "population": "819.198"
   },
   {
     "name": "Sambia",
     "continent": "Afrika",
     "letter": "S",
-    "alternatives": ["zambia"]
+    "alternatives": [
+      "zambia"
+    ],
+    "population": "21.314.956"
   },
   {
     "name": "Samoa",
     "continent": "Ozeanien",
     "letter": "S",
-    "alternatives": []
+    "alternatives": [],
+    "population": "218.019"
   },
   {
     "name": "San Marino",
     "continent": "Europa",
     "letter": "S",
-    "alternatives": []
+    "alternatives": [],
+    "population": "33.581"
   },
   {
     "name": "São Tomé und Príncipe",
     "continent": "Afrika",
     "letter": "S",
-    "alternatives": []
+    "alternatives": [],
+    "population": "235.536"
   },
   {
     "name": "Saudi-Arabien",
     "continent": "Asien",
     "letter": "S",
-    "alternatives": ["saudi arabia"]
+    "alternatives": [
+      "saudi arabia"
+    ],
+    "population": "33.962.757"
   },
   {
     "name": "Schweden",
     "continent": "Europa",
     "letter": "S",
-    "alternatives": ["sweden"]
+    "alternatives": [
+      "sweden"
+    ],
+    "population": "10.606.999"
   },
   {
     "name": "Schweiz",
     "continent": "Europa",
     "letter": "S",
-    "alternatives": ["switzerland"]
+    "alternatives": [
+      "switzerland"
+    ],
+    "population": "8.921.981"
   },
   {
     "name": "Senegal",
     "continent": "Afrika",
     "letter": "S",
-    "alternatives": []
+    "alternatives": [],
+    "population": "18.501.984"
   },
   {
     "name": "Serbien",
     "continent": "Europa",
     "letter": "S",
-    "alternatives": ["serbia"]
+    "alternatives": [
+      "serbia"
+    ],
+    "population": "6.736.216"
   },
   {
     "name": "Seychellen",
     "continent": "Afrika",
     "letter": "S",
-    "alternatives": ["seychelles"]
+    "alternatives": [
+      "seychelles"
+    ],
+    "population": "130.418"
   },
   {
     "name": "Sierra Leone",
     "continent": "Afrika",
     "letter": "S",
-    "alternatives": []
+    "alternatives": [],
+    "population": "8.642.022"
   },
   {
     "name": "Simbabwe",
     "continent": "Afrika",
     "letter": "S",
-    "alternatives": ["zimbabwe"]
+    "alternatives": [
+      "zimbabwe"
+    ],
+    "population": "16.634.373"
   },
   {
     "name": "Singapur",
     "continent": "Asien",
     "letter": "S",
-    "alternatives": ["singapore"]
+    "alternatives": [
+      "singapore"
+    ],
+    "population": "5.832.387"
   },
   {
     "name": "Slowakei",
     "continent": "Europa",
     "letter": "S",
-    "alternatives": ["slovakia"]
+    "alternatives": [
+      "slovakia"
+    ],
+    "population": "5.506.760"
   },
   {
     "name": "Slowenien",
     "continent": "Europa",
     "letter": "S",
-    "alternatives": ["slovenia"]
+    "alternatives": [
+      "slovenia"
+    ],
+    "population": "2.118.697"
   },
   {
     "name": "Somalia",
     "continent": "Afrika",
     "letter": "S",
-    "alternatives": []
+    "alternatives": [],
+    "population": "19.009.151"
   },
   {
     "name": "Spanien",
     "continent": "Europa",
     "letter": "S",
-    "alternatives": ["spain"]
+    "alternatives": [
+      "spain"
+    ],
+    "population": "47.910.526"
   },
   {
     "name": "Sri Lanka",
     "continent": "Asien",
     "letter": "S",
-    "alternatives": []
+    "alternatives": [],
+    "population": "23.103.565"
   },
   {
     "name": "St. Kitts und Nevis",
     "continent": "Nordamerika",
     "letter": "S",
-    "alternatives": ["saint kitts und nevis"]
+    "alternatives": [
+      "saint kitts und nevis"
+    ],
+    "population": "46.843"
   },
   {
     "name": "St. Lucia",
     "continent": "Nordamerika",
     "letter": "S",
-    "alternatives": ["saint lucia"]
+    "alternatives": [
+      "saint lucia"
+    ],
+    "population": "179.744"
   },
   {
     "name": "St. Vincent und die Grenadinen",
     "continent": "Nordamerika",
     "letter": "S",
-    "alternatives": ["saint vincent und die grenadinen"]
+    "alternatives": [
+      "saint vincent und die grenadinen"
+    ],
+    "population": "100.616"
   },
   {
     "name": "Südafrika",
     "continent": "Afrika",
     "letter": "S",
-    "alternatives": ["south africa"]
+    "alternatives": [
+      "south africa"
+    ],
+    "population": "64.007.187"
   },
   {
     "name": "Sudan",
     "continent": "Afrika",
     "letter": "S",
-    "alternatives": []
+    "alternatives": [],
+    "population": "50.448.963"
   },
   {
     "name": "Südkorea",
     "continent": "Asien",
     "letter": "S",
-    "alternatives": ["south korea"]
+    "alternatives": [
+      "south korea"
+    ],
+    "population": "51.717.590"
   },
   {
     "name": "Südsudan",
     "continent": "Afrika",
     "letter": "S",
-    "alternatives": ["south sudan"]
+    "alternatives": [
+      "south sudan"
+    ],
+    "population": "11.943.408"
   },
   {
     "name": "Suriname",
     "continent": "Südamerika",
     "letter": "S",
-    "alternatives": []
+    "alternatives": [],
+    "population": "634.431"
   },
   {
     "name": "Syrien",
     "continent": "Asien",
     "letter": "S",
-    "alternatives": ["syria"]
+    "alternatives": [
+      "syria"
+    ],
+    "population": "24.174.628"
   },
   {
     "name": "Tadschikistan",
     "continent": "Asien",
     "letter": "T",
-    "alternatives": ["tajikistan"]
+    "alternatives": [
+      "tajikistan"
+    ],
+    "population": "10.590.927"
   },
   {
     "name": "Taiwan",
     "continent": "Asien",
     "letter": "T",
-    "alternatives": []
+    "alternatives": [],
+    "population": null
   },
   {
     "name": "Tansania",
     "continent": "Afrika",
     "letter": "T",
-    "alternatives": ["tanzania"]
+    "alternatives": [
+      "tanzania"
+    ],
+    "population": "68.560.157"
   },
   {
     "name": "Thailand",
     "continent": "Asien",
     "letter": "T",
-    "alternatives": []
+    "alternatives": [],
+    "population": "71.668.011"
   },
   {
     "name": "Togo",
     "continent": "Afrika",
     "letter": "T",
-    "alternatives": []
+    "alternatives": [],
+    "population": "9.515.236"
   },
   {
     "name": "Tonga",
     "continent": "Ozeanien",
     "letter": "T",
-    "alternatives": []
+    "alternatives": [],
+    "population": "104.175"
   },
   {
     "name": "Trinidad und Tobago",
     "continent": "Südamerika",
     "letter": "T",
-    "alternatives": ["trinidad and tobago"]
+    "alternatives": [
+      "trinidad and tobago"
+    ],
+    "population": "1.507.782"
   },
   {
     "name": "Tschad",
     "continent": "Afrika",
     "letter": "T",
-    "alternatives": ["chad"]
+    "alternatives": [
+      "chad"
+    ],
+    "population": "20.299.123"
   },
   {
     "name": "Tschechien",
     "continent": "Europa",
     "letter": "T",
-    "alternatives": ["czech republic", "czech"]
+    "alternatives": [
+      "czech republic",
+      "czech"
+    ],
+    "population": "10.735.859"
   },
   {
     "name": "Tunesien",
     "continent": "Afrika",
     "letter": "T",
-    "alternatives": ["tunisia"]
+    "alternatives": [
+      "tunisia"
+    ],
+    "population": "12.277.109"
   },
   {
     "name": "Türkei",
     "continent": "Asien",
     "letter": "T",
-    "alternatives": ["turkey"]
+    "alternatives": [
+      "turkey"
+    ],
+    "population": "87.473.805"
   },
   {
     "name": "Turkmenistan",
     "continent": "Asien",
     "letter": "T",
-    "alternatives": []
+    "alternatives": [],
+    "population": "7.494.498"
   },
   {
     "name": "Tuvalu",
     "continent": "Ozeanien",
     "letter": "T",
-    "alternatives": []
+    "alternatives": [],
+    "population": "9.646"
   },
   {
     "name": "Uganda",
     "continent": "Afrika",
     "letter": "U",
-    "alternatives": []
+    "alternatives": [],
+    "population": "50.015.092"
   },
   {
     "name": "Ukraine",
     "continent": "Europa",
     "letter": "U",
-    "alternatives": []
+    "alternatives": [],
+    "population": "37.860.221"
   },
   {
     "name": "Ungarn",
     "continent": "Europa",
     "letter": "U",
-    "alternatives": ["hungary"]
+    "alternatives": [
+      "hungary"
+    ],
+    "population": "9.676.135"
   },
   {
     "name": "Uruguay",
     "continent": "Südamerika",
     "letter": "U",
-    "alternatives": []
+    "alternatives": [],
+    "population": "3.386.588"
   },
   {
     "name": "Usbekistan",
     "continent": "Asien",
     "letter": "U",
-    "alternatives": ["uzbekistan"]
+    "alternatives": [
+      "uzbekistan"
+    ],
+    "population": "36.361.859"
   },
   {
     "name": "Vanuatu",
     "continent": "Ozeanien",
     "letter": "V",
-    "alternatives": []
+    "alternatives": [],
+    "population": "327.777"
   },
   {
     "name": "Vatikanstadt",
     "continent": "Europa",
     "letter": "V",
-    "alternatives": ["vatikan", "vatican", "holy see", "vatican city"]
+    "alternatives": [
+      "vatikan",
+      "vatican",
+      "holy see",
+      "vatican city"
+    ],
+    "population": "496"
   },
   {
     "name": "Venezuela",
     "continent": "Südamerika",
     "letter": "V",
-    "alternatives": []
+    "alternatives": [],
+    "population": "28.405.543"
   },
   {
     "name": "Vereinigte Arabische Emirate",
     "continent": "Asien",
     "letter": "V",
-    "alternatives": ["vae", "uae", "united arab emirates"]
+    "alternatives": [
+      "vae",
+      "uae",
+      "united arab emirates"
+    ],
+    "population": "11.027.129"
   },
   {
     "name": "Vereinigte Staaten von Amerika",
     "continent": "Nordamerika",
     "letter": "V",
-    "alternatives": ["usa", "united states", "united states of america"]
+    "alternatives": [
+      "usa",
+      "united states",
+      "united states of america"
+    ],
+    "population": null
   },
   {
     "name": "Vereinigtes Königreich",
     "continent": "Europa",
     "letter": "V",
-    "alternatives": ["uk", "united kingdom", "great britain", "england"]
+    "alternatives": [
+      "uk",
+      "united kingdom",
+      "great britain",
+      "england"
+    ],
+    "population": "69.138.192"
   },
   {
     "name": "Vietnam",
     "continent": "Asien",
     "letter": "V",
-    "alternatives": []
+    "alternatives": [],
+    "population": "100.987.686"
   },
   {
     "name": "Westsahara",
     "continent": "Afrika",
     "letter": "W",
-    "alternatives": ["western sahara"]
+    "alternatives": [
+      "western sahara"
+    ],
+    "population": "590.506"
   },
   {
     "name": "Zentralafrikanische Republik",
     "continent": "Afrika",
     "letter": "Z",
-    "alternatives": ["central african republic"]
+    "alternatives": [
+      "central african republic"
+    ],
+    "population": "5.330.690"
   },
   {
     "name": "Zypern",
     "continent": "Europa",
     "letter": "Z",
-    "alternatives": ["cyprus"]
+    "alternatives": [
+      "cyprus"
+    ],
+    "population": "1.358.282"
   }
-] 
+]

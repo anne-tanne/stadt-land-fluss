@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useCountryContext } from '../contexts/CountryContext'
+import { useDataContext } from '../contexts/CountryContext'
 import { useQuizProgress } from '../hooks/useQuizProgress'
 import { useQuizLogic } from '../hooks/useQuizLogic'
 import { QuizStartScreen } from './quiz/QuizStartScreen'
@@ -16,14 +16,14 @@ import styles from '../styles/Quiz.module.css'
 interface QuizModeProps {
   selectedContinent: string
   onReturnToBrowse: () => void
-  onCountryLearned: (countryName: string) => void
+  onItemLearned: (itemName: string) => void
 }
 
 export const QuizMode: React.FC<QuizModeProps> = ({
-  onCountryLearned, 
+  onItemLearned, 
   onReturnToBrowse 
 }) => {
-  const { countries, getFilteredCountries } = useCountryContext()
+  const { data, getFilteredData } = useDataContext()
   
   const {
     currentLetter,
@@ -39,7 +39,7 @@ export const QuizMode: React.FC<QuizModeProps> = ({
     resetProgress,
     saveForLater,
     startQuiz
-  } = useQuizProgress(countries)
+  } = useQuizProgress(data)
 
   const {
     inputValue,
@@ -68,16 +68,16 @@ export const QuizMode: React.FC<QuizModeProps> = ({
     heavyHintedCountries,
     everHintedCountries,
     everHeavyHintedCountries
-  } = useQuizLogic(currentLetter, foundCountries, addFoundCountry, onCountryLearned, selectedContinent)
+  } = useQuizLogic(currentLetter, foundCountries, addFoundCountry, onItemLearned, selectedContinent)
 
-  const filteredCountries = getFilteredCountries(selectedContinent)
+  const filteredData = getFilteredData(selectedContinent)
   const hasProgress = getTotalCountriesFound() > 0
 
-  // Check if all countries for the selected continent are found
-  const allFoundForContinent = Array.from(foundCountries).filter(countryName => 
-    filteredCountries.some(country => country.name === countryName)
+  // Check if all items for the selected continent are found
+  const allFoundForContinent = Array.from(foundCountries).filter(itemName => 
+    filteredData.some(item => item.name === itemName)
   )
-  const isContinentComplete = allFoundForContinent.length === filteredCountries.length && filteredCountries.length > 0
+  const isContinentComplete = allFoundForContinent.length === filteredData.length && filteredData.length > 0
 
   const handleContinentChange = (continent: string) => {
     setSelectedContinent(continent)
@@ -143,14 +143,14 @@ export const QuizMode: React.FC<QuizModeProps> = ({
   // Show start screen if quiz is not active
   if (!isQuizActive) {
     return (
-      <QuizStartScreen
-        selectedContinent={selectedContinent}
-        onContinentChange={handleContinentChange}
-        onStartQuiz={handleStartQuiz}
-        onResetProgress={handleResetProgress}
-        hasProgress={hasProgress}
-        filteredCountriesCount={filteredCountries.length}
-      />
+              <QuizStartScreen
+          selectedContinent={selectedContinent}
+          onContinentChange={handleContinentChange}
+          onStartQuiz={handleStartQuiz}
+          onResetProgress={handleResetProgress}
+          hasProgress={hasProgress}
+          filteredCountriesCount={filteredData.length}
+        />
     )
   }
 
@@ -160,7 +160,7 @@ export const QuizMode: React.FC<QuizModeProps> = ({
       <QuizEndScreen
         selectedContinent={selectedContinent}
         totalFound={allFoundForContinent.length}
-        totalCountries={filteredCountries.length}
+        totalCountries={filteredData.length}
         hintedCountries={everHintedCountries}
         heavyHintedCountries={everHeavyHintedCountries}
         onReturnToBrowse={handleQuizComplete}
@@ -190,11 +190,11 @@ export const QuizMode: React.FC<QuizModeProps> = ({
         onEndQuiz={handleEndQuiz}
       />
 
-      <ContinentDisplay
-        selectedContinent={selectedContinent}
-        filteredCountriesCount={filteredCountries.length}
-        continentProgress={getContinentProgress()}
-      />
+              <ContinentDisplay
+          selectedContinent={selectedContinent}
+          filteredCountriesCount={filteredData.length}
+          continentProgress={getContinentProgress()}
+        />
 
       <LetterNavigation
         currentLetter={currentLetter}

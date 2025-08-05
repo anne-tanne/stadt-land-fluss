@@ -20,7 +20,7 @@ interface AppActions {
 
 export const useAppState = (): AppState & AppActions => {
   const [appMode, setAppMode] = useState<AppMode>('browse')
-  const [viewMode, setViewMode] = useState<ViewMode>('overall')
+  const [viewMode, setViewMode] = useState<ViewMode>('alphabetical')
   const [selectedLetter, setSelectedLetter] = useState<string>('A')
   const [selectedContinent, setSelectedContinent] = useState<string>('Alle')
 

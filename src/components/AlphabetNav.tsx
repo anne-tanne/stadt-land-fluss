@@ -1,20 +1,20 @@
-import type { Country } from '../types'
+import type { DataItem } from '../types'
 
 interface AlphabetNavProps {
   selectedLetter: string
   onLetterSelect: (letter: string) => void
-  countries: Country[]
+  data: DataItem[]
   selectedContinent?: string
 }
 
-const AlphabetNav = ({ selectedLetter, onLetterSelect, countries }: AlphabetNavProps) => {
+const AlphabetNav = ({ selectedLetter, onLetterSelect, data }: AlphabetNavProps) => {
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 
   const getProgressForLetter = (letter: string) => {
-    const letterCountries = countries.filter(country => country.letter === letter)
-    if (letterCountries.length === 0) return 0
-    const learnedCount = letterCountries.filter(country => country.learned).length
-    return Math.round((learnedCount / letterCountries.length) * 100)
+    const letterData = data.filter(item => item.letter === letter)
+    if (letterData.length === 0) return 0
+    const learnedCount = letterData.filter(item => item.learned).length
+    return Math.round((learnedCount / letterData.length) * 100)
   }
 
   return (
@@ -22,17 +22,17 @@ const AlphabetNav = ({ selectedLetter, onLetterSelect, countries }: AlphabetNavP
       <div className="alphabet-grid">
         {alphabet.map(letter => {
           const progress = getProgressForLetter(letter)
-          const hasCountries = countries.some(country => country.letter === letter)
+          const hasData = data.some(item => item.letter === letter)
           
           return (
             <button
               key={letter}
-              className={`alphabet-btn ${selectedLetter === letter ? 'active' : ''} ${!hasCountries ? 'disabled' : ''}`}
-              onClick={() => hasCountries && onLetterSelect(letter)}
-              disabled={!hasCountries}
+              className={`alphabet-btn ${selectedLetter === letter ? 'active' : ''} ${!hasData ? 'disabled' : ''}`}
+              onClick={() => hasData && onLetterSelect(letter)}
+              disabled={!hasData}
             >
               <span className="letter">{letter}</span>
-              {hasCountries && (
+              {hasData && (
                 <div className="progress-bar">
                   <div 
                     className="progress-fill" 
@@ -40,7 +40,7 @@ const AlphabetNav = ({ selectedLetter, onLetterSelect, countries }: AlphabetNavP
                   />
                 </div>
               )}
-              {hasCountries && (
+              {hasData && (
                 <span className="progress-text">{progress}%</span>
               )}
             </button>

@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react'
-import { useCountryContext } from '../contexts/CountryContext'
+import { useDataContext } from '../contexts/CountryContext'
 import { useTranslation } from '../translations'
 import { isCountryNameValid } from '../utils/validationUtils'
 import { getAvailableLetters } from '../utils/letterUtils'
@@ -11,7 +11,7 @@ export const useQuizLogic = (
   onCountryLearned: (countryName: string) => void,
   selectedContinent: string = 'Alle'
 ) => {
-  const { getCountriesByLetter } = useCountryContext()
+  const { getDataByLetter } = useDataContext()
   const { t } = useTranslation()
   const [inputValue, setInputValue] = useState<string>('')
   const [message, setMessage] = useState<string>('')
@@ -31,7 +31,7 @@ export const useQuizLogic = (
   const fadeTimerRef = useRef<NodeJS.Timeout | null>(null)
   const clearTimerRef = useRef<NodeJS.Timeout | null>(null)
 
-  const currentCountries = getCountriesByLetter(currentLetter, selectedContinent)
+  const currentCountries = getDataByLetter(currentLetter, selectedContinent)
   const totalCountries = currentCountries.length
   const foundForCurrentLetter = Array.from(foundCountries).filter(countryName => 
     currentCountries.some(country => country.name === countryName)
@@ -281,7 +281,7 @@ export const useQuizLogic = (
       const nextLetter = alphabet[nextIndex]
       let letterToUse = nextLetter
       let attempts = 0
-      while (getCountriesByLetter(letterToUse, selectedContinent).length === 0 && attempts < 26) {
+      while (getDataByLetter(letterToUse, selectedContinent).length === 0 && attempts < 26) {
         const nextAttemptIndex = (alphabet.indexOf(letterToUse) + 1) % 26
         letterToUse = alphabet[nextAttemptIndex]
         attempts++

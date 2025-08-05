@@ -1,30 +1,30 @@
-import type { Country } from '../types'
-import { useTranslation } from '../translations'
+import type { DataItem } from '../types'
 import { CountryCard } from './CountryCard'
 
 interface CountryListProps {
-  countries: Country[]
-  onCountryToggle?: (countryName: string, learned: boolean) => void
+  data: DataItem[]
+  onItemToggle?: (itemName: string, learned: boolean) => void
   selectedContinent?: string
+  dataMode: 'countries' | 'cities'
 }
 
-const CountryList = ({ countries, selectedContinent }: CountryListProps) => {
-  const { t } = useTranslation()
+const CountryList = ({ data, selectedContinent, dataMode }: CountryListProps) => {
   
   const getTitle = () => {
-    if (countries.length === 0) return ''
+    if (data.length === 0) return ''
     
-    const letter = countries[0]?.letter
+    const letter = data[0]?.letter
+    const itemType = dataMode === 'countries' ? 'Länder' : 'Millionenstädte'
     if (selectedContinent && selectedContinent !== 'Alle') {
-      return `Länder in ${selectedContinent}, die mit "${letter}" beginnen (${countries.length})`
+      return `${itemType} in ${selectedContinent}, die mit "${letter}" beginnen (${data.length})`
     }
-    return `${t('countriesStartingWith', { letter })} (${countries.length})`
+    return `${itemType} die mit "${letter}" beginnen (${data.length})`
   }
   
-  if (countries.length === 0) {
+  if (data.length === 0) {
     return (
       <div className="country-list empty">
-        <p>{t('noCountriesFoundForLetter')}</p>
+        <p>Keine {dataMode === 'countries' ? 'Länder' : 'Millionenstädte'} für diesen Buchstaben gefunden.</p>
       </div>
     )
   }
@@ -33,10 +33,10 @@ const CountryList = ({ countries, selectedContinent }: CountryListProps) => {
     <div className="country-list">
       <h2 className="white-box-title">{getTitle()}</h2>
       <div className="countries-grid">
-        {countries.map(country => (
+        {data.map(item => (
           <CountryCard
-            key={country.name} 
-            country={country}
+            key={item.name} 
+            item={item}
             showLetter={false}
             showLearnButton={false}
           />

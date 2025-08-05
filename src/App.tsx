@@ -8,13 +8,14 @@ import { QuizMode } from './components/QuizMode'
 import { ContinentDropdown } from './components/ContinentDropdown'
 import OverallView from './components/OverallView'
 import { ErrorBoundary } from './components/ErrorBoundary'
-import { CountryProvider, useCountryContext } from './contexts/CountryContext'
+import { DataProvider, useDataContext } from './contexts/CountryContext'
+
 import { useAppState } from './hooks/useAppState'
 import { useTranslation } from './translations'
 
 const AppContent: React.FC = () => {
   const { t } = useTranslation()
-  const { markCountryAsLearned, getFilteredCountries, getCountriesByLetter } = useCountryContext()
+  const { markItemAsLearned, getFilteredData, getDataByLetter, dataMode, setDataMode } = useDataContext()
   const {
     appMode,
     viewMode,
@@ -27,14 +28,14 @@ const AppContent: React.FC = () => {
     resetToBrowse
   } = useAppState()
 
-  const filteredCountries = useMemo(() => 
-    getFilteredCountries(selectedContinent), 
-    [getFilteredCountries, selectedContinent]
+  const filteredData = useMemo(() => 
+    getFilteredData(selectedContinent), 
+    [getFilteredData, selectedContinent]
   )
   
-  const countriesByLetter = useMemo(() => 
-    getCountriesByLetter(selectedLetter, selectedContinent), 
-    [getCountriesByLetter, selectedLetter, selectedContinent]
+  const dataByLetter = useMemo(() => 
+    getDataByLetter(selectedLetter, selectedContinent), 
+    [getDataByLetter, selectedLetter, selectedContinent]
   )
 
   return (
@@ -44,18 +45,34 @@ const AppContent: React.FC = () => {
           🌍 {t('appTitle')}
         </h1>
         <div className="mode-toggle">
-          <button 
-            className={appMode === 'browse' ? 'active' : ''} 
-            onClick={() => setAppMode('browse')}
-          >
-            📚 {t('browse')}
-          </button>
-          <button 
-            className={appMode === 'quiz' ? 'active' : ''} 
-            onClick={() => setAppMode('quiz')}
-          >
-            🎯 {t('quizMode')}
-          </button>
+          <div className="data-mode-section">
+            <button 
+              className={appMode === 'browse' && dataMode === 'cities' ? 'active' : ''} 
+              onClick={() => {
+                setAppMode('browse')
+                setDataMode('cities')
+              }}
+            >
+              🏙️ Stadt
+            </button>
+            <button 
+              className={appMode === 'browse' && dataMode === 'countries' ? 'active' : ''} 
+              onClick={() => {
+                setAppMode('browse')
+                setDataMode('countries')
+              }}
+            >
+              🌍 Land
+            </button>
+          </div>
+          <div className="quiz-section">
+            <button 
+              className={appMode === 'quiz' ? 'active' : ''} 
+              onClick={() => setAppMode('quiz')}
+            >
+              🎯 Quiz
+            </button>
+          </div>
         </div>
       </header>
 
@@ -68,43 +85,43 @@ const AppContent: React.FC = () => {
                 onContinentChange={setSelectedContinent}
               />
 
-              <div className="browse-controls">
-                <div className="view-mode-toggle">
-                  <button 
-                    className={viewMode === 'overall' ? 'active' : ''} 
-                    onClick={() => setViewMode('overall')}
-                  >
-                    {t('overallView')}
-                  </button>
-                  <button 
-                    className={viewMode === 'alphabetical' ? 'active' : ''} 
-                    onClick={() => setViewMode('alphabetical')}
-                  >
-                    {t('alphabeticalView')}
-                  </button>
-                </div>
+              <div className="view-toggle">
+                <button 
+                  className={viewMode === 'alphabetical' ? 'active' : ''} 
+                  onClick={() => setViewMode('alphabetical')}
+                >
+                  📝 Alphabetisch
+                </button>
+                <button 
+                  className={viewMode === 'overall' ? 'active' : ''} 
+                  onClick={() => setViewMode('overall')}
+                >
+                  📊 Übersicht
+                </button>
               </div>
 
               {viewMode === 'alphabetical' ? (
-          <>
-            <AlphabetNav 
-              selectedLetter={selectedLetter} 
-              onLetterSelect={setSelectedLetter}
-                    countries={filteredCountries}
+                <>
+                  <AlphabetNav 
+                    selectedLetter={selectedLetter} 
+                    onLetterSelect={setSelectedLetter}
+                    data={filteredData}
                     selectedContinent={selectedContinent}
-            />
-            <CountryList 
-                    countries={countriesByLetter}
-                    onCountryToggle={markCountryAsLearned}
+                  />
+                  <CountryList 
+                    data={dataByLetter}
+                    onItemToggle={markItemAsLearned}
                     selectedContinent={selectedContinent}
-            />
-          </>
+                    dataMode={dataMode}
+                  />
+                </>
               ) : (
                 <OverallView 
-                  countries={filteredCountries}
-                  onCountryToggle={markCountryAsLearned}
+                  data={filteredData}
+                  onItemToggle={markItemAsLearned}
                   selectedContinent={selectedContinent}
-          />
+                  dataMode={dataMode}
+                />
               )}
             </>
         )}
@@ -112,7 +129,7 @@ const AppContent: React.FC = () => {
         {appMode === 'quiz' && (
           <QuizMode 
               selectedContinent={selectedContinent}
-            onCountryLearned={markCountryAsLearned}
+            onItemLearned={markItemAsLearned}
               onReturnToBrowse={resetToBrowse}
           />
         )}
@@ -125,9 +142,9 @@ const AppContent: React.FC = () => {
 const App: React.FC = () => {
   return (
     <ErrorBoundary>
-      <CountryProvider>
+      <DataProvider>
         <AppContent />
-      </CountryProvider>
+      </DataProvider>
     </ErrorBoundary>
   )
 }

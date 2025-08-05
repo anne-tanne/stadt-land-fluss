@@ -1,52 +1,84 @@
 import React from 'react'
-import type { Country } from '../types'
+import type { DataItem } from '../types'
 
 
 interface CountryCardProps {
-  country: Country
+  item: DataItem
   showLetter?: boolean
   showLearnButton?: boolean
-  onCountryToggle?: (countryName: string, learned: boolean) => void
+  onItemToggle?: (itemName: string, learned: boolean) => void
 }
 
 export const CountryCard: React.FC<CountryCardProps> = React.memo(({ 
-  country, 
+  item, 
   showLetter = true, 
   showLearnButton = true,
-  onCountryToggle 
+  onItemToggle 
 }) => {
   const handleToggle = () => {
-    if (onCountryToggle) {
-      onCountryToggle(country.name, !country.learned)
+    if (onItemToggle) {
+      onItemToggle(item.name, !item.learned)
     }
   }
 
+  // Function to clean up duplicated country names and prefer umlaut versions
+  const cleanCountryName = (countryName: string) => {
+    // Split by space to handle duplicated names
+    const parts = countryName.split(' ')
+    
+    // If it's just one word, return as is
+    if (parts.length === 1) return countryName
+    
+    // If it's duplicated (same word twice), return the first one
+    if (parts.length === 2 && parts[0] === parts[1]) {
+      return parts[0]
+    }
+    
+    // For longer names, look for the version with umlauts first
+    const umlautVersion = parts.find(part => 
+      part.includes('ä') || part.includes('ö') || part.includes('ü') || 
+      part.includes('Ä') || part.includes('Ö') || part.includes('Ü')
+    )
+    
+    if (umlautVersion) {
+      return umlautVersion
+    }
+    
+    // If no umlaut version found, return the first part
+    return parts[0]
+  }
+
   return (
-    <div className={`country-card ${country.learned ? 'learned' : ''}`}>
+    <div className={`country-card ${item.learned ? 'learned' : ''}`}>
       <div className="country-info">
         <div className="country-details">
-          <span className="continent-badge">{country.continent}</span>
+          <span className="continent-badge">{item.continent}</span>
           {showLetter && (
             <span className="letter-badge">
-              {country.originalLetter}
+              {item.originalLetter}
             </span>
           )}
         </div>
-        <h3>{country.name}</h3>
+        <h3>{item.name}</h3>
         <div className="country-stats">
-          <p>Review Count: {country.reviewCount}</p>
-          {country.lastReviewed && (
-            <p>Last Reviewed: {new Date(country.lastReviewed).toLocaleDateString()}</p>
+          {item.lastReviewed && (
+            <p>Last Reviewed: {new Date(item.lastReviewed).toLocaleDateString()}</p>
+          )}
+          {'country' in item && (
+            <p>Land: {cleanCountryName(item.country)}</p>
+          )}
+          {'population' in item && item.population && (
+            <p>Einwohner: {item.population}</p>
           )}
         </div>
       </div>
       
-      {showLearnButton && onCountryToggle && (
+      {showLearnButton && onItemToggle && (
         <button 
-          className={`learn-btn ${country.learned ? 'learned' : ''}`}
+          className={`learn-btn ${item.learned ? 'learned' : ''}`}
           onClick={handleToggle}
         >
-          {country.learned ? '✓ Gelernt' : 'Als gelernt markieren'}
+          {item.learned ? '✓ Gelernt' : 'Als gelernt markieren'}
         </button>
       )}
     </div>

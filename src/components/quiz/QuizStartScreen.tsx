@@ -2,6 +2,7 @@ import React from 'react'
 import { Play, RotateCcw } from 'lucide-react'
 import { useTranslation } from '../../translations'
 import { ContinentDropdown } from '../ContinentDropdown'
+import { useDataContext } from '../../contexts/CountryContext'
 import styles from '../../styles/QuizStart.module.css'
 
 interface QuizStartScreenProps {
@@ -22,11 +23,29 @@ export const QuizStartScreen: React.FC<QuizStartScreenProps> = ({
   filteredCountriesCount
 }) => {
   const { t } = useTranslation()
+  const { dataMode, setDataMode } = useDataContext()
 
   return (
     <div className={styles.quizStartScreen}>
       <h2>🌍 {t('quizStartTitle')}</h2>
-      <p>{t('quizStartDescription')}</p>
+      
+      <div className={styles.dataModeSelection}>
+        <label>Was willst du abfragen?</label>
+        <div className={styles.dataModeButtons}>
+          <button 
+            className={`${styles.dataModeBtn} ${dataMode === 'cities' ? styles.active : ''}`}
+            onClick={() => setDataMode('cities')}
+          >
+            🏙️ Stadt
+          </button>
+          <button 
+            className={`${styles.dataModeBtn} ${dataMode === 'countries' ? styles.active : ''}`}
+            onClick={() => setDataMode('countries')}
+          >
+            🌍 Land
+          </button>
+        </div>
+      </div>
       
       <ContinentDropdown
         selectedContinent={selectedContinent}

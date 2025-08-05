@@ -1,31 +1,31 @@
-import type { Country } from '../types'
-import { useTranslation } from '../translations'
+import type { DataItem } from '../types'
 import { CountryCard } from './CountryCard'
 
 interface OverallViewProps {
-  countries: Country[]
-  onCountryToggle?: (countryName: string, learned: boolean) => void
+  data: DataItem[]
+  onItemToggle?: (itemName: string, learned: boolean) => void
   selectedContinent: string
+  dataMode: 'countries' | 'cities'
 }
 
-const OverallView = ({ countries, selectedContinent }: OverallViewProps) => {
-  const { t } = useTranslation()
+const OverallView = ({ data, selectedContinent, dataMode }: OverallViewProps) => {
   
-  // Sort countries alphabetically
-  const sortedCountries = [...countries].sort((a, b) => a.name.localeCompare(b.name))
+  // Sort data alphabetically
+  const sortedData = [...data].sort((a, b) => a.name.localeCompare(b.name))
 
   // Function to get dynamic title based on selected continent
   const getTitle = () => {
+    const itemType = dataMode === 'countries' ? 'Länder' : 'Millionenstädte'
     if (selectedContinent === 'Alle') {
-      return `${t('allCountries')} (${sortedCountries.length})`
+      return `Alle ${itemType} (${sortedData.length})`
     }
-    return `Alle Länder in ${selectedContinent} (${sortedCountries.length})`
+    return `Alle ${itemType} in ${selectedContinent} (${sortedData.length})`
   }
 
-  if (sortedCountries.length === 0) {
+  if (sortedData.length === 0) {
     return (
       <div className="overall-view empty">
-        <p>{t('noCountriesFound')}</p>
+        <p>Keine {dataMode === 'countries' ? 'Länder' : 'Millionenstädte'} gefunden.</p>
       </div>
     )
   }
@@ -34,10 +34,10 @@ const OverallView = ({ countries, selectedContinent }: OverallViewProps) => {
     <div className="overall-view">
       <h2 className="white-box-title">{getTitle()}</h2>
       <div className="countries-grid">
-        {sortedCountries.map(country => (
+        {sortedData.map(item => (
           <CountryCard
-            key={country.name}
-            country={country}
+            key={item.name}
+            item={item}
             showLetter={false}
             showLearnButton={false}
           />

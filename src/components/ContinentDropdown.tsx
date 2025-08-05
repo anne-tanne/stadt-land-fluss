@@ -1,5 +1,5 @@
 import React from 'react'
-import { useCountryContext } from '../contexts/CountryContext'
+import { useDataContext } from '../contexts/CountryContext'
 
 interface ContinentDropdownProps {
   selectedContinent: string
@@ -14,7 +14,7 @@ export const ContinentDropdown: React.FC<ContinentDropdownProps> = ({
   className = '',
   label = 'Wähle einen Kontinent:'
 }) => {
-  const { getAvailableContinents } = useCountryContext()
+  const { getAvailableContinents } = useDataContext()
 
   return (
     <div className={`continent-dropdown-container ${className}`}>
@@ -34,6 +34,7 @@ export const ContinentDropdown: React.FC<ContinentDropdownProps> = ({
              continent === 'Nordamerika' ? '🌎 Nordamerika' :
              continent === 'Südamerika' ? '🌎 Südamerika' :
              continent === 'Ozeanien' ? '🌏 Ozeanien' :
+             continent === 'Australien' ? '🌏 Australien' :
              continent}
           </option>
         ))}

@@ -1,37 +1,46 @@
 import React, { createContext, useContext } from 'react'
 import type { ReactNode } from 'react'
-import { useCountries } from '../hooks/useCountries'
-import type { Country } from '../types'
+import { useData, type DataMode } from '../hooks/useData'
+import type { DataItem } from '../types'
 
-interface CountryContextType {
-  countries: Country[]
-  updateCountryProgress: (countryName: string, learned: boolean) => void
-  markCountryAsLearned: (countryName: string) => void
-  getFilteredCountries: (selectedContinent: string) => Country[]
-  getCountriesByLetter: (letter: string, selectedContinent?: string) => Country[]
+interface DataContextType {
+  data: DataItem[]
+  dataMode: DataMode
+  setDataMode: (mode: DataMode) => void
+  updateItemProgress: (itemName: string, learned: boolean) => void
+  markItemAsLearned: (itemName: string) => void
+  getFilteredData: (selectedContinent: string) => DataItem[]
+  getDataByLetter: (letter: string, selectedContinent?: string) => DataItem[]
   getAvailableContinents: string[]
 }
 
-const CountryContext = createContext<CountryContextType | undefined>(undefined)
+const DataContext = createContext<DataContextType | undefined>(undefined)
 
-export const useCountryContext = () => {
-  const context = useContext(CountryContext)
+export const useDataContext = () => {
+  const context = useContext(DataContext)
   if (context === undefined) {
-    throw new Error('useCountryContext must be used within a CountryProvider')
+    throw new Error('useDataContext must be used within a DataProvider')
   }
   return context
 }
 
-interface CountryProviderProps {
+interface DataProviderProps {
   children: ReactNode
 }
 
-export const CountryProvider: React.FC<CountryProviderProps> = ({ children }) => {
-  const countryData = useCountries()
+export const DataProvider: React.FC<DataProviderProps> = ({ children }) => {
+  const [dataMode, setDataMode] = React.useState<DataMode>('countries')
+  const dataHook = useData(dataMode)
+
+  const contextValue: DataContextType = {
+    ...dataHook,
+    dataMode,
+    setDataMode
+  }
 
   return (
-    <CountryContext.Provider value={countryData}>
+    <DataContext.Provider value={contextValue}>
       {children}
-    </CountryContext.Provider>
+    </DataContext.Provider>
   )
 } 

@@ -56,6 +56,22 @@ body {
 
 .mode-toggle {
   display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  align-items: center;
+}
+
+.data-mode-section {
+  display: flex;
+  gap: 0.5rem;
+  background: #f7fafc;
+  padding: 0.25rem;
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;
+}
+
+.quiz-section {
+  display: flex;
   gap: 0.5rem;
   background: #f7fafc;
   padding: 0.25rem;
@@ -303,6 +319,7 @@ h2 {
 .white-box-title {
   color: #2d3748 !important;
   margin-bottom: 1.5rem;
+  text-align: left;
 }
 
 /* Override quiz-end-screen h2 specifically */
