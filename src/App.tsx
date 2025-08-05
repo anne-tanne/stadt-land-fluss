@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React, { useMemo, useEffect } from 'react'
 import './App.css'
 import './styles/design-system.css'
 import './styles/components.css'
@@ -16,6 +16,16 @@ import { useTranslation } from './translations'
 const AppContent: React.FC = () => {
   const { t } = useTranslation()
   const { markItemAsLearned, getFilteredData, getDataByLetter, dataMode, setDataMode } = useDataContext()
+  
+  // Clear quiz-related localStorage on app load to prevent data mixing issues
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Only clear quiz-related storage, not all localStorage
+      localStorage.removeItem('länder-quiz-progress')
+      localStorage.removeItem('länder-quiz-session')
+      localStorage.removeItem('länder-study-progress')
+    }
+  }, [])
   const {
     appMode,
     viewMode,

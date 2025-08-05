@@ -328,7 +328,6 @@ h2 {
 }
 
 /* Only set white for h2 on colored backgrounds */
-.overall-view h2,
 .quiz-end-screen h2,
 .quiz-complete h2 {
   color: white !important;
@@ -336,6 +335,10 @@ h2 {
 }
 
 .overall-view {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
 }
 

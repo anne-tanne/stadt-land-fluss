@@ -9,7 +9,7 @@ export type DataMode = 'countries' | 'cities'
 export const useData = (mode: DataMode = 'countries') => {
   const [data, setData] = useState<DataItem[]>([])
 
-  useEffect(() => {
+    useEffect(() => {
     if (mode === 'countries') {
       // Convert the JSON data to our Country format with normalized letters
       const countriesWithProgress = countriesData.map((countryData: any) => {
