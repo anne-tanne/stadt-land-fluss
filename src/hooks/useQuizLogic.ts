@@ -23,6 +23,9 @@ export const useQuizLogic = (
   const [hintInputValue, setHintInputValue] = useState<string>('')
   const [hintedCountries, setHintedCountries] = useState<Set<string>>(new Set())
   const [heavyHintedCountries, setHeavyHintedCountries] = useState<Set<string>>(new Set())
+  // Track all countries that have ever been hinted, regardless of popup state
+  const [everHintedCountries, setEverHintedCountries] = useState<Set<string>>(new Set())
+  const [everHeavyHintedCountries, setEverHeavyHintedCountries] = useState<Set<string>>(new Set())
   
   // Use refs to store timer IDs so we can clear them
   const fadeTimerRef = useRef<NodeJS.Timeout | null>(null)
@@ -35,6 +38,9 @@ export const useQuizLogic = (
   )
   const foundCount = foundForCurrentLetter.length
   const remainingCountries = currentCountries.filter(country => !foundCountries.has(country.name))
+
+
+
 
   const showMessage = (text: string, type: 'success' | 'error' | 'info', duration: number) => {
     // Clear any existing timers
@@ -73,6 +79,9 @@ export const useQuizLogic = (
     setHintLevel(2) // Start with first 2 letters
     setHintInputValue('')
     setShowHintPopup(true)
+    
+    // Mark this country as ever hinted (light hint level)
+    setEverHintedCountries(prev => new Set([...prev, newHintCountry]))
   }
 
   const closeHintPopup = () => {
@@ -85,11 +94,30 @@ export const useQuizLogic = (
   const showNextLetter = () => {
     if (hintLevel < hintCountry.length) {
       setHintLevel(prev => prev + 1)
+      
+      // If we're showing more than 2 letters, mark as heavy hint
+      if (hintLevel + 1 > 2) {
+        setEverHeavyHintedCountries(prev => new Set([...prev, hintCountry]))
+        // Remove from light hints if it was there
+        setEverHintedCountries(prev => {
+          const newSet = new Set(prev)
+          newSet.delete(hintCountry)
+          return newSet
+        })
+      }
     }
   }
 
   const showFullCountry = () => {
     setHintLevel(hintCountry.length)
+    // Mark as heavy hint when showing full country
+    setEverHeavyHintedCountries(prev => new Set([...prev, hintCountry]))
+    // Remove from light hints if it was there
+    setEverHintedCountries(prev => {
+      const newSet = new Set(prev)
+      newSet.delete(hintCountry)
+      return newSet
+    })
   }
 
   const handleHintInputSubmit = (e: React.FormEvent) => {
@@ -105,8 +133,24 @@ export const useQuizLogic = (
       const foundCountry = currentCountries.find(country => country.name === foundCountryName)
       if (!foundCountry) return false
       
-      // Check if input matches the found country name or any of its alternatives
-      return isCountryNameValid(input, foundCountry)
+      // Check if input exactly matches the found country name or any of its alternatives
+      const inputNormalized = input.toLowerCase().trim()
+      const foundNameNormalized = foundCountry.name.toLowerCase().trim()
+      
+      if (inputNormalized === foundNameNormalized) {
+        return true
+      }
+      
+      if (foundCountry.alternatives) {
+        for (const alternative of foundCountry.alternatives) {
+          const alternativeNormalized = alternative.toLowerCase().trim()
+          if (inputNormalized === alternativeNormalized) {
+            return true
+          }
+        }
+      }
+      
+      return false
     })
 
     if (isAlreadyFound) {
@@ -153,6 +197,7 @@ export const useQuizLogic = (
       onAddFoundCountry(hintCountry)
       onCountryLearned(hintCountry)
       setHeavyHintedCountries(prev => new Set([...prev, hintCountry]))
+      setEverHeavyHintedCountries(prev => new Set([...prev, hintCountry]))
       closeHintPopup()
       showMessage(`🔴 ${hintCountry} wurde mit Tipp hinzugefügt`, 'info', 3000)
     }
@@ -171,8 +216,24 @@ export const useQuizLogic = (
       const foundCountry = currentCountries.find(country => country.name === foundCountryName)
       if (!foundCountry) return false
       
-      // Check if input matches the found country name or any of its alternatives
-      return isCountryNameValid(input, foundCountry)
+      // Check if input exactly matches the found country name or any of its alternatives
+      const inputNormalized = input.toLowerCase().trim()
+      const foundNameNormalized = foundCountry.name.toLowerCase().trim()
+      
+      if (inputNormalized === foundNameNormalized) {
+        return true
+      }
+      
+      if (foundCountry.alternatives) {
+        for (const alternative of foundCountry.alternatives) {
+          const alternativeNormalized = alternative.toLowerCase().trim()
+          if (inputNormalized === alternativeNormalized) {
+            return true
+          }
+        }
+      }
+      
+      return false
     })
 
     if (isAlreadyFound) {
@@ -189,18 +250,13 @@ export const useQuizLogic = (
       onAddFoundCountry(matchedCountry.name)
       onCountryLearned(matchedCountry.name)
       
-      // Check if this was a hinted country and mark accordingly
-      if (hintedCountries.has(matchedCountry.name)) {
-        // Already marked as hinted (orange)
-      } else if (heavyHintedCountries.has(matchedCountry.name)) {
+      // Check if this country was ever hinted and mark accordingly
+      if (everHeavyHintedCountries.has(matchedCountry.name)) {
         // Already marked as heavily hinted (red)
-      } else if (matchedCountry.name === hintCountry && hintLevel > 0) {
-        // Current hint country - mark based on hint level
-        if (hintLevel <= 2) {
-          setHintedCountries(prev => new Set([...prev, matchedCountry.name]))
-        } else {
-          setHeavyHintedCountries(prev => new Set([...prev, matchedCountry.name]))
-        }
+        setHeavyHintedCountries(prev => new Set([...prev, matchedCountry.name]))
+      } else if (everHintedCountries.has(matchedCountry.name)) {
+        // Already marked as lightly hinted (orange)
+        setHintedCountries(prev => new Set([...prev, matchedCountry.name]))
       }
       
       // Check if this was the last country for this letter
@@ -265,6 +321,8 @@ export const useQuizLogic = (
     showFullCountry,
     revealHintedCountry,
     hintedCountries,
-    heavyHintedCountries
+    heavyHintedCountries,
+    everHintedCountries,
+    everHeavyHintedCountries
   }
 } 

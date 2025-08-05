@@ -1,0 +1,4124 @@
+[
+ {
+   "Rang": 1,
+   "Stadt": "Shanghai",
+   "Einwohner": "21.909.814",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[1]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 2,
+   "Stadt": "Delhi",
+   "Einwohner": "21.359.000",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2023[2]",
+   "Stadtdefinition": "Hauptstadtdistrikt (NCR)"
+ },
+ {
+   "Rang": 3,
+   "Stadt": "Karatschi",
+   "Einwohner": "20.382.881",
+   "Land": "Pakistan Pakistan",
+   "Kontinent": "Asien",
+   "Stand": "2023[3]",
+   "Stadtdefinition": "Gemeinde (Metropolitan corporation)"
+ },
+ {
+   "Rang": 4,
+   "Stadt": "Peking",
+   "Einwohner": "18.960.744",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[4]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 5,
+   "Stadt": "Shenzhen",
+   "Einwohner": "17.444.609",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 6,
+   "Stadt": "Kinshasa",
+   "Einwohner": "16.316.000",
+   "Land": "Kongo Demokratische Republik Demokratische Republik Kongo",
+   "Kontinent": "Afrika",
+   "Stand": "2023[6]",
+   "Stadtdefinition": "Provinz"
+ },
+ {
+   "Rang": 7,
+   "Stadt": "Guangzhou",
+   "Einwohner": "16.096.724",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 8,
+   "Stadt": "Lagos",
+   "Einwohner": "15.946.000",
+   "Land": "Nigeria Nigeria",
+   "Kontinent": "Afrika",
+   "Stand": "2023[7]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 9,
+   "Stadt": "İstanbul",
+   "Einwohner": "15.907.951",
+   "Land": "Turkei Türkei",
+   "Kontinent": "Asien/Europa",
+   "Stand": "2022[8]",
+   "Stadtdefinition": "Metropolprovinz"
+ },
+ {
+   "Rang": 10,
+   "Stadt": "Bengaluru",
+   "Einwohner": "14.254.786",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2021[9]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 11,
+   "Stadt": "Chengdu",
+   "Einwohner": "13.568.357",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 12,
+   "Stadt": "Mumbai",
+   "Einwohner": "13.127.825",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2021[10][11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 13,
+   "Stadt": "Moskau",
+   "Einwohner": "13.010.112",
+   "Land": "Russland Russland",
+   "Kontinent": "Europa",
+   "Stand": "2021[12]",
+   "Stadtdefinition": "Stadt mit Subjektstatus"
+ },
+ {
+   "Rang": 14,
+   "Stadt": "Lahore",
+   "Einwohner": "13.004.135",
+   "Land": "Pakistan Pakistan",
+   "Kontinent": "Asien",
+   "Stand": "2023[13]",
+   "Stadtdefinition": "Gemeinde/Distrikt"
+ },
+ {
+   "Rang": 15,
+   "Stadt": "São Paulo",
+   "Einwohner": "12.200.180",
+   "Land": "Brasilien Brasilien",
+   "Kontinent": "Südamerika",
+   "Stand": "2022[14]",
+   "Stadtdefinition": "Gemeinde (Município)"
+ },
+ {
+   "Rang": 16,
+   "Stadt": "Tianjin",
+   "Einwohner": "11.052.404",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 17,
+   "Stadt": "Jakarta",
+   "Einwohner": "10.562.088",
+   "Land": "Indonesien Indonesien",
+   "Kontinent": "Asien",
+   "Stand": "2020[15][16]",
+   "Stadtdefinition": "Hauptstadtdistrikt"
+ },
+ {
+   "Rang": 18,
+   "Stadt": "Wuhan",
+   "Einwohner": "10.494.879",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 19,
+   "Stadt": "Dhaka",
+   "Einwohner": "10.278.882",
+   "Land": "Bangladesch Bangladesch",
+   "Kontinent": "Asien",
+   "Stand": "2022[17][18]",
+   "Stadtdefinition": "Gemeinde (City Corporation)"
+ },
+ {
+   "Rang": 20,
+   "Stadt": "Hyderabad",
+   "Einwohner": "10.269.000",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2021[19]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 21,
+   "Stadt": "Kairo",
+   "Einwohner": "10.100.166",
+   "Land": "Agypten Ägypten",
+   "Kontinent": "Afrika",
+   "Stand": "2022[20]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 22,
+   "Stadt": "Tokio",
+   "Einwohner": "9.733.276",
+   "Land": "Japan Japan",
+   "Kontinent": "Asien",
+   "Stand": "2020[21]",
+   "Stadtdefinition": "Bezirke Tokios"
+ },
+ {
+   "Rang": 23,
+   "Stadt": "Chennai",
+   "Einwohner": "9.722.974",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2021[22]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 24,
+   "Stadt": "Lima",
+   "Einwohner": "9.674.800",
+   "Land": "Peru Peru",
+   "Kontinent": "Südamerika",
+   "Stand": "2020[23]",
+   "Stadtdefinition": "Region"
+ },
+ {
+   "Rang": 25,
+   "Stadt": "Dongguan",
+   "Einwohner": "9.644.871",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 26,
+   "Stadt": "Seoul",
+   "Einwohner": "9.586.195",
+   "Land": "Korea Sud Südkorea",
+   "Kontinent": "Asien",
+   "Stand": "2020[24]",
+   "Stadtdefinition": "Besondere Stadt (Teukbyeolsi)"
+ },
+ {
+   "Rang": 27,
+   "Stadt": "Chongqing",
+   "Einwohner": "9.580.810",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 28,
+   "Stadt": "Xi’an",
+   "Einwohner": "9.392.938",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 29,
+   "Stadt": "Hangzhou",
+   "Einwohner": "9.236.032",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 30,
+   "Stadt": "Luanda",
+   "Einwohner": "9.079.800",
+   "Land": "Angola Angola",
+   "Kontinent": "Afrika",
+   "Stand": "2022[25]",
+   "Stadtdefinition": "Provinz"
+ },
+ {
+   "Rang": 31,
+   "Stadt": "Foshan",
+   "Einwohner": "9.042.509",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 32,
+   "Stadt": "Teheran",
+   "Einwohner": "9.039.000",
+   "Land": "Iran Iran",
+   "Kontinent": "Asien",
+   "Stand": "2021[26]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 33,
+   "Stadt": "London",
+   "Einwohner": "8.945.309",
+   "Land": "Vereinigtes Konigreich Vereinigtes Königreich",
+   "Kontinent": "Europa",
+   "Stand": "2023[27]",
+   "Stadtdefinition": "Region/Zeremonielle Grafschaft"
+ },
+ {
+   "Rang": 34,
+   "Stadt": "Mexiko-Stadt",
+   "Einwohner": "8.843.706",
+   "Land": "Mexiko Mexiko",
+   "Kontinent": "Nordamerika",
+   "Stand": "2020[28]",
+   "Stadtdefinition": "Ortschaft (Localidad)"
+ },
+ {
+   "Rang": 35,
+   "Stadt": "New York City",
+   "Einwohner": "8.467.513",
+   "Land": "Vereinigte Staaten Vereinigte Staaten",
+   "Kontinent": "Nordamerika",
+   "Stand": "2021[29]",
+   "Stadtdefinition": "City"
+ },
+ {
+   "Rang": 36,
+   "Stadt": "Ahmedabad",
+   "Einwohner": "8.253.226",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2021[30]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 37,
+   "Stadt": "Bogotá",
+   "Einwohner": "7.936.500",
+   "Land": "Kolumbien Kolumbien",
+   "Kontinent": "Südamerika",
+   "Stand": "2023[31]",
+   "Stadtdefinition": "Hauptstadtdistrikt (Distrito Capital)"
+ },
+ {
+   "Rang": 38,
+   "Stadt": "Surat",
+   "Einwohner": "7.567.538",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2021[32]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 39,
+   "Stadt": "Nanjing",
+   "Einwohner": "7.519.814",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 40,
+   "Stadt": "Hongkong",
+   "Einwohner": "7.413.070",
+   "Land": "Hongkong Hongkong",
+   "Kontinent": "Asien",
+   "Stand": "2021[33]",
+   "Stadtdefinition": "Sonderverwaltungszone"
+ },
+ {
+   "Rang": 41,
+   "Stadt": "Shenyang",
+   "Einwohner": "7.026.358",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 42,
+   "Stadt": "Ho-Chi-Minh-Stadt",
+   "Einwohner": "7.004.921",
+   "Land": "Vietnam Vietnam",
+   "Kontinent": "Asien",
+   "Stand": "2019[34]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 43,
+   "Stadt": "Riad",
+   "Einwohner": "6.924.566",
+   "Land": "Saudi-Arabien Saudi-Arabien",
+   "Kontinent": "Asien",
+   "Stand": "2022[35]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 44,
+   "Stadt": "Bagdad",
+   "Einwohner": "6.719.476",
+   "Land": "Irak Irak",
+   "Kontinent": "Asien",
+   "Stand": "2018[36]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 45,
+   "Stadt": "Rio de Janeiro",
+   "Einwohner": "6.625.849",
+   "Land": "Brasilien Brasilien",
+   "Kontinent": "Südamerika",
+   "Stand": "2022[37]",
+   "Stadtdefinition": "Gemeinde (Município)"
+ },
+ {
+   "Rang": 46,
+   "Stadt": "Zhengzhou",
+   "Einwohner": "6.461.013",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 47,
+   "Stadt": "Qingdao",
+   "Einwohner": "6.165.279",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 48,
+   "Stadt": "Kolkata (Kalkutta)",
+   "Einwohner": "6.112.874",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2020[38]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 49,
+   "Stadt": "Suzhou (Jiangsu)",
+   "Einwohner": "5.892.892",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 50,
+   "Stadt": "Singapur",
+   "Einwohner": "5.685.807",
+   "Land": "Singapur Singapur",
+   "Kontinent": "Asien",
+   "Stand": "2020[39]",
+   "Stadtdefinition": "Staat"
+ },
+ {
+   "Rang": 51,
+   "Stadt": "Bangkok",
+   "Einwohner": "5.666.264",
+   "Land": "Thailand Thailand",
+   "Kontinent": "Asien",
+   "Stand": "2019[40]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 52,
+   "Stadt": "Changsha",
+   "Einwohner": "5.630.256",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 53,
+   "Stadt": "Abidjan",
+   "Einwohner": "5.616.633",
+   "Land": "Elfenbeinküste Elfenbeinküste",
+   "Kontinent": "Afrika",
+   "Stand": "2021[41]",
+   "Stadtdefinition": "Gemeinde (Ville)"
+ },
+ {
+   "Rang": 54,
+   "Stadt": "Sankt Petersburg",
+   "Einwohner": "5.601.911",
+   "Land": "Russland Russland",
+   "Kontinent": "Europa",
+   "Stand": "2021[12]",
+   "Stadtdefinition": "Stadt mit Subjektstatus"
+ },
+ {
+   "Rang": 55,
+   "Stadt": "Jinan",
+   "Einwohner": "5.452.335",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[42]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 56,
+   "Stadt": "Daressalam",
+   "Einwohner": "5.383.728",
+   "Land": "Tansania Tansania",
+   "Kontinent": "Afrika",
+   "Stand": "2022[43]",
+   "Stadtdefinition": "Region"
+ },
+ {
+   "Rang": 57,
+   "Stadt": "Kunming",
+   "Einwohner": "5.273.144",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[44]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 58,
+   "Stadt": "Alexandria",
+   "Einwohner": "5.263.542",
+   "Land": "Agypten Ägypten",
+   "Kontinent": "Afrika",
+   "Stand": "2021[45]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 59,
+   "Stadt": "Harbin",
+   "Einwohner": "5.242.897",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 60,
+   "Stadt": "Sydney",
+   "Einwohner": "5.231.147",
+   "Land": "Australien Australien",
+   "Kontinent": "Australien",
+   "Stand": "2021[46]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 61,
+   "Stadt": "Santiago de Chile",
+   "Einwohner": "5.220.161",
+   "Land": "Chile Chile",
+   "Kontinent": "Südamerika",
+   "Stand": "2017[47]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 62,
+   "Stadt": "Ankara",
+   "Einwohner": "5.186.002",
+   "Land": "Turkei Türkei",
+   "Kontinent": "Asien",
+   "Stand": "2022[8][48]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 63,
+   "Stadt": "Shijiazhuang",
+   "Einwohner": "5.090.440",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 64,
+   "Stadt": "Hefei",
+   "Einwohner": "5.055.978",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 65,
+   "Stadt": "Melbourne",
+   "Einwohner": "5.031.195",
+   "Land": "Australien Australien",
+   "Kontinent": "Australien",
+   "Stand": "2022[49]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 66,
+   "Stadt": "Dalian",
+   "Einwohner": "4.913.879",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 67,
+   "Stadt": "Johannesburg",
+   "Einwohner": "4.803.262",
+   "Land": "Sudafrika Südafrika",
+   "Kontinent": "Afrika",
+   "Stand": "2022[50]",
+   "Stadtdefinition": "Metropolgemeinde"
+ },
+ {
+   "Rang": 68,
+   "Stadt": "Cape Town (Kapstadt)",
+   "Einwohner": "4.772.846",
+   "Land": "Sudafrika Südafrika",
+   "Kontinent": "Afrika",
+   "Stand": "2022[51]",
+   "Stadtdefinition": "Metropolgemeinde"
+ },
+ {
+   "Rang": 69,
+   "Stadt": "Rangun",
+   "Einwohner": "4.728.524",
+   "Land": "Myanmar Myanmar",
+   "Kontinent": "Asien",
+   "Stand": "2014[52]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 70,
+   "Stadt": "Xiamen",
+   "Einwohner": "4.617.251",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 71,
+   "Stadt": "Nanning",
+   "Einwohner": "4.582.703",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 72,
+   "Stadt": "Changchun",
+   "Einwohner": "4.557.356",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 73,
+   "Stadt": "Kabul",
+   "Einwohner": "4.434.600",
+   "Land": "Afghanistan Afghanistan",
+   "Kontinent": "Asien",
+   "Stand": "2020[53]",
+   "Stadtdefinition": "Hauptstadtbezirk"
+ },
+ {
+   "Rang": 74,
+   "Stadt": "Nairobi",
+   "Einwohner": "4.397.073",
+   "Land": "Kenia Kenia",
+   "Kontinent": "Afrika",
+   "Stand": "2019[54]",
+   "Stadtdefinition": "County/Gemeinde"
+ },
+ {
+   "Rang": 75,
+   "Stadt": "Gizeh",
+   "Einwohner": "4.367.343",
+   "Land": "Agypten Ägypten",
+   "Kontinent": "Afrika",
+   "Stand": "2021[45]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 76,
+   "Stadt": "Kano",
+   "Einwohner": "4.348.000",
+   "Land": "Nigeria Nigeria",
+   "Kontinent": "Afrika",
+   "Stand": "2023[55][56]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 77,
+   "Stadt": "Taiyuan",
+   "Einwohner": "4.303.673",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 78,
+   "Stadt": "eThekwini (Durban)",
+   "Einwohner": "4.239.901",
+   "Land": "Sudafrika Südafrika",
+   "Kontinent": "Afrika",
+   "Stand": "2022[57]",
+   "Stadtdefinition": "Metropolgemeinde"
+ },
+ {
+   "Rang": 79,
+   "Stadt": "Bamako",
+   "Einwohner": "4.227.569",
+   "Land": "Mali Mali",
+   "Kontinent": "Afrika",
+   "Stand": "2022[58]",
+   "Stadtdefinition": "Hauptstadtdistrikt"
+ },
+ {
+   "Rang": 80,
+   "Stadt": "Jaipur",
+   "Einwohner": "4.067.826",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2021[11][59]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 81,
+   "Stadt": "Ekurhuleni",
+   "Einwohner": "4.066.691",
+   "Land": "Sudafrika Südafrika",
+   "Kontinent": "Afrika",
+   "Stand": "2022[60]",
+   "Stadtdefinition": "Metropolgemeinde"
+ },
+ {
+   "Rang": 82,
+   "Stadt": "Tshwane (Pretoria)",
+   "Einwohner": "4.040.315",
+   "Land": "Sudafrika Südafrika",
+   "Kontinent": "Afrika",
+   "Stand": "2022[61]",
+   "Stadtdefinition": "Metropolgemeinde"
+ },
+ {
+   "Rang": 83,
+   "Stadt": "Neu-Taipeh",
+   "Einwohner": "4.030.954",
+   "Land": "Taiwan Taiwan",
+   "Kontinent": "Asien",
+   "Stand": "2020[62]",
+   "Stadtdefinition": "regierungsunmittelbare Stadt"
+ },
+ {
+   "Rang": 84,
+   "Stadt": "Guiyang",
+   "Einwohner": "4.021.275",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 85,
+   "Stadt": "Wuxi",
+   "Einwohner": "3.956.985",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 86,
+   "Stadt": "Pune",
+   "Einwohner": "3.891.823",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2021[11][63]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 87,
+   "Stadt": "Shantou",
+   "Einwohner": "3.890.169",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[64]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 88,
+   "Stadt": "Ibadan",
+   "Einwohner": "3.875.000",
+   "Land": "Nigeria Nigeria",
+   "Kontinent": "Afrika",
+   "Stand": "2023[55][56]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 89,
+   "Stadt": "Ürümqi",
+   "Einwohner": "3.864.136",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 90,
+   "Stadt": "Los Angeles",
+   "Einwohner": "3.849.297",
+   "Land": "Vereinigte Staaten Vereinigte Staaten",
+   "Kontinent": "Nordamerika",
+   "Stand": "2021[65]",
+   "Stadtdefinition": "City"
+ },
+ {
+   "Rang": 91,
+   "Stadt": "Zhongshan",
+   "Einwohner": "3.841.873",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 92,
+   "Stadt": "Abuja",
+   "Einwohner": "3.840.000",
+   "Land": "Nigeria Nigeria",
+   "Kontinent": "Afrika",
+   "Stand": "2023[55]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 93,
+   "Stadt": "Lucknow",
+   "Einwohner": "3.790.274",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2021[66]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 94,
+   "Stadt": "Yokohama",
+   "Einwohner": "3.777.491",
+   "Land": "Japan Japan",
+   "Kontinent": "Asien",
+   "Stand": "2020[21]",
+   "Stadtdefinition": "kreisfreie Stadt (shi)"
+ },
+ {
+   "Rang": 95,
+   "Stadt": "Berlin",
+   "Einwohner": "3.735.164",
+   "Land": "Deutschland Deutschland",
+   "Kontinent": "Europa",
+   "Stand": "2022[67]",
+   "Stadtdefinition": "Land/kreisfreie Stadt (Bezirke)"
+ },
+ {
+   "Rang": 96,
+   "Stadt": "Ningbo",
+   "Einwohner": "3.731.203",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 97,
+   "Stadt": "Fuzhou",
+   "Einwohner": "3.723.454",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 98,
+   "Stadt": "Dschidda",
+   "Einwohner": "3.712.917",
+   "Land": "Saudi-Arabien Saudi-Arabien",
+   "Kontinent": "Asien",
+   "Stand": "2022[35]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 99,
+   "Stadt": "Hanoi",
+   "Einwohner": "3.605.364",
+   "Land": "Vietnam Vietnam",
+   "Kontinent": "Asien",
+   "Stand": "2019[68]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 100,
+   "Stadt": "Nanchang",
+   "Einwohner": "3.518.975",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 101,
+   "Stadt": "Addis Abeba",
+   "Einwohner": "3.480.229",
+   "Land": "Athiopien Äthiopien",
+   "Kontinent": "Afrika",
+   "Stand": "2022[69]",
+   "Stadtdefinition": "regionsunabhängige Stadt"
+ },
+ {
+   "Rang": 102,
+   "Stadt": "Port Harcourt",
+   "Einwohner": "3.480.000",
+   "Land": "Nigeria Nigeria",
+   "Kontinent": "Afrika",
+   "Stand": "2023[55]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 103,
+   "Stadt": "Busan",
+   "Einwohner": "3.349.016",
+   "Land": "Korea Sud Südkorea",
+   "Kontinent": "Asien",
+   "Stand": "2020[24]",
+   "Stadtdefinition": "Metropolstadt (Gwangyeoksi)"
+ },
+ {
+   "Rang": 104,
+   "Stadt": "Madrid",
+   "Einwohner": "3.305.408",
+   "Land": "Spanien Spanien",
+   "Kontinent": "Europa",
+   "Stand": "2021[70]",
+   "Stadtdefinition": "Gemeinde (Municipio)"
+ },
+ {
+   "Rang": 105,
+   "Stadt": "Dubai",
+   "Einwohner": "3.291.166",
+   "Land": "Vereinigte Arabische Emirate Vereinigte Arabische Emirate",
+   "Kontinent": "Asien",
+   "Stand": "2019[71]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 106,
+   "Stadt": "Chittagong",
+   "Einwohner": "3.227.246",
+   "Land": "Bangladesch Bangladesch",
+   "Kontinent": "Asien",
+   "Stand": "2022[17][18]",
+   "Stadtdefinition": "Gemeinde (City Corporation)"
+ },
+ {
+   "Rang": 107,
+   "Stadt": "Casablanca",
+   "Einwohner": "3.218.036",
+   "Land": "Marokko Marokko",
+   "Kontinent": "Afrika",
+   "Stand": "2024[1]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 108,
+   "Stadt": "Faisalabad",
+   "Einwohner": "3.204.726",
+   "Land": "Pakistan Pakistan",
+   "Kontinent": "Asien",
+   "Stand": "2017[72]",
+   "Stadtdefinition": "Gemeinde (Metropolitan corporation)"
+ },
+ {
+   "Rang": 109,
+   "Stadt": "Kanpur",
+   "Einwohner": "3.203.932",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2021[73]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 110,
+   "Stadt": "Changzhou",
+   "Einwohner": "3.187.315",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 111,
+   "Stadt": "Buenos Aires",
+   "Einwohner": "3.120.612",
+   "Land": "Argentinien Argentinien",
+   "Kontinent": "Südamerika",
+   "Stand": "2022[74]",
+   "Stadtdefinition": "Hauptstadtdistrikt (Ciudad Autónoma)"
+ },
+ {
+   "Rang": 112,
+   "Stadt": "Pjöngjang",
+   "Einwohner": "3.038.000",
+   "Land": "Korea Nord Nordkorea",
+   "Kontinent": "Asien",
+   "Stand": "2018[75]",
+   "Stadtdefinition": "Hauptstadtdistrikt"
+ },
+ {
+   "Rang": 113,
+   "Stadt": "Lanzhou",
+   "Einwohner": "3.012.577",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 114,
+   "Stadt": "Maschhad",
+   "Einwohner": "3.001.184",
+   "Land": "Iran Iran",
+   "Kontinent": "Asien",
+   "Stand": "2016[76]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 115,
+   "Stadt": "Nantong",
+   "Einwohner": "2.987.600",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[77]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 116,
+   "Stadt": "Surabaya",
+   "Einwohner": "2.972.801",
+   "Land": "Indonesien Indonesien",
+   "Kontinent": "Asien",
+   "Stand": "2022[78]",
+   "Stadtdefinition": "provinzunmittelbare Stadt (Kota)"
+ },
+ {
+   "Rang": 117,
+   "Stadt": "Quezon City",
+   "Einwohner": "2.960.048",
+   "Land": "Philippinen Philippinen",
+   "Kontinent": "Asien",
+   "Stand": "2020[79]",
+   "Stadtdefinition": "Gemeinde (Lungsod)"
+ },
+ {
+   "Rang": 118,
+   "Stadt": "Taschkent",
+   "Einwohner": "2.956.384",
+   "Land": "Usbekistan Usbekistan",
+   "Kontinent": "Asien",
+   "Stand": "2023[80]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 119,
+   "Stadt": "Kiew",
+   "Einwohner": "2.952.301",
+   "Land": "Ukraine Ukraine",
+   "Kontinent": "Europa",
+   "Stand": "2022[81]",
+   "Stadtdefinition": "Stadt mit Sonderstatus"
+ },
+ {
+   "Rang": 120,
+   "Stadt": "Izmir",
+   "Einwohner": "2.948.160",
+   "Land": "Turkei Türkei",
+   "Kontinent": "Asien",
+   "Stand": "2022[8]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 121,
+   "Stadt": "Incheon",
+   "Einwohner": "2.945.454",
+   "Land": "Korea Sud Südkorea",
+   "Kontinent": "Asien",
+   "Stand": "2020[24]",
+   "Stadtdefinition": "Metropolstadt (Gwangyeoksi)"
+ },
+ {
+   "Rang": 122,
+   "Stadt": "Brasília",
+   "Einwohner": "2.923.369",
+   "Land": "Brasilien Brasilien",
+   "Kontinent": "Südamerika",
+   "Stand": "2022[82]",
+   "Stadtdefinition": "Hauptstadtdistrikt (Distrito Federal)"
+ },
+ {
+   "Rang": 123,
+   "Stadt": "Kumasi",
+   "Einwohner": "2.907.000",
+   "Land": "Ghana Ghana",
+   "Kontinent": "Afrika",
+   "Stand": "2017[83]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 124,
+   "Stadt": "Algier",
+   "Einwohner": "2.902.000",
+   "Land": "Algerien Algerien",
+   "Kontinent": "Afrika",
+   "Stand": "2023[84]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 125,
+   "Stadt": "Mbuji-Mayi",
+   "Einwohner": "2.892.000",
+   "Land": "Kongo Demokratische Republik Demokratische Republik Kongo",
+   "Kontinent": "Afrika",
+   "Stand": "2023[85]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 126,
+   "Stadt": "Nagpur",
+   "Einwohner": "2.886.562",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2020[86]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 127,
+   "Stadt": "Rom",
+   "Einwohner": "2.872.800",
+   "Land": "Italien Italien",
+   "Kontinent": "Europa",
+   "Stand": "2017[87]",
+   "Stadtdefinition": "Gemeinde (comune)"
+ },
+ {
+   "Rang": 128,
+   "Stadt": "Xuzhou",
+   "Einwohner": "2.845.552",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 129,
+   "Stadt": "Taichung",
+   "Einwohner": "2.820.787",
+   "Land": "Taiwan Taiwan",
+   "Kontinent": "Asien",
+   "Stand": "2020[62]",
+   "Stadtdefinition": "regierungsunmittelbare Stadt"
+ },
+ {
+   "Rang": 130,
+   "Stadt": "Lubumbashi",
+   "Einwohner": "2.812.000",
+   "Land": "Kongo Demokratische Republik Demokratische Republik Kongo",
+   "Kontinent": "Afrika",
+   "Stand": "2023[85]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 131,
+   "Stadt": "Toronto",
+   "Einwohner": "2.794.356",
+   "Land": "Kanada Kanada",
+   "Kontinent": "Nordamerika",
+   "Stand": "2021[88][89]",
+   "Stadtdefinition": "City"
+ },
+ {
+   "Rang": 132,
+   "Stadt": "Douala",
+   "Einwohner": "2.768.400",
+   "Land": "Kamerun Kamerun",
+   "Kontinent": "Afrika",
+   "Stand": "2015[90]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 133,
+   "Stadt": "Kaohsiung",
+   "Einwohner": "2.765.932",
+   "Land": "Taiwan Taiwan",
+   "Kontinent": "Asien",
+   "Stand": "2020[62]",
+   "Stadtdefinition": "regierungsunmittelbare Stadt"
+ },
+ {
+   "Rang": 134,
+   "Stadt": "Yaoundé",
+   "Einwohner": "2.765.600",
+   "Land": "Kamerun Kamerun",
+   "Kontinent": "Afrika",
+   "Stand": "2015[90]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 135,
+   "Stadt": "Osaka",
+   "Einwohner": "2.752.412",
+   "Land": "Japan Japan",
+   "Kontinent": "Asien",
+   "Stand": "2020[21]",
+   "Stadtdefinition": "kreisfreie Stadt (shi)"
+ },
+ {
+   "Rang": 136,
+   "Stadt": "Zibo",
+   "Einwohner": "2.750.312",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 137,
+   "Stadt": "Linyi",
+   "Einwohner": "2.743.843",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 138,
+   "Stadt": "Quito",
+   "Einwohner": "2.735.987",
+   "Land": "Ecuador Ecuador",
+   "Kontinent": "Südamerika",
+   "Stand": "2019[91]",
+   "Stadtdefinition": "Gemeinde (Municipio)"
+ },
+ {
+   "Rang": 139,
+   "Stadt": "Chicago",
+   "Einwohner": "2.696.555",
+   "Land": "Vereinigte Staaten Vereinigte Staaten",
+   "Kontinent": "Nordamerika",
+   "Stand": "2021[92]",
+   "Stadtdefinition": "City"
+ },
+ {
+   "Rang": 140,
+   "Stadt": "Gazipur",
+   "Einwohner": "2.674.697",
+   "Land": "Bangladesch Bangladesch",
+   "Kontinent": "Asien",
+   "Stand": "2022[17]",
+   "Stadtdefinition": "Gemeinde (City Corporation)"
+ },
+ {
+   "Rang": 141,
+   "Stadt": "Dakar",
+   "Einwohner": "2.646.503",
+   "Land": "Senegal Senegal",
+   "Kontinent": "Afrika",
+   "Stand": "2013[93]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 142,
+   "Stadt": "Baku",
+   "Einwohner": "2.616.948",
+   "Land": "Aserbaidschan Aserbaidschan",
+   "Kontinent": "Asien",
+   "Stand": "2019[94]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 143,
+   "Stadt": "Medellín",
+   "Einwohner": "2.611.100",
+   "Land": "Kolumbien Kolumbien",
+   "Kontinent": "Südamerika",
+   "Stand": "2023[31]",
+   "Stadtdefinition": "Gemeinde (Municipio)"
+ },
+ {
+   "Rang": 144,
+   "Stadt": "Salvador",
+   "Einwohner": "2.610.987",
+   "Land": "Brasilien Brasilien",
+   "Kontinent": "Südamerika",
+   "Stand": "2022[95]",
+   "Stadtdefinition": "Gemeinde (Município)"
+ },
+ {
+   "Rang": 145,
+   "Stadt": "Taipeh",
+   "Einwohner": "2.602.418",
+   "Land": "Taiwan Taiwan",
+   "Kontinent": "Asien",
+   "Stand": "2020[62]",
+   "Stadtdefinition": "regierungsunmittelbare Stadt"
+ },
+ {
+   "Rang": 146,
+   "Stadt": "Fortaleza",
+   "Einwohner": "2.596.157",
+   "Land": "Brasilien Brasilien",
+   "Kontinent": "Südamerika",
+   "Stand": "2022[96]",
+   "Stadtdefinition": "Gemeinde (Município)"
+ },
+ {
+   "Rang": 147,
+   "Stadt": "Wenzhou",
+   "Einwohner": "2.582.017",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 148,
+   "Stadt": "Santo Domingo",
+   "Einwohner": "2.581.827",
+   "Land": "Dominikanische Republik Dominikanische Republik",
+   "Kontinent": "Nordamerika",
+   "Stand": "2010[97]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 149,
+   "Stadt": "Brisbane",
+   "Einwohner": "2.568.927",
+   "Land": "Australien Australien",
+   "Kontinent": "Australien",
+   "Stand": "2021[49]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 150,
+   "Stadt": "Tangshan",
+   "Einwohner": "2.549.968",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 151,
+   "Stadt": "Sanaa",
+   "Einwohner": "2.545.000",
+   "Land": "Jemen Jemen",
+   "Kontinent": "Asien",
+   "Stand": "2017[98]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 152,
+   "Stadt": "Bandung",
+   "Einwohner": "2.527.854",
+   "Land": "Indonesien Indonesien",
+   "Kontinent": "Asien",
+   "Stand": "2021[78]",
+   "Stadtdefinition": "provinzunmittelbare Stadt (Kota)"
+ },
+ {
+   "Rang": 153,
+   "Stadt": "Lusaka",
+   "Einwohner": "2.526.100",
+   "Land": "Sambia Sambia",
+   "Kontinent": "Afrika",
+   "Stand": "2018[99]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 154,
+   "Stadt": "Ouagadougou",
+   "Einwohner": "2.485.600",
+   "Land": "Burkina Faso Burkina Faso",
+   "Kontinent": "Afrika",
+   "Stand": "2018[100]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 155,
+   "Stadt": "Bekasi",
+   "Einwohner": "2.468.448",
+   "Land": "Indonesien Indonesien",
+   "Kontinent": "Asien",
+   "Stand": "2021[78]",
+   "Stadtdefinition": "provinzunmittelbare Stadt (Kota)"
+ },
+ {
+   "Rang": 156,
+   "Stadt": "Indore",
+   "Einwohner": "2.463.588",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2020[101]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 157,
+   "Stadt": "Medan",
+   "Einwohner": "2.435.252",
+   "Land": "Indonesien Indonesien",
+   "Kontinent": "Asien",
+   "Stand": "2020[102]",
+   "Stadtdefinition": "provinzunmittelbare Stadt (Kota)"
+ },
+ {
+   "Rang": 158,
+   "Stadt": "Daegu",
+   "Einwohner": "2.410.700",
+   "Land": "Korea Sud Südkorea",
+   "Kontinent": "Asien",
+   "Stand": "2020[24]",
+   "Stadtdefinition": "Metropolstadt (Gwangyeoksi)"
+ },
+ {
+   "Rang": 159,
+   "Stadt": "Omdurman",
+   "Einwohner": "2.395.159",
+   "Land": "Sudan Sudan",
+   "Kontinent": "Afrika",
+   "Stand": "2022[103]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 160,
+   "Stadt": "Belo Horizonte",
+   "Einwohner": "2.392.678",
+   "Land": "Brasilien Brasilien",
+   "Kontinent": "Südamerika",
+   "Stand": "2022[104]",
+   "Stadtdefinition": "Gemeinde (Município)"
+ },
+ {
+   "Rang": 161,
+   "Stadt": "Mekka",
+   "Einwohner": "2.385.509",
+   "Land": "Saudi-Arabien Saudi-Arabien",
+   "Kontinent": "Asien",
+   "Stand": "2022[35]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 162,
+   "Stadt": "Hohhot",
+   "Einwohner": "2.373.399",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 163,
+   "Stadt": "Haikou",
+   "Einwohner": "2.349.239",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 164,
+   "Stadt": "Shaoxing",
+   "Einwohner": "2.333.080",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 165,
+   "Stadt": "Nagoya",
+   "Einwohner": "2.332.176",
+   "Land": "Japan Japan",
+   "Kontinent": "Asien",
+   "Stand": "2020[21]",
+   "Stadtdefinition": "kreisfreie Stadt (shi)"
+ },
+ {
+   "Rang": 166,
+   "Stadt": "Mogadischu",
+   "Einwohner": "2.330.700",
+   "Land": "Somalia Somalia",
+   "Kontinent": "Afrika",
+   "Stand": "2019[105]",
+   "Stadtdefinition": "Region"
+ },
+ {
+   "Rang": 167,
+   "Stadt": "Accra",
+   "Einwohner": "2.291.352",
+   "Land": "Ghana Ghana",
+   "Kontinent": "Afrika",
+   "Stand": "2023[106]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 168,
+   "Stadt": "Houston",
+   "Einwohner": "2.288.250",
+   "Land": "Vereinigte Staaten Vereinigte Staaten",
+   "Kontinent": "Nordamerika",
+   "Stand": "2021[107]",
+   "Stadtdefinition": "City"
+ },
+ {
+   "Rang": 169,
+   "Stadt": "Phnom Penh",
+   "Einwohner": "2.281.951",
+   "Land": "Kambodscha Kambodscha",
+   "Kontinent": "Asien",
+   "Stand": "2019[108]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 170,
+   "Stadt": "Guayaquil",
+   "Einwohner": "2.278.691",
+   "Land": "Ecuador Ecuador",
+   "Kontinent": "Südamerika",
+   "Stand": "2010[109]",
+   "Stadtdefinition": "Gemeinde (Municipio)"
+ },
+ {
+   "Rang": 171,
+   "Stadt": "Taoyuan",
+   "Einwohner": "2.268.807",
+   "Land": "Taiwan Taiwan",
+   "Kontinent": "Asien",
+   "Stand": "2020[62]",
+   "Stadtdefinition": "regierungsunmittelbare Stadt"
+ },
+ {
+   "Rang": 172,
+   "Stadt": "Cali",
+   "Einwohner": "2.250.800",
+   "Land": "Kolumbien Kolumbien",
+   "Kontinent": "Südamerika",
+   "Stand": "2023[31]",
+   "Stadtdefinition": "Gemeinde (Municipio)"
+ },
+ {
+   "Rang": 173,
+   "Stadt": "Zhuhai",
+   "Einwohner": "2.207.090",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 174,
+   "Stadt": "Paris",
+   "Einwohner": "2.206.488",
+   "Land": "Frankreich Frankreich",
+   "Kontinent": "Europa",
+   "Stand": "2018[110]",
+   "Stadtdefinition": "Département/Gemeinde"
+ },
+ {
+   "Rang": 175,
+   "Stadt": "Liuzhou",
+   "Einwohner": "2.204.841",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 176,
+   "Stadt": "Perth",
+   "Einwohner": "2.192.229",
+   "Land": "Australien Australien",
+   "Kontinent": "Australien",
+   "Stand": "2021[49]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 177,
+   "Stadt": "Lomé",
+   "Einwohner": "2.188.376",
+   "Land": "Togo Togo",
+   "Kontinent": "Afrika",
+   "Stand": "2022[111]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 178,
+   "Stadt": "Almaty",
+   "Einwohner": "2.147.113",
+   "Land": "Kasachstan Kasachstan",
+   "Kontinent": "Asien",
+   "Stand": "2022[112]",
+   "Stadtdefinition": "Stadt mit Sonderstatus"
+ },
+ {
+   "Rang": 179,
+   "Stadt": "Havanna",
+   "Einwohner": "2.132.183",
+   "Land": "Kuba Kuba",
+   "Kontinent": "Nordamerika",
+   "Stand": "2020[113]",
+   "Stadtdefinition": "Gemeinde (Municipio)"
+ },
+ {
+   "Rang": 180,
+   "Stadt": "Baotou",
+   "Einwohner": "2.104.114",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[114]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 181,
+   "Stadt": "Damaskus",
+   "Einwohner": "2.103.000",
+   "Land": "Syrien Syrien",
+   "Kontinent": "Asien",
+   "Stand": "2021[115]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 182,
+   "Stadt": "Aleppo",
+   "Einwohner": "2.100.000",
+   "Land": "Syrien Syrien",
+   "Kontinent": "Asien",
+   "Stand": "2011[116]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 183,
+   "Stadt": "Rawalpindi",
+   "Einwohner": "2.098.231",
+   "Land": "Pakistan Pakistan",
+   "Kontinent": "Asien",
+   "Stand": "2017[72]",
+   "Stadtdefinition": "Gemeinde (Metropolitan corporation)"
+ },
+ {
+   "Rang": 184,
+   "Stadt": "Handan",
+   "Einwohner": "2.095.134",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 185,
+   "Stadt": "Huizhou",
+   "Einwohner": "2.090.578",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[117]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 186,
+   "Stadt": "Caracas",
+   "Einwohner": "2.089.012",
+   "Land": "Venezuela Venezuela",
+   "Kontinent": "Südamerika",
+   "Stand": "2019[118]",
+   "Stadtdefinition": "Hauptstadtdistrikt (Distrito Capital)"
+ },
+ {
+   "Rang": 187,
+   "Stadt": "Manaus",
+   "Einwohner": "2.054.731",
+   "Land": "Brasilien Brasilien",
+   "Kontinent": "Südamerika",
+   "Stand": "2022[119]",
+   "Stadtdefinition": "Gemeinde (Município)"
+ },
+ {
+   "Rang": 188,
+   "Stadt": "Bursa",
+   "Einwohner": "2.051.464",
+   "Land": "Turkei Türkei",
+   "Kontinent": "Asien",
+   "Stand": "2022[8]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 189,
+   "Stadt": "Weifang",
+   "Einwohner": "2.044.028",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2021[120]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 190,
+   "Stadt": "Gujranwala",
+   "Einwohner": "2.027.001",
+   "Land": "Pakistan Pakistan",
+   "Kontinent": "Asien",
+   "Stand": "2017[72]",
+   "Stadtdefinition": "Gemeinde (Metropolitan corporation)"
+ },
+ {
+   "Rang": 191,
+   "Stadt": "Wien",
+   "Einwohner": "2.006.134",
+   "Land": "Osterreich Österreich",
+   "Kontinent": "Europa",
+   "Stand": "2024[121]",
+   "Stadtdefinition": "Land/Gemeinde (Bezirke)"
+ },
+ {
+   "Rang": 192,
+   "Stadt": "Minsk",
+   "Einwohner": "1.995.471",
+   "Land": "Belarus Belarus",
+   "Kontinent": "Europa",
+   "Stand": "2023[122]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 193,
+   "Stadt": "Kuala Lumpur",
+   "Einwohner": "1.982.112",
+   "Land": "Malaysia Malaysia",
+   "Kontinent": "Asien",
+   "Stand": "2020[123]",
+   "Stadtdefinition": "Bundesterritorium"
+ },
+ {
+   "Rang": 194,
+   "Stadt": "Brazzaville",
+   "Einwohner": "1.982.000",
+   "Land": "Kongo Republik Republik Kongo",
+   "Kontinent": "Afrika",
+   "Stand": "2019[124]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 195,
+   "Stadt": "Khartum",
+   "Einwohner": "1.974.647",
+   "Land": "Sudan Sudan",
+   "Kontinent": "Afrika",
+   "Stand": "2023[125]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 196,
+   "Stadt": "Sapporo",
+   "Einwohner": "1.973.395",
+   "Land": "Japan Japan",
+   "Kontinent": "Asien",
+   "Stand": "2020[21]",
+   "Stadtdefinition": "kreisfreie Stadt (shi)"
+ },
+ {
+   "Rang": 197,
+   "Stadt": "Peschawar",
+   "Einwohner": "1.970.042",
+   "Land": "Pakistan Pakistan",
+   "Kontinent": "Asien",
+   "Stand": "2017[72]",
+   "Stadtdefinition": "Gemeinde (Metropolitan corporation)"
+ },
+ {
+   "Rang": 198,
+   "Stadt": "Al-Chartum Bahri",
+   "Einwohner": "1.968.601",
+   "Land": "Sudan Sudan",
+   "Kontinent": "Afrika",
+   "Stand": "2015[126]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 199,
+   "Stadt": "Isfahan",
+   "Einwohner": "1.961.260",
+   "Land": "Iran Iran",
+   "Kontinent": "Asien",
+   "Stand": "2016[76]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 200,
+   "Stadt": "Benin City",
+   "Einwohner": "1.953.000",
+   "Land": "Nigeria Nigeria",
+   "Kontinent": "Afrika",
+   "Stand": "2023[55]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 201,
+   "Stadt": "Baoding",
+   "Einwohner": "1.940.384",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 202,
+   "Stadt": "Santa Cruz de la Sierra",
+   "Einwohner": "1.903.398",
+   "Land": "Bolivien Bolivien",
+   "Kontinent": "Südamerika",
+   "Stand": "2022[127]",
+   "Stadtdefinition": "städtische Bevölkerung"
+ },
+ {
+   "Rang": 203,
+   "Stadt": "Tangerang",
+   "Einwohner": "1.895.486",
+   "Land": "Indonesien Indonesien",
+   "Kontinent": "Asien",
+   "Stand": "2020[128]",
+   "Stadtdefinition": "provinzunmittelbare Stadt (Kota)"
+ },
+ {
+   "Rang": 204,
+   "Stadt": "Depok",
+   "Einwohner": "1.893.321",
+   "Land": "Indonesien Indonesien",
+   "Kontinent": "Asien",
+   "Stand": "2021[129]",
+   "Stadtdefinition": "provinzunmittelbare Stadt (Kota)"
+ },
+ {
+   "Rang": 205,
+   "Stadt": "Luoyang",
+   "Einwohner": "1.892.500",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2018[130]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 206,
+   "Stadt": "Hamburg",
+   "Einwohner": "1.888.879",
+   "Land": "Deutschland Deutschland",
+   "Kontinent": "Europa",
+   "Stand": "2022[131]",
+   "Stadtdefinition": "Land/kreisfreie Stadt (Bezirke)"
+ },
+ {
+   "Rang": 207,
+   "Stadt": "Tainan",
+   "Einwohner": "1.874.917",
+   "Land": "Taiwan Taiwan",
+   "Kontinent": "Asien",
+   "Stand": "2020[62]",
+   "Stadtdefinition": "regierungsunmittelbare Stadt"
+ },
+ {
+   "Rang": 208,
+   "Stadt": "Multan",
+   "Einwohner": "1.871.843",
+   "Land": "Pakistan Pakistan",
+   "Kontinent": "Asien",
+   "Stand": "2017[72]",
+   "Stadtdefinition": "Gemeinde (Metropolitan corporation)"
+ },
+ {
+   "Rang": 209,
+   "Stadt": "Curitiba",
+   "Einwohner": "1.871.789",
+   "Land": "Brasilien Brasilien",
+   "Kontinent": "Südamerika",
+   "Stand": "2022[132]",
+   "Stadtdefinition": "Gemeinde (Município)"
+ },
+ {
+   "Rang": 210,
+   "Stadt": "Warschau",
+   "Einwohner": "1.860.281",
+   "Land": "Polen Polen",
+   "Kontinent": "Europa",
+   "Stand": "2021[133]",
+   "Stadtdefinition": "kreisfreie Stadt"
+ },
+ {
+   "Rang": 211,
+   "Stadt": "Manila",
+   "Einwohner": "1.846.513",
+   "Land": "Philippinen Philippinen",
+   "Kontinent": "Asien",
+   "Stand": "2020[79]",
+   "Stadtdefinition": "Gemeinde (Lungsod)"
+ },
+ {
+   "Rang": 212,
+   "Stadt": "Bukarest",
+   "Einwohner": "1.819.419",
+   "Land": "Rumänien Rumänien",
+   "Kontinent": "Europa",
+   "Stand": "2021[134]",
+   "Stadtdefinition": "Kreis/Gemeinde"
+ },
+ {
+   "Rang": 213,
+   "Stadt": "Amman",
+   "Einwohner": "1.812.059",
+   "Land": "Jordanien Jordanien",
+   "Kontinent": "Asien",
+   "Stand": "2015[135]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 214,
+   "Stadt": "Tijuana",
+   "Einwohner": "1.810.645",
+   "Land": "Mexiko Mexiko",
+   "Kontinent": "Nordamerika",
+   "Stand": "2020[28]",
+   "Stadtdefinition": "Ortschaft (Localidad)"
+ },
+ {
+   "Rang": 215,
+   "Stadt": "Datong",
+   "Einwohner": "1.809.505",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 216,
+   "Stadt": "Huaiyin",
+   "Einwohner": "1.804.611",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 217,
+   "Stadt": "Yantai",
+   "Einwohner": "1.802.700",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[136]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 218,
+   "Stadt": "Bhopal",
+   "Einwohner": "1.795.648",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 219,
+   "Stadt": "Jiangmen",
+   "Einwohner": "1.795.459",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 220,
+   "Stadt": "Adana",
+   "Einwohner": "1.779.463",
+   "Land": "Turkei Türkei",
+   "Kontinent": "Asien",
+   "Stand": "2022[8]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 221,
+   "Stadt": "Ganzhou",
+   "Einwohner": "1.778.132",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 222,
+   "Stadt": "Maracaibo",
+   "Einwohner": "1.752.602",
+   "Land": "Venezuela Venezuela",
+   "Kontinent": "Südamerika",
+   "Stand": "2019[137]",
+   "Stadtdefinition": "Gemeinde (Municipio)"
+ },
+ {
+   "Rang": 223,
+   "Stadt": "Budapest",
+   "Einwohner": "1.752.704",
+   "Land": "Ungarn Ungarn",
+   "Kontinent": "Europa",
+   "Stand": "2017[138]",
+   "Stadtdefinition": "Komitat/Gemeinde"
+ },
+ {
+   "Rang": 224,
+   "Stadt": "Kigali",
+   "Einwohner": "1.745.555",
+   "Land": "Ruanda Ruanda",
+   "Kontinent": "Afrika",
+   "Stand": "2022[139]",
+   "Stadtdefinition": "Provinz"
+ },
+ {
+   "Rang": 225,
+   "Stadt": "Hyderabad",
+   "Einwohner": "1.734.309",
+   "Land": "Pakistan Pakistan",
+   "Kontinent": "Asien",
+   "Stand": "2017[72]",
+   "Stadtdefinition": "Gemeinde (Metropolitan corporation)"
+ },
+ {
+   "Rang": 226,
+   "Stadt": "Visakhapatnam",
+   "Einwohner": "1.730.320",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 227,
+   "Stadt": "Pimpri-Chinchwad",
+   "Einwohner": "1.729.359",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 228,
+   "Stadt": "Montreal",
+   "Einwohner": "1.704.694",
+   "Land": "Kanada Kanada",
+   "Kontinent": "Nordamerika",
+   "Stand": "2016[89]",
+   "Stadtdefinition": "City"
+ },
+ {
+   "Rang": 229,
+   "Stadt": "Semarang",
+   "Einwohner": "1.688.133",
+   "Land": "Indonesien Indonesien",
+   "Kontinent": "Asien",
+   "Stand": "2022[78]",
+   "Stadtdefinition": "provinzunmittelbare Stadt (Kota)"
+ },
+ {
+   "Rang": 230,
+   "Stadt": "Xianyang",
+   "Einwohner": "1.686.403",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 231,
+   "Stadt": "Belgrad",
+   "Einwohner": "1.685.563",
+   "Land": "Serbien Serbien",
+   "Kontinent": "Europa",
+   "Stand": "2021[140]",
+   "Stadtdefinition": "Bezirk"
+ },
+ {
+   "Rang": 232,
+   "Stadt": "Patna",
+   "Einwohner": "1.683.200",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 233,
+   "Stadt": "Gaziantep",
+   "Einwohner": "1.680.723",
+   "Land": "Turkei Türkei",
+   "Kontinent": "Asien",
+   "Stand": "2022[8][48]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 234,
+   "Stadt": "Kampala",
+   "Einwohner": "1.680.600",
+   "Land": "Uganda Uganda",
+   "Kontinent": "Afrika",
+   "Stand": "2020[141]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 235,
+   "Stadt": "Monrovia",
+   "Einwohner": "1.678.000",
+   "Land": "Liberia Liberia",
+   "Kontinent": "Afrika",
+   "Stand": "2023[142]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 236,
+   "Stadt": "Xining",
+   "Einwohner": "1.677.177",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 237,
+   "Stadt": "Zunyi",
+   "Einwohner": "1.675.245",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 238,
+   "Stadt": "Palembang",
+   "Einwohner": "1.668.848",
+   "Land": "Indonesien Indonesien",
+   "Kontinent": "Asien",
+   "Stand": "2020[143]",
+   "Stadtdefinition": "provinzunmittelbare Stadt (Kota)"
+ },
+ {
+   "Rang": 239,
+   "Stadt": "Vadodara",
+   "Einwohner": "1.666.703",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 240,
+   "Stadt": "Caloocan",
+   "Einwohner": "1.661.584",
+   "Land": "Philippinen Philippinen",
+   "Kontinent": "Asien",
+   "Stand": "2020[79]",
+   "Stadtdefinition": "Gemeinde (Lungsod)"
+ },
+ {
+   "Rang": 241,
+   "Stadt": "Conakry",
+   "Einwohner": "1.660.973",
+   "Land": "Guinea-a Guinea",
+   "Kontinent": "Afrika",
+   "Stand": "2014[144]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 242,
+   "Stadt": "Kunshan",
+   "Einwohner": "1.652.159",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 243,
+   "Stadt": "Beirut",
+   "Einwohner": "1.650.000",
+   "Land": "Libanon Libanon",
+   "Kontinent": "Asien",
+   "Stand": "2017[145]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 244,
+   "Stadt": "Ecatepec de Morelos",
+   "Einwohner": "1.643.623",
+   "Land": "Mexiko Mexiko",
+   "Kontinent": "Nordamerika",
+   "Stand": "2020[28]",
+   "Stadtdefinition": "Ortschaft (Localidad)"
+ },
+ {
+   "Rang": 245,
+   "Stadt": "Barcelona",
+   "Einwohner": "1.636.193",
+   "Land": "Spanien Spanien",
+   "Kontinent": "Europa",
+   "Stand": "2022[146]",
+   "Stadtdefinition": "Gemeinde (Municipio)"
+ },
+ {
+   "Rang": 246,
+   "Stadt": "Ghaziabad",
+   "Einwohner": "1.636.068",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 247,
+   "Stadt": "Nowosibirsk",
+   "Einwohner": "1.633.595",
+   "Land": "Russland Russland",
+   "Kontinent": "Asien",
+   "Stand": "2021[12]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 248,
+   "Stadt": "Auckland",
+   "Einwohner": "1.628.900",
+   "Land": "Neuseeland Neuseeland",
+   "Kontinent": "Australien",
+   "Stand": "2018[147]",
+   "Stadtdefinition": "Unitary Authority"
+ },
+ {
+   "Rang": 249,
+   "Stadt": "Phoenix",
+   "Einwohner": "1.624.569",
+   "Land": "Vereinigte Staaten Vereinigte Staaten",
+   "Kontinent": "Nordamerika",
+   "Stand": "2021[148]",
+   "Stadtdefinition": "City"
+ },
+ {
+   "Rang": 250,
+   "Stadt": "Ludhiana",
+   "Einwohner": "1.613.878",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 251,
+   "Stadt": "Fukuoka",
+   "Einwohner": "1.612.392",
+   "Land": "Japan Japan",
+   "Kontinent": "Asien",
+   "Stand": "2020[21]",
+   "Stadtdefinition": "kreisfreie Stadt (shi)"
+ },
+ {
+   "Rang": 252,
+   "Stadt": "Daqing",
+   "Einwohner": "1.604.027",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 253,
+   "Stadt": "Kisangani",
+   "Einwohner": "1.602.144",
+   "Land": "Kongo Demokratische Republik Demokratische Republik Kongo",
+   "Kontinent": "Afrika",
+   "Stand": "2016[149]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 254,
+   "Stadt": "Wuhu",
+   "Einwohner": "1.598.165",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 255,
+   "Stadt": "Karadsch",
+   "Einwohner": "1.592.492",
+   "Land": "Iran Iran",
+   "Kontinent": "Asien",
+   "Stand": "2016[76]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 256,
+   "Stadt": "León",
+   "Einwohner": "1.579.803",
+   "Land": "Mexiko Mexiko",
+   "Kontinent": "Nordamerika",
+   "Stand": "2020[28]",
+   "Stadtdefinition": "Ortschaft (Localidad)"
+ },
+ {
+   "Rang": 257,
+   "Stadt": "Philadelphia",
+   "Einwohner": "1.576.251",
+   "Land": "Vereinigte Staaten Vereinigte Staaten",
+   "Kontinent": "Nordamerika",
+   "Stand": "2021[150]",
+   "Stadtdefinition": "City"
+ },
+ {
+   "Rang": 258,
+   "Stadt": "Agra",
+   "Einwohner": "1.574.542",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 259,
+   "Stadt": "Schiras",
+   "Einwohner": "1.565.572",
+   "Land": "Iran Iran",
+   "Kontinent": "Asien",
+   "Stand": "2016[76]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 260,
+   "Stadt": "Tabriz",
+   "Einwohner": "1.558.693",
+   "Land": "Iran Iran",
+   "Kontinent": "Asien",
+   "Stand": "2016[76]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 261,
+   "Stadt": "Jekaterinburg",
+   "Einwohner": "1.544.376",
+   "Land": "Russland Russland",
+   "Kontinent": "Asien",
+   "Stand": "2022[12]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 262,
+   "Stadt": "Puebla",
+   "Einwohner": "1.542.232",
+   "Land": "Mexiko Mexiko",
+   "Kontinent": "Nordamerika",
+   "Stand": "2020[28]",
+   "Stadtdefinition": "Ortschaft (Localidad)"
+ },
+ {
+   "Rang": 263,
+   "Stadt": "Putian",
+   "Einwohner": "1.539.389",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 264,
+   "Stadt": "Kawasaki",
+   "Einwohner": "1.538.262",
+   "Land": "Japan Japan",
+   "Kontinent": "Asien",
+   "Stand": "2020[21]",
+   "Stadtdefinition": "kreisfreie Stadt (shi)"
+ },
+ {
+   "Rang": 265,
+   "Stadt": "Kōbe",
+   "Einwohner": "1.525.152",
+   "Land": "Japan Japan",
+   "Kontinent": "Asien",
+   "Stand": "2020[21]",
+   "Stadtdefinition": "kreisfreie Stadt (shi)"
+ },
+ {
+   "Rang": 266,
+   "Stadt": "Qinhuangdao",
+   "Einwohner": "1.520.199",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 267,
+   "Stadt": "Jilin",
+   "Einwohner": "1.509.292",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 268,
+   "Stadt": "München",
+   "Einwohner": "1.505.254",
+   "Land": "Deutschland Deutschland",
+   "Kontinent": "Europa",
+   "Stand": "2022[151]",
+   "Stadtdefinition": "kreisfreie Stadt"
+ },
+ {
+   "Rang": 269,
+   "Stadt": "Ciudad Juárez",
+   "Einwohner": "1.501.551",
+   "Land": "Mexiko Mexiko",
+   "Kontinent": "Nordamerika",
+   "Stand": "2020[28]",
+   "Stadtdefinition": "Ortschaft (Localidad)"
+ },
+ {
+   "Rang": 270,
+   "Stadt": "Recife",
+   "Einwohner": "1.494.586",
+   "Land": "Brasilien Brasilien",
+   "Kontinent": "Südamerika",
+   "Stand": "2022[152]",
+   "Stadtdefinition": "Gemeinde (Município)"
+ },
+ {
+   "Rang": 271,
+   "Stadt": "Daejeon",
+   "Einwohner": "1.488.435",
+   "Land": "Korea Sud Südkorea",
+   "Kontinent": "Asien",
+   "Stand": "2020[24]",
+   "Stadtdefinition": "Metropolstadt (Gwangyeoksi)"
+ },
+ {
+   "Rang": 272,
+   "Stadt": "Nashik",
+   "Einwohner": "1.486.973",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 273,
+   "Stadt": "Harare",
+   "Einwohner": "1.485.231",
+   "Land": "Simbabwe Simbabwe",
+   "Kontinent": "Afrika",
+   "Stand": "2014[153]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 274,
+   "Stadt": "Yiwu",
+   "Einwohner": "1.481.384",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 275,
+   "Stadt": "Anshan",
+   "Einwohner": "1.480.332",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 276,
+   "Stadt": "Gwangju",
+   "Einwohner": "1.477.573",
+   "Land": "Korea Sud Südkorea",
+   "Kontinent": "Asien",
+   "Stand": "2020[24]",
+   "Stadtdefinition": "Metropolstadt (Gwangyeoksi)"
+ },
+ {
+   "Rang": 277,
+   "Stadt": "Quanzhou",
+   "Einwohner": "1.469.157",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 278,
+   "Stadt": "Kyōto",
+   "Einwohner": "1.463.723",
+   "Land": "Japan Japan",
+   "Kontinent": "Asien",
+   "Stand": "2020[21]",
+   "Stadtdefinition": "kreisfreie Stadt (shi)"
+ },
+ {
+   "Rang": 279,
+   "Stadt": "Ulaanbaatar",
+   "Einwohner": "1.466.431",
+   "Land": "Mongolei Mongolei",
+   "Kontinent": "Asien",
+   "Stand": "2021[154]",
+   "Stadtdefinition": "Hauptstadtdistrikt"
+ },
+ {
+   "Rang": 280,
+   "Stadt": "Cixi",
+   "Einwohner": "1.457.510",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 281,
+   "Stadt": "San Antonio",
+   "Einwohner": "1.451.853",
+   "Land": "Vereinigte Staaten Vereinigte Staaten",
+   "Kontinent": "Nordamerika",
+   "Stand": "2021[155]",
+   "Stadtdefinition": "City"
+ },
+ {
+   "Rang": 282,
+   "Stadt": "Charkiw",
+   "Einwohner": "1.450.082",
+   "Land": "Ukraine Ukraine",
+   "Kontinent": "Europa",
+   "Stand": "2018[81]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 283,
+   "Stadt": "Davao City",
+   "Einwohner": "1.436.085",
+   "Land": "Philippinen Philippinen",
+   "Kontinent": "Asien",
+   "Stand": "2020[156]",
+   "Stadtdefinition": "Gemeinde (Lungsod)"
+ },
+ {
+   "Rang": 284,
+   "Stadt": "Makassar",
+   "Einwohner": "1.423.877",
+   "Land": "Indonesien Indonesien",
+   "Kontinent": "Asien",
+   "Stand": "2020[157]",
+   "Stadtdefinition": "provinzunmittelbare Stadt (Kota)"
+ },
+ {
+   "Rang": 285,
+   "Stadt": "Tai’an",
+   "Einwohner": "1.416.591",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 286,
+   "Stadt": "Goiânia",
+   "Einwohner": "1.414.483",
+   "Land": "Brasilien Brasilien",
+   "Kontinent": "Südamerika",
+   "Stand": "2022[158]",
+   "Stadtdefinition": "Gemeinde (Município)"
+ },
+ {
+   "Rang": 287,
+   "Stadt": "Medina",
+   "Einwohner": "1.411.599",
+   "Land": "Saudi-Arabien Saudi-Arabien",
+   "Kontinent": "Asien",
+   "Stand": "2022[35]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 288,
+   "Stadt": "Nanyang",
+   "Einwohner": "1.407.616",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 289,
+   "Stadt": "Faridabad",
+   "Einwohner": "1.404.653",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 290,
+   "Stadt": "Porto Alegre",
+   "Einwohner": "1.404.269",
+   "Land": "Brasilien Brasilien",
+   "Kontinent": "Südamerika",
+   "Stand": "2022[159]",
+   "Stadtdefinition": "Gemeinde (Município)"
+ },
+ {
+   "Rang": 291,
+   "Stadt": "Zhanjiang",
+   "Einwohner": "1.400.709",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 292,
+   "Stadt": "Dammam",
+   "Einwohner": "1.386.166",
+   "Land": "Saudi-Arabien Saudi-Arabien",
+   "Kontinent": "Asien",
+   "Stand": "2022[35]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 293,
+   "Stadt": "Guadalajara",
+   "Einwohner": "1.385.621",
+   "Land": "Mexiko Mexiko",
+   "Kontinent": "Nordamerika",
+   "Stand": "2020[28]",
+   "Stadtdefinition": "Ortschaft (Localidad)"
+ },
+ {
+   "Rang": 294,
+   "Stadt": "San Diego",
+   "Einwohner": "1.381.611",
+   "Land": "Vereinigte Staaten Vereinigte Staaten",
+   "Kontinent": "Nordamerika",
+   "Stand": "2021[160]",
+   "Stadtdefinition": "City"
+ },
+ {
+   "Rang": 295,
+   "Stadt": "Belém",
+   "Einwohner": "1.367.336",
+   "Land": "Brasilien Brasilien",
+   "Kontinent": "Südamerika",
+   "Stand": "2022[161]",
+   "Stadtdefinition": "Gemeinde (Município)"
+ },
+ {
+   "Rang": 296,
+   "Stadt": "Mailand",
+   "Einwohner": "1.366.180",
+   "Land": "Italien Italien",
+   "Kontinent": "Europa",
+   "Stand": "2017[87]",
+   "Stadtdefinition": "Gemeinde (comune)"
+ },
+ {
+   "Rang": 297,
+   "Stadt": "Guarulhos",
+   "Einwohner": "1.383.272",
+   "Land": "Brasilien Brasilien",
+   "Kontinent": "Südamerika",
+   "Stand": "2022[162]",
+   "Stadtdefinition": "Gemeinde (Município)"
+ },
+ {
+   "Rang": 298,
+   "Stadt": "Konya",
+   "Einwohner": "1.365.287",
+   "Land": "Turkei Türkei",
+   "Kontinent": "Asien",
+   "Stand": "2022[8]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 299,
+   "Stadt": "Mossul",
+   "Einwohner": "1.361.819",
+   "Land": "Irak Irak",
+   "Kontinent": "Asien",
+   "Stand": "2018[36]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 300,
+   "Stadt": "Guilin",
+   "Einwohner": "1.361.244",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 301,
+   "Stadt": "Tangerang Selatan",
+   "Einwohner": "1.354.350",
+   "Land": "Indonesien Indonesien",
+   "Kontinent": "Asien",
+   "Stand": "2020[163]",
+   "Stadtdefinition": "provinzunmittelbare Stadt (Kota)"
+ },
+ {
+   "Rang": 302,
+   "Stadt": "Yancheng",
+   "Einwohner": "1.353.475",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 303,
+   "Stadt": "Zaozhuang",
+   "Einwohner": "1.349.883",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 304,
+   "Stadt": "Taizhou",
+   "Einwohner": "1.348.327",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 305,
+   "Stadt": "Shangrao",
+   "Einwohner": "1.342.220",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 306,
+   "Stadt": "Basra",
+   "Einwohner": "1.340.827",
+   "Land": "Irak Irak",
+   "Kontinent": "Asien",
+   "Stand": "2018[36]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 307,
+   "Stadt": "Astana",
+   "Einwohner": "1.340.782",
+   "Land": "Kasachstan Kasachstan",
+   "Kontinent": "Asien",
+   "Stand": "2022[112]",
+   "Stadtdefinition": "Stadt mit Sonderstatus"
+ },
+ {
+   "Rang": 308,
+   "Stadt": "Jiangyin",
+   "Einwohner": "1.331.352",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 309,
+   "Stadt": "Nouakchott",
+   "Einwohner": "1.324.700",
+   "Land": "Mauretanien Mauretanien",
+   "Kontinent": "Afrika",
+   "Stand": "2022[164]",
+   "Stadtdefinition": "Hauptstadtdistrikt"
+ },
+ {
+   "Rang": 310,
+   "Stadt": "Saitama",
+   "Einwohner": "1.324.025",
+   "Land": "Japan Japan",
+   "Kontinent": "Asien",
+   "Stand": "2020[21]",
+   "Stadtdefinition": "kreisfreie Stadt (shi)"
+ },
+ {
+   "Rang": 311,
+   "Stadt": "Antalya",
+   "Einwohner": "1.322.766",
+   "Land": "Turkei Türkei",
+   "Kontinent": "Asien",
+   "Stand": "2022[8][48]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 312,
+   "Stadt": "Córdoba",
+   "Einwohner": "1.317.298",
+   "Land": "Argentinien Argentinien",
+   "Kontinent": "Südamerika",
+   "Stand": "2010[74]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 313,
+   "Stadt": "Adelaide",
+   "Einwohner": "1.313.927",
+   "Land": "Australien Australien",
+   "Kontinent": "Australien",
+   "Stand": "2017[165]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 314,
+   "Stadt": "Meerut",
+   "Einwohner": "1.309.023",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 315,
+   "Stadt": "Kasan",
+   "Einwohner": "1.308.660",
+   "Land": "Russland Russland",
+   "Kontinent": "Europa",
+   "Stand": "2021[12]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 316,
+   "Stadt": "Maoming",
+   "Einwohner": "1.307.802",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 317,
+   "Stadt": "Calgary",
+   "Einwohner": "1.306.784",
+   "Land": "Kanada Kanada",
+   "Kontinent": "Nordamerika",
+   "Stand": "2021[166]",
+   "Stadtdefinition": "City"
+ },
+ {
+   "Rang": 318,
+   "Stadt": "Prag",
+   "Einwohner": "1.294.513",
+   "Land": "Tschechien Tschechien",
+   "Kontinent": "Europa",
+   "Stand": "2018[167]",
+   "Stadtdefinition": "Kraj/Statutarstadt"
+ },
+ {
+   "Rang": 319,
+   "Stadt": "Heze",
+   "Einwohner": "1.293.767",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 320,
+   "Stadt": "Dallas",
+   "Einwohner": "1.288.457",
+   "Land": "Vereinigte Staaten Vereinigte Staaten",
+   "Kontinent": "Nordamerika",
+   "Stand": "2021[168]",
+   "Stadtdefinition": "City"
+ },
+ {
+   "Rang": 321,
+   "Stadt": "Montevideo",
+   "Einwohner": "1.287.452",
+   "Land": "Uruguay Uruguay",
+   "Kontinent": "Südamerika",
+   "Stand": "2023[169]",
+   "Stadtdefinition": "Gemeinde (Municipio)"
+ },
+ {
+   "Rang": 322,
+   "Stadt": "Rajkot",
+   "Einwohner": "1.286.995",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 323,
+   "Stadt": "Onitsha",
+   "Einwohner": "1.285.000",
+   "Land": "Nigeria Nigeria",
+   "Kontinent": "Afrika",
+   "Stand": "2018[170]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 324,
+   "Stadt": "Yichang",
+   "Einwohner": "1.284.305",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 325,
+   "Stadt": "Tanger",
+   "Einwohner": "1.275.428",
+   "Land": "Marokko Marokko",
+   "Kontinent": "Afrika",
+   "Stand": "2024[4]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 326,
+   "Stadt": "Schardscha",
+   "Einwohner": "1.274.749",
+   "Land": "Vereinigte Arabische Emirate Vereinigte Arabische Emirate",
+   "Kontinent": "Asien",
+   "Stand": "2015[71]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 327,
+   "Stadt": "Antananarivo",
+   "Einwohner": "1.274.225",
+   "Land": "Madagaskar Madagaskar",
+   "Kontinent": "Afrika",
+   "Stand": "2018[171]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 328,
+   "Stadt": "Xinxiang",
+   "Einwohner": "1.271.350",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 329,
+   "Stadt": "Abu Dhabi",
+   "Einwohner": "1.266.189",
+   "Land": "Vereinigte Arabische Emirate Vereinigte Arabische Emirate",
+   "Kontinent": "Asien",
+   "Stand": "2016[71]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 330,
+   "Stadt": "Zapopan",
+   "Einwohner": "1.257.547",
+   "Land": "Mexiko Mexiko",
+   "Kontinent": "Nordamerika",
+   "Stand": "2020[28]",
+   "Stadtdefinition": "Ortschaft (Localidad)"
+ },
+ {
+   "Rang": 331,
+   "Stadt": "Nanchong",
+   "Einwohner": "1.254.455",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 332,
+   "Stadt": "Chaozhou",
+   "Einwohner": "1.254.007",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 333,
+   "Stadt": "Bukavu",
+   "Einwohner": "1.249.000",
+   "Land": "Kongo Demokratische Republik Demokratische Republik Kongo",
+   "Kontinent": "Afrika",
+   "Stand": "2023[85]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 334,
+   "Stadt": "Kalyan-Dombivli",
+   "Einwohner": "1.246.381",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 335,
+   "Stadt": "Jieyang",
+   "Einwohner": "1.242.906",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 336,
+   "Stadt": "Schubra al-Chaima",
+   "Einwohner": "1.240.289",
+   "Land": "Agypten Ägypten",
+   "Kontinent": "Afrika",
+   "Stand": "2021[45]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 337,
+   "Stadt": "Huainan",
+   "Einwohner": "1.238.488",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2010[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 338,
+   "Stadt": "Sofia",
+   "Einwohner": "1.236.047",
+   "Land": "Bulgarien Bulgarien",
+   "Kontinent": "Europa",
+   "Stand": "2016[172]",
+   "Stadtdefinition": "Bezirk/Gemeinde"
+ },
+ {
+   "Rang": 339,
+   "Stadt": "Changshu",
+   "Einwohner": "1.230.599",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 340,
+   "Stadt": "Fushun",
+   "Einwohner": "1.228.890",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 341,
+   "Stadt": "Lilongwe",
+   "Einwohner": "1.227.100",
+   "Land": "Malawi Malawi",
+   "Kontinent": "Afrika",
+   "Stand": "2018[173]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 342,
+   "Stadt": "Nischni Nowgorod",
+   "Einwohner": "1.226.076",
+   "Land": "Russland Russland",
+   "Kontinent": "Europa",
+   "Stand": "2021[12]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 343,
+   "Stadt": "Mandalay",
+   "Einwohner": "1.225.546",
+   "Land": "Myanmar Myanmar",
+   "Kontinent": "Asien",
+   "Stand": "2014[52]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 344,
+   "Stadt": "Barranquilla",
+   "Einwohner": "1.224.000",
+   "Land": "Kolumbien Kolumbien",
+   "Kontinent": "Südamerika",
+   "Stand": "2017[31]",
+   "Stadtdefinition": "Gemeinde (Municipio)"
+ },
+ {
+   "Rang": 345,
+   "Stadt": "Vasai-Virar",
+   "Einwohner": "1.221.233",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 346,
+   "Stadt": "Suwon",
+   "Einwohner": "1.210.150",
+   "Land": "Korea Sud Südkorea",
+   "Kontinent": "Asien",
+   "Stand": "2020[24]",
+   "Stadtdefinition": "kreisfreie Stadt (Si)"
+ },
+ {
+   "Rang": 347,
+   "Stadt": "Varanasi",
+   "Einwohner": "1.201.815",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 348,
+   "Stadt": "Ghom",
+   "Einwohner": "1.201.158",
+   "Land": "Iran Iran",
+   "Kontinent": "Asien",
+   "Stand": "2016[76]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 349,
+   "Stadt": "Hiroshima",
+   "Einwohner": "1.200.754",
+   "Land": "Japan Japan",
+   "Kontinent": "Asien",
+   "Stand": "2020[21]",
+   "Stadtdefinition": "kreisfreie Stadt (shi)"
+ },
+ {
+   "Rang": 350,
+   "Stadt": "Qingyuan",
+   "Einwohner": "1.197.581",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 351,
+   "Stadt": "Batam",
+   "Einwohner": "1.196.396",
+   "Land": "Indonesien Indonesien",
+   "Kontinent": "Asien",
+   "Stand": "2020[174]",
+   "Stadtdefinition": "provinzunmittelbare Stadt (Kota)"
+ },
+ {
+   "Rang": 352,
+   "Stadt": "Kaifeng",
+   "Einwohner": "1.193.802",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 353,
+   "Stadt": "Srinagar",
+   "Einwohner": "1.192.792",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 354,
+   "Stadt": "Xianyang",
+   "Einwohner": "1.192.776",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 355,
+   "Stadt": "Fuyang",
+   "Einwohner": "1.191.810",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 356,
+   "Stadt": "Nelson Mandela Bay (Gqeberha)",
+   "Einwohner": "1.190.496",
+   "Land": "Sudafrika Südafrika",
+   "Kontinent": "Afrika",
+   "Stand": "2022[175]",
+   "Stadtdefinition": "Metropolgemeinde"
+ },
+ {
+   "Rang": 357,
+   "Stadt": "Tscheljabinsk",
+   "Einwohner": "1.189.525",
+   "Land": "Russland Russland",
+   "Kontinent": "Asien",
+   "Stand": "2021[12]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 358,
+   "Stadt": "Jiaxing",
+   "Einwohner": "1.188.321",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 359,
+   "Stadt": "Anyang",
+   "Einwohner": "1.187.772",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 360,
+   "Stadt": "Krasnojarsk",
+   "Einwohner": "1.187.771",
+   "Land": "Russland Russland",
+   "Kontinent": "Asien",
+   "Stand": "2021[12]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 361,
+   "Stadt": "Hengyang",
+   "Einwohner": "1.185.130",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 362,
+   "Stadt": "Ahvaz",
+   "Einwohner": "1.184.788",
+   "Land": "Iran Iran",
+   "Kontinent": "Asien",
+   "Stand": "2016[76]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 363,
+   "Stadt": "Schymkent",
+   "Einwohner": "1.184.113",
+   "Land": "Kasachstan Kasachstan",
+   "Kontinent": "Asien",
+   "Stand": "2022[112]",
+   "Stadtdefinition": "Stadt mit Sonderstatus"
+ },
+ {
+   "Rang": 364,
+   "Stadt": "Fès",
+   "Einwohner": "1.182.963",
+   "Land": "Marokko Marokko",
+   "Kontinent": "Afrika",
+   "Stand": "2024[2]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 365,
+   "Stadt": "Tripolis",
+   "Einwohner": "1.176.000",
+   "Land": "Libyen Libyen",
+   "Kontinent": "Afrika",
+   "Stand": "2022[176]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 366,
+   "Stadt": "Samara",
+   "Einwohner": "1.173.299",
+   "Land": "Russland Russland",
+   "Kontinent": "Europa",
+   "Stand": "2021[12]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 367,
+   "Stadt": "Jinjiang",
+   "Einwohner": "1.172.827",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2010[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 368,
+   "Stadt": "Aurangabad",
+   "Einwohner": "1.171.330",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 369,
+   "Stadt": "Campinas",
+   "Einwohner": "1.170.247",
+   "Land": "Brasilien Brasilien",
+   "Kontinent": "Südamerika",
+   "Stand": "2022[177]",
+   "Stadtdefinition": "Gemeinde (Município)"
+ },
+ {
+   "Rang": 370,
+   "Stadt": "Kananga",
+   "Einwohner": "1.169.000",
+   "Land": "Kongo Demokratische Republik Demokratische Republik Kongo",
+   "Kontinent": "Afrika",
+   "Stand": "2015[178]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 371,
+   "Stadt": "Bandar Lampung",
+   "Einwohner": "1.166.066",
+   "Land": "Indonesien Indonesien",
+   "Kontinent": "Asien",
+   "Stand": "2020[179]",
+   "Stadtdefinition": "provinzunmittelbare Stadt (Kota)"
+ },
+ {
+   "Rang": 372,
+   "Stadt": "Dhanbad",
+   "Einwohner": "1.161.561",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 373,
+   "Stadt": "Naypyidaw",
+   "Einwohner": "1.160.242",
+   "Land": "Myanmar Myanmar",
+   "Kontinent": "Asien",
+   "Stand": "2014[180]",
+   "Stadtdefinition": "Hauptstadtdistrikt"
+ },
+ {
+   "Rang": 374,
+   "Stadt": "Yinchuan",
+   "Einwohner": "1.159.457",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2010[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 375,
+   "Stadt": "Barquisimeto",
+   "Einwohner": "1.159.062",
+   "Land": "Venezuela Venezuela",
+   "Kontinent": "Südamerika",
+   "Stand": "2019[181]",
+   "Stadtdefinition": "Gemeinde (Municipio)"
+ },
+ {
+   "Rang": 376,
+   "Stadt": "Kaduna",
+   "Einwohner": "1.158.000",
+   "Land": "Nigeria Nigeria",
+   "Kontinent": "Afrika",
+   "Stand": "2023[182]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 377,
+   "Stadt": "Rizhao",
+   "Einwohner": "1.147.175",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 378,
+   "Stadt": "Ufa",
+   "Einwohner": "1.144.809",
+   "Land": "Russland Russland",
+   "Kontinent": "Europa",
+   "Stand": "2021[12]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 379,
+   "Stadt": "Monterrey",
+   "Einwohner": "1.142.952",
+   "Land": "Mexiko Mexiko",
+   "Kontinent": "Nordamerika",
+   "Stand": "2020[28]",
+   "Stadtdefinition": "Ortschaft (Localidad)"
+ },
+ {
+   "Rang": 380,
+   "Stadt": "Rostow am Don",
+   "Einwohner": "1.142.162",
+   "Land": "Russland Russland",
+   "Kontinent": "Europa",
+   "Stand": "2021[12]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 381,
+   "Stadt": "Birmingham",
+   "Einwohner": "1.137.123",
+   "Land": "Vereinigtes Konigreich Vereinigtes Königreich",
+   "Kontinent": "Europa",
+   "Stand": "2017[27]",
+   "Stadtdefinition": "Metropolitan Borough/City"
+ },
+ {
+   "Rang": 382,
+   "Stadt": "Dazhou",
+   "Einwohner": "1.135.817",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 383,
+   "Stadt": "Ulsan",
+   "Einwohner": "1.135.423",
+   "Land": "Korea Sud Südkorea",
+   "Kontinent": "Asien",
+   "Stand": "2020[24]",
+   "Stadtdefinition": "Metropolstadt (Gwangyeoksi)"
+ },
+ {
+   "Rang": 384,
+   "Stadt": "Amritsar",
+   "Einwohner": "1.132.761",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 385,
+   "Stadt": "Luzhou",
+   "Einwohner": "1.128.479",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 386,
+   "Stadt": "Omsk",
+   "Einwohner": "1.125.695",
+   "Land": "Russland Russland",
+   "Kontinent": "Asien",
+   "Stand": "2022[12]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 387,
+   "Stadt": "Yueyang",
+   "Einwohner": "1.125.448",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 388,
+   "Stadt": "Zhenjiang",
+   "Einwohner": "1.123.813",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 389,
+   "Stadt": "Bischkek",
+   "Einwohner": "1.120.827",
+   "Land": "Kirgisistan Kirgisistan",
+   "Kontinent": "Asien",
+   "Stand": "2022[183]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 390,
+   "Stadt": "Navi Mumbai",
+   "Einwohner": "1.119.477",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 391,
+   "Stadt": "Prayagraj",
+   "Einwohner": "1.117.094",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 392,
+   "Stadt": "Baoji",
+   "Einwohner": "1.107.702",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 393,
+   "Stadt": "Mwanza",
+   "Einwohner": "1.104.521",
+   "Land": "Tansania Tansania",
+   "Kontinent": "Afrika",
+   "Stand": "2022[43]",
+   "Stadtdefinition": "Gemeinde (City)"
+ },
+ {
+   "Rang": 394,
+   "Stadt": "Maputo",
+   "Einwohner": "1.101.170",
+   "Land": "Mosambik Mosambik",
+   "Kontinent": "Afrika",
+   "Stand": "2017[184]",
+   "Stadtdefinition": "Stadt mit Provinzstatus"
+ },
+ {
+   "Rang": 395,
+   "Stadt": "Yibin",
+   "Einwohner": "1.100.737",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 396,
+   "Stadt": "Changde",
+   "Einwohner": "1.100.719",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 397,
+   "Stadt": "Krasnodar",
+   "Einwohner": "1.099.344",
+   "Land": "Russland Russland",
+   "Kontinent": "Asien",
+   "Stand": "2021[12]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 398,
+   "Stadt": "Sendai",
+   "Einwohner": "1.096.704",
+   "Land": "Japan Japan",
+   "Kontinent": "Asien",
+   "Stand": "2020[21]",
+   "Stadtdefinition": "kreisfreie Stadt (shi)"
+ },
+ {
+   "Rang": 399,
+   "Stadt": "Chifeng",
+   "Einwohner": "1.093.068",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 400,
+   "Stadt": "N’Djamena",
+   "Einwohner": "1.092.000",
+   "Land": "Tschad Tschad",
+   "Kontinent": "Afrika",
+   "Stand": "2012[185]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 401,
+   "Stadt": "Diyarbakır",
+   "Einwohner": "1.087.786",
+   "Land": "Turkei Türkei",
+   "Kontinent": "Asien",
+   "Stand": "2022[48]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 402,
+   "Stadt": "Köln",
+   "Einwohner": "1.084.858",
+   "Land": "Deutschland Deutschland",
+   "Kontinent": "Europa",
+   "Stand": "2022[186]",
+   "Stadtdefinition": "kreisfreie Stadt"
+ },
+ {
+   "Rang": 403,
+   "Stadt": "Huzhou",
+   "Einwohner": "1.083.953",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 404,
+   "Stadt": "Tiflis",
+   "Einwohner": "1.082.400",
+   "Land": "Georgien Georgien",
+   "Kontinent": "Asien",
+   "Stand": "2016[187]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 405,
+   "Stadt": "Suqian",
+   "Einwohner": "1.081.559",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5][5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 406,
+   "Stadt": "Wanzhou",
+   "Einwohner": "1.078.149",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 407,
+   "Stadt": "Bengbu",
+   "Einwohner": "1.077.704",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 408,
+   "Stadt": "Jerewan",
+   "Einwohner": "1.077.600",
+   "Land": "Armenien Armenien",
+   "Kontinent": "Asien",
+   "Stand": "2018[188]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 409,
+   "Stadt": "Yangzhou",
+   "Einwohner": "1.077.531",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2010[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 410,
+   "Stadt": "Ranchi",
+   "Einwohner": "1.073.440",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 411,
+   "Stadt": "Nezahualcóyotl",
+   "Einwohner": "1.072.676",
+   "Land": "Mexiko Mexiko",
+   "Kontinent": "Nordamerika",
+   "Stand": "2020[28]",
+   "Stadtdefinition": "Ortschaft (Localidad)"
+ },
+ {
+   "Rang": 412,
+   "Stadt": "Haora",
+   "Einwohner": "1.072.161",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 413,
+   "Stadt": "Lu’an",
+   "Einwohner": "1.069.940",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 414,
+   "Stadt": "Ottawa",
+   "Einwohner": "1.068.821",
+   "Land": "Kanada Kanada",
+   "Kontinent": "Nordamerika",
+   "Stand": "2021[189]",
+   "Stadtdefinition": "City"
+ },
+ {
+   "Rang": 415,
+   "Stadt": "Yongin",
+   "Einwohner": "1.066.975",
+   "Land": "Korea Sud Südkorea",
+   "Kontinent": "Asien",
+   "Stand": "2020[24]",
+   "Stadtdefinition": "kreisfreie Stadt (Si)"
+ },
+ {
+   "Rang": 416,
+   "Stadt": "Tegucigalpa",
+   "Einwohner": "1.065.600",
+   "Land": "Honduras Honduras",
+   "Kontinent": "Nordamerika",
+   "Stand": "2018[190]",
+   "Stadtdefinition": "Gemeinde (Municipio)"
+ },
+ {
+   "Rang": 417,
+   "Stadt": "Coimbatore",
+   "Einwohner": "1.061.447",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 418,
+   "Stadt": "São Luís",
+   "Einwohner": "1.061.374",
+   "Land": "Brasilien Brasilien",
+   "Kontinent": "Südamerika",
+   "Stand": "2022[191]",
+   "Stadtdefinition": "Gemeinde (Município)"
+ },
+ {
+   "Rang": 419,
+   "Stadt": "Managua",
+   "Einwohner": "1.058.191",
+   "Land": "Nicaragua Nicaragua",
+   "Kontinent": "Nordamerika",
+   "Stand": "2021[192]",
+   "Stadtdefinition": "Gemeinde (Municipio)"
+ },
+ {
+   "Rang": 420,
+   "Stadt": "Woronesch",
+   "Einwohner": "1.057.681",
+   "Land": "Russland Russland",
+   "Kontinent": "Europa",
+   "Stand": "2021[12]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 421,
+   "Stadt": "Zhangjiagang",
+   "Einwohner": "1.055.893",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 422,
+   "Stadt": "Jabalpur",
+   "Einwohner": "1.054.336",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 423,
+   "Stadt": "Gwalior",
+   "Einwohner": "1.053.505",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 424,
+   "Stadt": "Vijayawada",
+   "Einwohner": "1.048.240",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 425,
+   "Stadt": "Changzhi",
+   "Einwohner": "1.047.461",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 426,
+   "Stadt": "Pingdingshan",
+   "Einwohner": "1.045.966",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 427,
+   "Stadt": "Goyang",
+   "Einwohner": "1.045.497",
+   "Land": "Korea Sud Südkorea",
+   "Kontinent": "Asien",
+   "Stand": "2020[24]",
+   "Stadtdefinition": "kreisfreie Stadt (Si)"
+ },
+ {
+   "Rang": 428,
+   "Stadt": "Bogor",
+   "Einwohner": "1.043.070",
+   "Land": "Indonesien Indonesien",
+   "Kontinent": "Asien",
+   "Stand": "2020[193]",
+   "Stadtdefinition": "provinzunmittelbare Stadt (Kota)"
+ },
+ {
+   "Rang": 429,
+   "Stadt": "Jinhua",
+   "Einwohner": "1.040.948",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 430,
+   "Stadt": "Mersin",
+   "Einwohner": "1.040.507",
+   "Land": "Turkei Türkei",
+   "Kontinent": "Asien",
+   "Stand": "2022[48]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 431,
+   "Stadt": "Zhaoqing",
+   "Einwohner": "1.035.810",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 432,
+   "Stadt": "San José",
+   "Einwohner": "1.035.317",
+   "Land": "Vereinigte Staaten Vereinigte Staaten",
+   "Kontinent": "Nordamerika",
+   "Stand": "2017[194]",
+   "Stadtdefinition": "City"
+ },
+ {
+   "Rang": 433,
+   "Stadt": "Asmara",
+   "Einwohner": "1.035.000",
+   "Land": "Eritrea Eritrea",
+   "Kontinent": "Afrika",
+   "Stand": "2022[195]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 434,
+   "Stadt": "Perm",
+   "Einwohner": "1.034.002",
+   "Land": "Russland Russland",
+   "Kontinent": "Europa",
+   "Stand": "2021[12]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 435,
+   "Stadt": "Jodhpur",
+   "Einwohner": "1.033.918",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 436,
+   "Stadt": "Matola",
+   "Einwohner": "1.032.197",
+   "Land": "Mosambik Mosambik",
+   "Kontinent": "Afrika",
+   "Stand": "2017[196]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 437,
+   "Stadt": "Pointe-Noire",
+   "Einwohner": "1.032.000",
+   "Land": "Kongo Republik Republik Kongo",
+   "Kontinent": "Afrika",
+   "Stand": "2019[124]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 438,
+   "Stadt": "Shangqiu",
+   "Einwohner": "1.031.123",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 439,
+   "Stadt": "Qiqihar",
+   "Einwohner": "1.029.522",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 440,
+   "Stadt": "Changwon",
+   "Einwohner": "1.029.389",
+   "Land": "Korea Sud Südkorea",
+   "Kontinent": "Asien",
+   "Stand": "2020[24]",
+   "Stadtdefinition": "kreisfreie Stadt (Si)"
+ },
+ {
+   "Rang": 441,
+   "Stadt": "Cartagena",
+   "Einwohner": "1.028.736",
+   "Land": "Kolumbien Kolumbien",
+   "Kontinent": "Südamerika",
+   "Stand": "2020[197]",
+   "Stadtdefinition": "Gemeinde (Municipio)"
+ },
+ {
+   "Rang": 442,
+   "Stadt": "Wolgograd",
+   "Einwohner": "1.028.036",
+   "Land": "Russland Russland",
+   "Kontinent": "Europa",
+   "Stand": "2021[12]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 443,
+   "Stadt": "Niamey",
+   "Einwohner": "1.026.848",
+   "Land": "Niger Niger",
+   "Kontinent": "Afrika",
+   "Stand": "2012[198]",
+   "Stadtdefinition": "Hauptstadtdistrikt"
+ },
+ {
+   "Rang": 444,
+   "Stadt": "Jinzhou",
+   "Einwohner": "1.021.478",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 445,
+   "Stadt": "Tshikapa",
+   "Einwohner": "1.020.468",
+   "Land": "Kongo Demokratische Republik Demokratische Republik Kongo",
+   "Kontinent": "Afrika",
+   "Stand": "2023[199]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 446,
+   "Stadt": "Liaocheng",
+   "Einwohner": "1.020.430",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 447,
+   "Stadt": "Madurai",
+   "Einwohner": "1.016.885",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 448,
+   "Stadt": "Xinyang",
+   "Einwohner": "1.014.843",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 449,
+   "Stadt": "Marrakesch",
+   "Einwohner": "1.014.813",
+   "Land": "Marokko Marokko",
+   "Kontinent": "Afrika",
+   "Stand": "2024[4]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 450,
+   "Stadt": "Yuyao",
+   "Einwohner": "1.013.866",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 451,
+   "Stadt": "Rui’an",
+   "Einwohner": "1.012.731",
+   "Land": "China Volksrepublik Volksrepublik China",
+   "Kontinent": "Asien",
+   "Stand": "2020[5]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 452,
+   "Stadt": "Edmonton",
+   "Einwohner": "1.010.899",
+   "Land": "Kanada Kanada",
+   "Kontinent": "Nordamerika",
+   "Stand": "2021[200]",
+   "Stadtdefinition": "City"
+ },
+ {
+   "Rang": 453,
+   "Stadt": "Odessa",
+   "Einwohner": "1.010.537",
+   "Land": "Ukraine Ukraine",
+   "Kontinent": "Europa",
+   "Stand": "2022[201]",
+   "Stadtdefinition": "Gemeinde"
+ },
+ {
+   "Rang": 454,
+   "Stadt": "Raipur",
+   "Einwohner": "1.010.087",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 455,
+   "Stadt": "Islamabad",
+   "Einwohner": "1.009.832",
+   "Land": "Pakistan Pakistan",
+   "Kontinent": "Asien",
+   "Stand": "2017[72]",
+   "Stadtdefinition": "Gemeinde (Metropolitan corporation)"
+ },
+ {
+   "Rang": 456,
+   "Stadt": "Arequipa",
+   "Einwohner": "1.002.846",
+   "Land": "Peru Peru",
+   "Kontinent": "Südamerika",
+   "Stand": "2017[23]",
+   "Stadtdefinition": "städtische Siedlung"
+ },
+ {
+   "Rang": 457,
+   "Stadt": "Kota",
+   "Einwohner": "1.001.365",
+   "Land": "Indien Indien",
+   "Kontinent": "Asien",
+   "Stand": "2011[11]",
+   "Stadtdefinition": "Gemeinde (Municipal corporation)"
+ },
+ {
+   "Rang": 458,
+   "Stadt": "Quetta",
+   "Einwohner": "1.001.205",
+   "Land": "Pakistan Pakistan",
+   "Kontinent": "Asien",
+   "Stand": "2017[72]",
+   "Stadtdefinition": "Gemeinde (Metropolitan corporation)"
+ }
+]

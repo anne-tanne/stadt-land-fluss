@@ -1,6 +1,6 @@
 import React from 'react'
 import type { Country } from '../types'
-import { useTranslation } from '../translations'
+
 
 interface CountryCardProps {
   country: Country

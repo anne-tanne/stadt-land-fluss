@@ -7,7 +7,7 @@ interface AlphabetNavProps {
   selectedContinent?: string
 }
 
-const AlphabetNav = ({ selectedLetter, onLetterSelect, countries, selectedContinent }: AlphabetNavProps) => {
+const AlphabetNav = ({ selectedLetter, onLetterSelect, countries }: AlphabetNavProps) => {
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
 
   const getProgressForLetter = (letter: string) => {

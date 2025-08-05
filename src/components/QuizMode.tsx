@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useCountryContext } from '../contexts/CountryContext'
 import { useQuizProgress } from '../hooks/useQuizProgress'
 import { useQuizLogic } from '../hooks/useQuizLogic'
@@ -10,6 +10,7 @@ import { QuizHeader } from './quiz/QuizHeader'
 import { QuizInput } from './quiz/QuizInput'
 import { FoundCountries } from './quiz/FoundCountries'
 import { HintPopup } from './quiz/HintPopup'
+import { QuizEndScreen } from './quiz/QuizEndScreen'
 import styles from '../styles/Quiz.module.css'
 
 interface QuizModeProps {
@@ -33,6 +34,7 @@ export const QuizMode: React.FC<QuizModeProps> = ({
     isQuizActive,
     getTotalCountriesFound,
     getLetterProgress,
+    getContinentProgress,
     addFoundCountry,
     resetProgress,
     saveForLater,
@@ -63,11 +65,19 @@ export const QuizMode: React.FC<QuizModeProps> = ({
     showFullCountry,
     revealHintedCountry,
     hintedCountries,
-    heavyHintedCountries
+    heavyHintedCountries,
+    everHintedCountries,
+    everHeavyHintedCountries
   } = useQuizLogic(currentLetter, foundCountries, addFoundCountry, onCountryLearned, selectedContinent)
 
   const filteredCountries = getFilteredCountries(selectedContinent)
   const hasProgress = getTotalCountriesFound() > 0
+
+  // Check if all countries for the selected continent are found
+  const allFoundForContinent = Array.from(foundCountries).filter(countryName => 
+    filteredCountries.some(country => country.name === countryName)
+  )
+  const isContinentComplete = allFoundForContinent.length === filteredCountries.length && filteredCountries.length > 0
 
   const handleContinentChange = (continent: string) => {
     setSelectedContinent(continent)
@@ -75,14 +85,24 @@ export const QuizMode: React.FC<QuizModeProps> = ({
 
   const handleStartQuiz = () => {
     startQuiz()
+    setShowEndScreen(false)
   }
 
   const handleResetProgress = () => {
     resetProgress()
   }
 
+  const [showEndScreen, setShowEndScreen] = useState<boolean>(false)
+
   const handleEndQuiz = () => {
+    setShowEndScreen(true)
+  }
+
+  const handleQuizComplete = () => {
+    // Reset progress and return to browse mode
     resetProgress()
+    setShowEndScreen(false)
+    onReturnToBrowse()
   }
 
   const handleLetterChange = (letter: string) => {
@@ -134,6 +154,20 @@ export const QuizMode: React.FC<QuizModeProps> = ({
     )
   }
 
+  // Show end screen if all countries for the continent are found OR user wants to end quiz
+  if (isContinentComplete || showEndScreen) {
+    return (
+      <QuizEndScreen
+        selectedContinent={selectedContinent}
+        totalFound={allFoundForContinent.length}
+        totalCountries={filteredCountries.length}
+        hintedCountries={everHintedCountries}
+        heavyHintedCountries={everHeavyHintedCountries}
+        onReturnToBrowse={handleQuizComplete}
+      />
+    )
+  }
+
   // Show message if no countries for current letter
   if (totalCountries === 0) {
     return (
@@ -159,6 +193,7 @@ export const QuizMode: React.FC<QuizModeProps> = ({
       <ContinentDisplay
         selectedContinent={selectedContinent}
         filteredCountriesCount={filteredCountries.length}
+        continentProgress={getContinentProgress()}
       />
 
       <LetterNavigation

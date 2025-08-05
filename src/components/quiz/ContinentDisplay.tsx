@@ -4,11 +4,13 @@ import styles from '../../styles/Quiz.module.css'
 interface ContinentDisplayProps {
   selectedContinent: string
   filteredCountriesCount: number
+  continentProgress?: { found: number; total: number }
 }
 
 export const ContinentDisplay: React.FC<ContinentDisplayProps> = ({
   selectedContinent,
-  filteredCountriesCount
+  filteredCountriesCount,
+  continentProgress
 }) => {
   const getContinentDisplay = () => {
     switch (selectedContinent) {
@@ -38,7 +40,9 @@ export const ContinentDisplay: React.FC<ContinentDisplayProps> = ({
       <span className={styles.continentBadge}>
         {getContinentDisplay()}
       </span>
-      <span className={styles.continentCount}>({filteredCountriesCount} Länder)</span>
+      <span className={styles.continentCount}>
+        {continentProgress ? `${continentProgress.found}/${continentProgress.total}` : `(${filteredCountriesCount} Länder)`}
+      </span>
     </div>
   )
 } 

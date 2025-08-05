@@ -95,6 +95,14 @@ export const useQuizProgress = (countries: Country[]) => {
     return { found: foundForLetter.length, total: letterCountries.length }
   }
 
+  const getContinentProgress = (continent: string = selectedContinent) => {
+    const filteredCountries = getFilteredCountries(continent)
+    const foundForContinent = Array.from(foundCountries).filter(countryName => 
+      filteredCountries.some(country => country.name === countryName)
+    )
+    return { found: foundForContinent.length, total: filteredCountries.length }
+  }
+
   const addFoundCountry = (countryName: string) => {
     setFoundCountries(prev => new Set([...prev, countryName]))
   }
@@ -134,6 +142,7 @@ export const useQuizProgress = (countries: Country[]) => {
     setIsQuizActive,
     getTotalCountriesFound,
     getLetterProgress,
+    getContinentProgress,
     addFoundCountry,
     resetProgress,
     saveForLater,

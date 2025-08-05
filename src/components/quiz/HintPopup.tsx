@@ -55,7 +55,7 @@ export const HintPopup: React.FC<HintPopupProps> = ({
         <div className={styles.hintContent}>
           <div className={styles.hintDisplay}>
             <span className={styles.visibleLetters}>{visibleLetters}</span>
-            {remainingLetters.split('').map((letter, index) => (
+            {remainingLetters.split('').map((_, index) => (
               <span key={index} className={styles.hiddenLetter}>_</span>
             ))}
           </div>

@@ -9,13 +9,12 @@ export const useCountries = () => {
   useEffect(() => {
     // Convert the JSON data to our Country format with normalized letters
     const countriesWithProgress = countriesData.map((countryData: any) => {
-      const firstChar = countryData.name.charAt(0)
-      const normalizedLetter = normalizeLetter(firstChar.toUpperCase())
+      const normalizedLetter = normalizeLetter(countryData.letter)
       
       return {
         name: countryData.name,
         letter: normalizedLetter,
-        originalLetter: firstChar.toUpperCase(), // Keep original for display
+        originalLetter: countryData.letter, // Keep original for display
         continent: countryData.continent,
         learned: false,
         lastReviewed: null,
